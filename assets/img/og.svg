@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#0B0B10"/>
+    </linearGradient>
+    <radialGradient id="a" cx=".2" cy="0" r=".8"><stop offset="0" stop-color="#87E47C" stop-opacity=".18"/><stop offset="1" stop-color="#87E47C" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b" cx=".9" cy=".1" r=".7"><stop offset="0" stop-color="#9292F5" stop-opacity=".18"/><stop offset="1" stop-color="#9292F5" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#a)"/><rect width="1200" height="630" fill="url(#b)"/>
+  <text x="84" y="200" font-family="Inter,sans-serif" font-size="28" fill="#8A8A94" letter-spacing="6">AI PRODUCT MANAGER</text>
+  <text x="84" y="310" font-family="Inter,sans-serif" font-size="82" font-weight="400" fill="#fff" letter-spacing="-3.4">Abhinay Tiwari</text>
+  <text x="84" y="404" font-family="Inter,sans-serif" font-size="42" font-weight="400" fill="#C2C2C7" letter-spacing="-1.6">Turning AI capability into products</text>
+  <text x="84" y="460" font-family="Georgia,serif" font-size="42" fill="#87E47C" letter-spacing="-1.2">people actually use.</text>
+  <rect x="84" y="524" width="1032" height="1" fill="#ffffff" fill-opacity=".12"/>
+  <text x="84" y="576" font-family="Inter,sans-serif" font-size="24" fill="#5A5A64" letter-spacing="-.4">5 AI product case studies · 4 shipped builds · 0→1 with founders</text>
+</svg>

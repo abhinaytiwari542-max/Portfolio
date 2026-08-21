@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" fill="none" role="img" aria-label="Agent proposal passing through policy engine and human approval gate before execution">
+  <rect width="400" height="170" fill="#08080A"/>
+  <g stroke="#ffffff" stroke-opacity=".04"><path d="M0 42h400M0 85h400M0 128h400"/></g>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="8.5" letter-spacing=".06em">
+    <rect x="20" y="70" width="66" height="30" rx="8" fill="#14141A" stroke="#9292F5" stroke-opacity=".45"/>
+    <text x="34" y="89" fill="#9292F5">LLM PLAN</text>
+    <rect x="118" y="70" width="70" height="30" rx="8" fill="#14141A" stroke="#F1BD15" stroke-opacity=".45"/>
+    <text x="130" y="89" fill="#F1BD15">POLICY</text>
+    <rect x="220" y="70" width="76" height="30" rx="8" fill="#14141A" stroke="#87E47C" stroke-opacity=".55"/>
+    <text x="230" y="89" fill="#87E47C">APPROVE</text>
+    <rect x="328" y="70" width="52" height="30" rx="8" fill="#87E47C" fill-opacity=".14" stroke="#87E47C" stroke-opacity=".5"/>
+    <text x="338" y="89" fill="#87E47C">EXEC</text>
+  </g>
+  <g stroke="#5A5A64" stroke-width="1.2">
+    <path d="M88 85h26M190 85h26M298 85h26"/>
+  </g>
+  <g fill="#5A5A64"><path d="M114 82l6 3-6 3zM216 82l6 3-6 3zM324 82l6 3-6 3z"/></g>
+  <g stroke="#FF8F70" stroke-width="1.1" stroke-dasharray="3 3">
+    <path d="M153 70V44h94"/><path d="M258 70V44"/>
+  </g>
+  <text x="163" y="38" font-family="ui-monospace,Menlo,monospace" font-size="8" fill="#FF8F70" letter-spacing=".08em">BLOCKED / HALTED → AUDIT LOG</text>
+  <text x="20" y="140" font-family="ui-monospace,Menlo,monospace" font-size="8" fill="#5A5A64" letter-spacing=".08em">THE LLM CAN SUGGEST. IT CANNOT SPEND.</text>
+</svg>

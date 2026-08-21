@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhinay Tiwari — AI Product Manager</title>
+<meta name="description" content="AI Product Manager. 0→1 with founders, five AI product case studies (Zomato, Rapido, Physics Wallah, YouTube, music streaming) and four shipped builds — agentic commerce, enterprise RAG search, lead-gen automation.">
+<meta name="author" content="Abhinay Tiwari">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abhinay Tiwari — AI Product Manager">
+<meta property="og:description" content="Turning AI capability into products people actually use. 5 AI product case studies · 4 shipped builds.">
+<meta property="og:image" content="assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav__in">
+    <a class="nav__brand" href="#top"><span class="nav__dot"></span> Abhinay Tiwari</a>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav__links">
+      <a href="#work">Case studies</a>
+      <a href="#builds">Builds</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a class="nav__cta" href="resume/Abhinay_Tiwari_CV.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero wrap">
+  <span class="hero__badge"><span class="nav__dot"></span> <b>Open to AI PM roles</b></span>
+
+  <h1>
+    <span class="ln">Turning AI capability</span>
+    <span class="ln">into products
+      <span class="emo" aria-hidden="true"><span>🧠</span><span>⚡</span></span>
+    </span>
+    <span class="ln"><em>people actually use.</em></span>
+  </h1>
+
+  <p class="hero__bio">
+    I'm Abhinay Tiwari — an AI product manager who takes products
+    <span class="hl hl--g">0&nbsp;→&nbsp;1</span> alongside founders. I write the
+    <span class="hl">PRDs</span>, build the
+    <span class="hl">metrics trees</span>, and own
+    <span class="hl hl--a">GTM</span> — then ship the thing myself when it's faster than waiting.
+  </p>
+
+  <div class="hero__acts">
+    <a class="btn btn--solid" href="#work">
+      See the case studies
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn" href="mailto:abhinaytiwari542@gmail.com">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m2.5 7 9.5 6 9.5-6"/></svg>
+      Get in touch
+    </a>
+  </div>
+
+  <div class="hero__stats">
+    <div class="hero__stat"><b>5</b><span>AI product case studies</span></div>
+    <div class="hero__stat"><b>4</b><span>shipped, open-source builds</span></div>
+    <div class="hero__stat"><b>3</b><span>0→1 roles with founders</span></div>
+    <div class="hero__stat"><b>52</b><span>automated tests on one build</span></div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section class="section wrap" id="work">
+  <div class="shead rv">
+    <span class="shead__eyebrow">Selected work</span>
+    <h2>Five AI products, taken from<br>a messy problem to a <em>metrics tree.</em></h2>
+    <p>Self-directed AI product case studies. Each one goes from problem framing through architecture, technique selection, MVP scoping, experiment design and guardrails — with assumptions labelled as assumptions, never dressed up as data.</p>
+  </div>
+
+  <div class="works">
+
+    <!-- 01 Zomato -->
+    <article class="work rv">
+      <a class="work__art" href="work/zomato-retention.html" aria-label="Read the Zomato retention case study">
+        <img src="assets/img/cs-zomato.svg" alt="Two retention curves diverging — with incentive versus without" loading="lazy" width="420" height="300">
+      </a>
+      <div class="work__body">
+        <div class="work__idx">01 · RETENTION &amp; INCENTIVE ECONOMICS</div>
+        <h3>Beyond discounts — an AI retention engine for Zomato</h3>
+        <p>In a multi-homing marketplace, the easy lever is a discount and the easy way to wreck unit economics is to make discounts the only reason anyone comes back. I reframed it as an <strong>incremental-retention-ROI</strong> problem and designed an uplift-modelled incentive engine on top.</p>
+        <div class="work__nstar"><b>North Star</b>Incremental retained customers per ₹1,000 of incentive spend</div>
+        <div class="work__tags">
+          <span class="tag tag--g">Uplift modelling</span>
+          <span class="tag tag--v">Budget-constrained optimisation</span>
+          <span class="tag tag--b">Holdout experiments</span>
+          <span class="tag tag--n">Service recovery</span>
+        </div>
+        <div class="work__foot">
+          <a class="link-arrow" href="work/zomato-retention.html">Read case study
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <span class="link-muted">14 sections · ~9 min</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 Rapido -->
+    <article class="work rv">
+      <a class="work__art" href="work/rapido-mobility.html" aria-label="Read the Rapido mobility case study">
+        <img src="assets/img/cs-rapido.svg" alt="City grid with predicted demand heat cells and a matched route" loading="lazy" width="420" height="300">
+      </a>
+      <div class="work__body">
+        <div class="work__idx">02 · TWO-SIDED MARKETPLACE</div>
+        <h3>Rapido — an AI Marketplace Optimizer for bike taxis</h3>
+        <p>India's last-mile gap sits between expensive cabs and unreliable autos. I analysed the two-sided liquidity problem and scoped four AI levers — demand forecasting, ETA, cancellation prediction, supply positioning — that move the North Star without needing matching infrastructure to exist first.</p>
+        <div class="work__nstar"><b>North Star</b>Completed rides per active supply hour</div>
+        <div class="work__tags">
+          <span class="tag tag--g">Demand forecasting</span>
+          <span class="tag tag--v">Marketplace liquidity</span>
+          <span class="tag tag--b">Unit economics</span>
+          <span class="tag tag--a">Regulatory risk</span>
+        </div>
+        <div class="work__foot">
+          <a class="link-arrow" href="work/rapido-mobility.html">Read case study
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <span class="link-muted">14 sections · ~10 min</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 PW -->
+    <article class="work rv">
+      <a class="work__art" href="work/pw-learning-coach.html" aria-label="Read the Physics Wallah AI learning coach case study">
+        <img src="assets/img/cs-pw.svg" alt="Knowledge graph drilling from subject down to a weak sub-concept" loading="lazy" width="420" height="300">
+      </a>
+      <div class="work__body">
+        <div class="work__idx">03 · EDTECH · RAG &amp; KNOWLEDGE GRAPHS</div>
+        <h3>Physics Wallah — personalisation at mass-market scale</h3>
+        <p>A dropper has hundreds of hours of content and no idea what to study today. I designed an AI Learning Coach — diagnostic profiling on a knowledge graph, a RAG-grounded multimodal doubt solver, slippage detection — with confidence-tiered escalation so teachers get the cases AI is worst at.</p>
+        <div class="work__nstar"><b>North Star</b>% of active students showing measurable topic-mastery gain per cycle</div>
+        <div class="work__tags">
+          <span class="tag tag--g">RAG grounding</span>
+          <span class="tag tag--v">Knowledge graph</span>
+          <span class="tag tag--b">Human-in-the-loop</span>
+          <span class="tag tag--c">Hallucination guardrails</span>
+        </div>
+        <div class="work__foot">
+          <a class="link-arrow" href="work/pw-learning-coach.html">Read case study
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <span class="link-muted">14 sections · ~9 min</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 YouTube -->
+    <article class="work rv">
+      <a class="work__art" href="work/youtube-creator-os.html" aria-label="Read the YouTube Creator AI OS case study">
+        <img src="assets/img/cs-youtube.svg" alt="Thumbnail A/B variants above an analytics waveform" loading="lazy" width="420" height="300">
+      </a>
+      <div class="work__body">
+        <div class="work__idx">04 · CREATOR TOOLS · PLATFORM STRATEGY</div>
+        <h3>The Creator AI OS — rebuilding YouTube Studio around AI</h3>
+        <p>Creators stitch ten tools around YouTube Studio. I mapped the friction across four personas, ranked it by frequency × impact × AI leverage, and scoped a Creator Copilot MVP — with a clickbait guardrail that optimises for click <em>and</em> retention, never CTR alone.</p>
+        <div class="work__nstar"><b>North Star</b>Creator value generated per active creator</div>
+        <div class="work__tags">
+          <span class="tag tag--g">RICE prioritisation</span>
+          <span class="tag tag--v">Technique selection</span>
+          <span class="tag tag--b">Composite North Star</span>
+          <span class="tag tag--c">Homogenisation risk</span>
+        </div>
+        <div class="work__foot">
+          <a class="link-arrow" href="work/youtube-creator-os.html">Read case study
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <span class="link-muted">11 sections · ~8 min</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 Playlists -->
+    <article class="work rv">
+      <a class="work__art" href="work/one-tap-playlists.html" aria-label="Read the One-Tap Playlists case study">
+        <img src="assets/img/cs-playlists.svg" alt="A discovery session of tracks collapsing into one saved playlist" loading="lazy" width="420" height="300">
+      </a>
+      <div class="work__body">
+        <div class="work__idx">05 · CONSUMER · 0→1 FEATURE</div>
+        <h3>One-Tap Playlists — closing the discovery-to-collection gap</h3>
+        <p>Recommendation engines are working fine. What breaks is the moment right after: you loved six songs and saved none of them. I scoped Discovery Session — a tracked autoplay stream you can save or AI-curate in one tap — where the LLM <strong>can't hallucinate a track by construction.</strong></p>
+        <div class="work__nstar"><b>North Star</b>Recommendation-to-playlist conversion rate</div>
+        <div class="work__tags">
+          <span class="tag tag--g">JTBD</span>
+          <span class="tag tag--v">Constrained LLM orchestration</span>
+          <span class="tag tag--b">Structured output contract</span>
+          <span class="tag tag--n">A/B design</span>
+        </div>
+        <div class="work__foot">
+          <a class="link-arrow" href="work/one-tap-playlists.html">Read case study
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <span class="link-muted">11 sections · ~7 min</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ BUILDS ============ -->
+<section class="section wrap" id="builds">
+  <div class="shead rv">
+    <span class="shead__eyebrow">Things I've shipped</span>
+    <h2>PM who writes the spec, then <em>writes the code.</em></h2>
+    <p>Four working systems on GitHub. Not prototypes — auth that survives XSS, policy engines that block the LLM from spending money, fail-closed PII redaction. Building them is how I learn what a spec actually costs.</p>
+  </div>
+
+  <div class="builds">
+
+    <article class="build rv">
+      <div class="build__art"><img src="assets/img/bd-vriddhi.svg" alt="Agent proposal passing through a policy engine and human approval gate before execution" loading="lazy" width="400" height="170"></div>
+      <div class="build__in">
+        <div class="build__top">
+          <h3>Vriddhi</h3>
+          <span class="tag tag--g">Agentic commerce</span>
+        </div>
+        <p>An AI agent that finds revenue opportunities for Razorpay merchants — abandoned-checkout recovery, cross-sell — and drafts actions a human must approve before anything executes. Every money action passes a deterministic policy engine, an approval gate, and a full audit trail. <strong>The LLM can suggest; it can't spend.</strong> Built in 22 sequential phases, each live-tested before the next started.</p>
+        <div class="build__stack">
+          <span class="stackchip">Next.js</span><span class="stackchip">TypeScript</span><span class="stackchip">Gemini</span>
+          <span class="stackchip">Prisma</span><span class="stackchip">Postgres</span><span class="stackchip">52 tests</span>
+        </div>
+        <div class="build__links">
+          <a class="link-arrow" href="https://github.com/abhinaytiwari542-max/vriddhi" target="_blank" rel="noopener">GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="link-muted" href="https://github.com/abhinaytiwari542-max/vriddhi/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener">Case study &amp; PRD →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="build rv">
+      <div class="build__art"><img src="assets/img/bd-secondobrain.svg" alt="Query fanning out to semantic and keyword search, fused, permission-filtered, then answered with citations" loading="lazy" width="400" height="170"></div>
+      <div class="build__in">
+        <div class="build__top">
+          <h3>SecondoBrain</h3>
+          <span class="tag tag--v">Enterprise RAG</span>
+        </div>
+        <p>A company's searchable memory. Employees ask plain-English questions across Drive, Slack, Gmail and Jira and get <strong>permission-filtered</strong> results plus a grounded, cited answer. Semantic and keyword search run in parallel and fuse with RRF; Cloud DLP redacts PII before embedding and <strong>fails closed</strong> — a chunk is dropped rather than leaked. Nothing leaves the VPC.</p>
+        <div class="build__stack">
+          <span class="stackchip">FastAPI</span><span class="stackchip">Next.js</span><span class="stackchip">Pinecone</span>
+          <span class="stackchip">Elasticsearch</span><span class="stackchip">Vertex AI</span><span class="stackchip">GCP VPC</span>
+        </div>
+        <div class="build__links">
+          <a class="link-arrow" href="https://github.com/abhinaytiwari542-max/secondobrain" target="_blank" rel="noopener">GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <span class="link-muted">RRF · ACL fail-closed · audit log</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="build rv">
+      <div class="build__art"><img src="assets/img/bd-leads.svg" alt="Scraped listings narrowing through AI qualification into drafted proposals" loading="lazy" width="400" height="170"></div>
+      <div class="build__in">
+        <div class="build__top">
+          <h3>Leads Finder</h3>
+          <span class="tag tag--a">GTM automation</span>
+        </div>
+        <p>A multi-platform lead-generation engine: Playwright and RSS scrapers across Upwork, Reddit and LinkedIn feed a Gemini qualification pass that scores each job, then auto-drafts a proposal and fires a Slack, Telegram or desktop alert. Scheduled scans every 10 minutes, SQLite analytics, Sheets export, and a FastAPI dashboard on top.</p>
+        <div class="build__stack">
+          <span class="stackchip">Python</span><span class="stackchip">Playwright</span><span class="stackchip">Gemini</span>
+          <span class="stackchip">FastAPI</span><span class="stackchip">SQLite</span><span class="stackchip">pytest</span>
+        </div>
+        <div class="build__links">
+          <a class="link-arrow" href="https://github.com/abhinaytiwari542-max/leads-finder" target="_blank" rel="noopener">GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <span class="link-muted">Scrape → qualify → draft → alert</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="build rv">
+      <div class="build__art"><img src="assets/img/bd-tracker.svg" alt="Habit streak contribution grid" loading="lazy" width="400" height="170"></div>
+      <div class="build__in">
+        <div class="build__top">
+          <h3>Tracker</h3>
+          <span class="tag tag--b">Full-stack</span>
+        </div>
+        <p>A habit tracker with streaks and real visualisations — and an auth system I built properly rather than quickly. Access tokens live 15 minutes in memory only; refresh tokens are opaque, SHA-256 hashed, HttpOnly, and rotate on every use, so <strong>an XSS bug can't walk off with a session.</strong> Google sign-in verifies signature, issuer <em>and</em> audience — skipping that last check is the classic hole.</p>
+        <div class="build__stack">
+          <span class="stackchip">Java 21</span><span class="stackchip">Spring Boot 3.5</span><span class="stackchip">React</span>
+          <span class="stackchip">Postgres</span><span class="stackchip">Flyway</span><span class="stackchip">Testcontainers</span>
+        </div>
+        <div class="build__links">
+          <a class="link-arrow" href="https://github.com/abhinaytiwari542-max/Tracker" target="_blank" rel="noopener">GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <span class="link-muted">Rotating refresh tokens · OIDC</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ HOW I WORK ============ -->
+<section class="section section--tight wrap" id="how">
+  <div class="shead rv">
+    <span class="shead__eyebrow">How I work</span>
+    <h2>Opinions I keep <em>having to defend.</em></h2>
+  </div>
+
+  <div class="caps rv">
+    <div class="cap">
+      <div class="cap__ico" style="background:rgba(135,228,124,.1);border-color:rgba(135,228,124,.28)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#87E47C" stroke-width="1.6"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+      </div>
+      <h3>Pick the technique, don't default to one</h3>
+      <p>Churn is a calibrated ML problem. Budget allocation is optimisation. Support triage is an LLM job. Reaching for an LLM because it's the exciting one is how you get an unauditable model setting discount amounts.</p>
+    </div>
+    <div class="cap">
+      <div class="cap__ico" style="background:rgba(146,146,245,.1);border-color:rgba(146,146,245,.28)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9292F5" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-8"/><path d="M16 8h5v5"/></svg>
+      </div>
+      <h3>Incrementality, or it didn't happen</h3>
+      <p>A customer who'd have come back anyway is wasted spend. I design permanent holdout groups in from day one, because without one you'll attribute organic behaviour to your own intervention and believe it.</p>
+    </div>
+    <div class="cap">
+      <div class="cap__ico" style="background:rgba(111,168,255,.1);border-color:rgba(111,168,255,.28)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6FA8FF" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 4v16"/></svg>
+      </div>
+      <h3>Constrain the model architecturally</h3>
+      <p>Telling an LLM "don't hallucinate tracks" is a prompt. Only letting it select from a candidate set the recommender produced is an architecture. I prefer the second — it holds when the prompt doesn't.</p>
+    </div>
+    <div class="cap">
+      <div class="cap__ico" style="background:rgba(241,189,21,.1);border-color:rgba(241,189,21,.28)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F1BD15" stroke-width="1.6"><path d="M12 3l8 4v6c0 5-3.4 7.6-8 9-4.6-1.4-8-4-8-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+      <h3>Guardrail metrics are real metrics</h3>
+      <p>Optimise CTR alone and you ship clickbait. Optimise targeting alone and you ship notification fatigue. Every North Star in my case studies carries a guardrail that's allowed to veto it.</p>
+    </div>
+    <div class="cap">
+      <div class="cap__ico" style="background:rgba(255,143,112,.1);border-color:rgba(255,143,112,.28)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FF8F70" stroke-width="1.6"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+      </div>
+      <h3>Label the assumption as an assumption</h3>
+      <p>Every case study here separates public knowledge, my proposals, and illustrative numbers. Inventing a 34% retention lift is easy and worthless. Saying "here's the experiment that would tell us" is the actual job.</p>
+    </div>
+    <div class="cap">
+      <div class="cap__ico" style="background:rgba(255,143,163,.1);border-color:rgba(255,143,163,.28)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FF8FA3" stroke-width="1.6"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+      </div>
+      <h3>Build it if that's the fastest way to know</h3>
+      <p>I ship code — Spring Boot, FastAPI, Next.js, Playwright. Not to be an engineer, but because a working thing settles arguments that a document keeps having, and it teaches me what I'm really asking a team for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section wrap" id="experience">
+  <div class="shead rv">
+    <span class="shead__eyebrow">Experience</span>
+    <h2>0→1 work, mostly <em>next to founders.</em></h2>
+  </div>
+
+  <div class="xp rv">
+
+    <div class="xp__row">
+      <div class="xp__when">Mar 2026 — May 2026<span>Bengaluru</span></div>
+      <div>
+        <div class="xp__head"><h3>Operations &amp; GTM Lead</h3><span class="xp__co">Build AI</span></div>
+        <ul>
+          <li>Led GTM and stakeholder onboarding across factory owners, workers and government authorities in a multi-state rollout.</li>
+          <li>Built the field-ops infrastructure from scratch — recruited and trained the team, and scaled a zero-pending-24-hours logistics SLA.</li>
+          <li>Architected onboarding playbooks and a scaling framework, plus a sustained worker data pipeline feeding the product.</li>
+        </ul>
+        <div class="xp__chips">
+          <span class="tag tag--n">GTM</span><span class="tag tag--n">Field ops</span>
+          <span class="tag tag--n">Stakeholder management</span><span class="tag tag--n">Team building</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="xp__row">
+      <div class="xp__when">Oct 2025 — Apr 2026<span>Remote</span></div>
+      <div>
+        <div class="xp__head"><h3>Product &amp; Business Management</h3><span class="xp__co">Renan</span></div>
+        <ul>
+          <li>Worked directly with founders to take AI products 0→1 — product strategy, feature development and GTM execution.</li>
+          <li>Built and shipped AI-driven automations that streamlined internal workflows and cut manual process load.</li>
+          <li>Led product discovery and feature launches off real user needs, improving acquisition, conversion and engagement.</li>
+        </ul>
+        <div class="xp__chips">
+          <span class="tag tag--n">0→1 product</span><span class="tag tag--n">Product discovery</span>
+          <span class="tag tag--n">AI automation</span><span class="tag tag--n">Growth</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="xp__row">
+      <div class="xp__when">Jun 2025 — Aug 2025<span>Chandigarh</span></div>
+      <div>
+        <div class="xp__head"><h3>Finance Intern</h3><span class="xp__co">Aditya Birla Capital</span></div>
+        <ul>
+          <li>Ran financial statement analysis, credit assessment and operating performance review to support investment and risk decisions.</li>
+          <li>Built and validated DCF and LBO models, testing leverage capacity, downside risk and scenario-based return outcomes.</li>
+          <li>Supported financial due diligence and data verification, packaging structured insight summaries for senior stakeholders.</li>
+        </ul>
+        <div class="xp__chips">
+          <span class="tag tag--n">DCF / LBO</span><span class="tag tag--n">Due diligence</span>
+          <span class="tag tag--n">Unit economics</span><span class="tag tag--n">Risk analysis</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section wrap" id="about">
+  <div class="shead rv">
+    <span class="shead__eyebrow">About me</span>
+    <h2>Chandigarh, India <span style="opacity:.4">📮</span></h2>
+  </div>
+
+  <div class="about">
+    <div class="rv">
+      <p class="about__lede">I got into product from the numbers side — building DCF models at Aditya Birla Capital — and found I cared much more about <em>why the business worked</em> than about the model.</p>
+      <p>Since then it's been 0→1 work with founders: at <strong>Renan</strong>, taking AI products from an idea to something users touched; at <strong>Build AI</strong>, standing up field operations across multiple states and learning that GTM is mostly logistics wearing a suit.</p>
+      <p>The finance background left me with a habit I haven't shaken — I want to see the unit economics before I get excited about a feature. It's why every case study here ends with a contribution-margin line rather than a hockey stick.</p>
+      <p>Alongside that I'm finishing a <strong>B.E. in Electronics &amp; Communication Engineering at UIET, Panjab University</strong>, and building things on the side that are too small to be startups and too real to be toys.</p>
+      <p>Away from work: I led leadership and training programmes for 100+ cadets in the <strong>NCC</strong>, and I founded <strong>Mind Sustain</strong>, an NGO running financial-literacy bootcamps for underserved students — budgeting, savings, and how compounding actually feels over ten years.</p>
+    </div>
+
+    <div class="rv">
+      <div class="panel">
+        <h4>Education</h4>
+        <div class="panel__row">
+          <span class="panel__ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 9 12 4 2 9l10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
+          <div>
+            <b>B.E., Electronics &amp; Communication Engineering</b>
+            <span>UIET, Panjab University · Chandigarh · Aug 2023 — May 2027</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h4>Certifications</h4>
+        <div class="panel__row"><span class="panel__ico">◈</span><div><b>McKinsey.org Forward Program</b><span>Problem solving, client communication</span></div></div>
+        <div class="panel__row"><span class="panel__ico">◈</span><div><b>Finlatics Investment Banking Experience</b><span>DCF, LBO, deal structuring</span></div></div>
+        <div class="panel__row"><span class="panel__ico">◈</span><div><b>Forage Virtual IB &amp; M&amp;A Simulation</b><span>J.P. Morgan &amp; Citi</span></div></div>
+      </div>
+
+      <div class="panel">
+        <h4>Toolkit</h4>
+        <div class="build__stack" style="margin:0">
+          <span class="stackchip">SQL</span><span class="stackchip">A/B testing</span><span class="stackchip">Cohort analysis</span>
+          <span class="stackchip">Funnel analysis</span><span class="stackchip">RICE</span><span class="stackchip">PRDs</span>
+          <span class="stackchip">Roadmapping</span><span class="stackchip">Prompt engineering</span>
+          <span class="stackchip">Model eval metrics</span><span class="stackchip">LLM apps</span>
+          <span class="stackchip">Tableau / PowerBI</span><span class="stackchip">Jira</span><span class="stackchip">Notion</span>
+          <span class="stackchip">Figma collab</span><span class="stackchip">APIs</span><span class="stackchip">Excel modelling</span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h4>Leadership</h4>
+        <div class="panel__row"><span class="panel__ico">★</span><div><b>National Cadet Corps</b><span>Ran leadership sessions and training operations for 100+ cadets</span></div></div>
+        <div class="panel__row"><span class="panel__ico">★</span><div><b>Mind Sustain (NGO) — Founder</b><span>Financial-literacy bootcamps for underserved students</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact wrap" id="contact">
+  <p class="contact__hand rv">say hello!</p>
+  <div class="rv">
+    <h2>I'd love to <em>connect.</em></h2>
+    <p>Looking for an AI Product Manager role where the hard part is judgement, not headcount. If you're building something where the model is a means rather than the pitch — let's talk.</p>
+  </div>
+
+  <div class="contact__grid rv">
+    <a class="ccard" href="mailto:abhinaytiwari542@gmail.com">
+      <span class="ccard__ico" style="background:rgba(135,228,124,.09);border-color:rgba(135,228,124,.28)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#87E47C" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m2.5 7 9.5 6 9.5-6"/></svg>
+      </span>
+      <span><b data-copy-label>Email</b><span>abhinaytiwari542@gmail.com</span></span>
+    </a>
+
+    <a class="ccard" href="https://www.linkedin.com/in/abhinay-tiwari22/" target="_blank" rel="noopener">
+      <span class="ccard__ico" style="background:rgba(111,168,255,.09);border-color:rgba(111,168,255,.28)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#6FA8FF"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C20.6 8.75 22 11 22 14.4V21h-4v-5.9c0-1.4-.03-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H9z"/></svg>
+      </span>
+      <span><b>LinkedIn</b><span>/in/abhinay-tiwari22</span></span>
+    </a>
+
+    <a class="ccard" href="https://github.com/abhinaytiwari542-max" target="_blank" rel="noopener">
+      <span class="ccard__ico" style="background:rgba(146,146,245,.09);border-color:rgba(146,146,245,.28)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#9292F5"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.9c-2.78.62-3.37-1.2-3.37-1.2-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+      </span>
+      <span><b>GitHub</b><span>@abhinaytiwari542-max</span></span>
+    </a>
+
+    <a class="ccard" href="tel:+919604966007">
+      <span class="ccard__ico" style="background:rgba(241,189,21,.09);border-color:rgba(241,189,21,.28)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F1BD15" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      </span>
+      <span><b>Phone</b><span>+91 96049 66007</span></span>
+    </a>
+
+    <a class="ccard" href="resume/Abhinay_Tiwari_CV.pdf" target="_blank" rel="noopener">
+      <span class="ccard__ico" style="background:rgba(255,143,112,.09);border-color:rgba(255,143,112,.28)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF8F70" stroke-width="1.6"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5M9 13h6M9 17h4"/></svg>
+      </span>
+      <span><b>Résumé</b><span>PDF · one page</span></span>
+    </a>
+
+    <a class="ccard" href="#work">
+      <span class="ccard__ico" style="background:rgba(255,143,163,.09);border-color:rgba(255,143,163,.28)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF8FA3" stroke-width="1.6"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-1.5z"/><path d="M9 7h7M9 11h5"/></svg>
+      </span>
+      <span><b>Case studies</b><span>Five, start anywhere</span></span>
+    </a>
+  </div>
+
+  <footer class="foot">
+    <span>© <span data-year>2026</span> Abhinay Tiwari · Built from scratch, no page builder.</span>
+    <span class="foot__right">
+      <a href="https://www.linkedin.com/in/abhinay-tiwari22/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/abhinaytiwari542-max" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:abhinaytiwari542@gmail.com">Email</a>
+      <a href="#top">Back to top ↑</a>
+    </span>
+  </footer>
+</section>
+
+</main>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

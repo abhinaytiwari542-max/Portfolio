@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" fill="none" role="img" aria-label="Query fanning to semantic and keyword search, fused, permission filtered, then grounded answer">
+  <rect width="400" height="170" fill="#08080A"/>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="8" letter-spacing=".05em">
+    <circle cx="34" cy="85" r="12" fill="#14141A" stroke="#9292F5" stroke-opacity=".5"/>
+    <text x="20" y="112" fill="#8A8A94">QUERY</text>
+    <rect x="86" y="42" width="72" height="26" rx="7" fill="#14141A" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="96" y="59" fill="#C2C2C7">PINECONE</text>
+    <rect x="86" y="102" width="72" height="26" rx="7" fill="#14141A" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="94" y="119" fill="#C2C2C7">ELASTIC</text>
+    <rect x="184" y="72" width="46" height="26" rx="7" fill="#14141A" stroke="#6FA8FF" stroke-opacity=".5"/>
+    <text x="196" y="89" fill="#6FA8FF">RRF</text>
+    <rect x="252" y="72" width="60" height="26" rx="7" fill="#14141A" stroke="#F1BD15" stroke-opacity=".5"/>
+    <text x="259" y="89" fill="#F1BD15">ACL FILT</text>
+    <rect x="334" y="72" width="48" height="26" rx="7" fill="#87E47C" fill-opacity=".12" stroke="#87E47C" stroke-opacity=".5"/>
+    <text x="343" y="89" fill="#87E47C">CITED</text>
+  </g>
+  <g stroke="#5A5A64" stroke-width="1.1" fill="none">
+    <path d="M46 79 C 66 60 70 55 84 55"/><path d="M46 91 C 66 110 70 115 84 115"/>
+    <path d="M158 55 C 172 55 172 82 182 85"/><path d="M158 115 C 172 115 172 88 182 85"/>
+    <path d="M230 85h20M312 85h20"/>
+  </g>
+  <g fill="#5A5A64"><path d="M250 82l5 3-5 3zM332 82l5 3-5 3z"/></g>
+  <text x="20" y="152" font-family="ui-monospace,Menlo,monospace" font-size="8" fill="#5A5A64" letter-spacing=".07em">DLP REDACT → EMBED · FAIL-CLOSED · EVERY QUERY AUDITED</text>
+</svg>

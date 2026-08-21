@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" fill="none" role="img" aria-label="Knowledge graph drilling from subject to weak sub-concept, with mastery bars">
+  <defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E0E12"/><stop offset="1" stop-color="#08080A"/></linearGradient></defs>
+  <rect width="420" height="300" fill="url(#pbg)"/>
+  <g stroke="#ffffff" stroke-opacity=".13" stroke-width="1">
+    <path d="M60 56 L140 106 M60 56 L140 56 M60 56 L140 156"/>
+    <path d="M140 156 L226 130 M140 156 L226 182 M140 106 L226 92"/>
+    <path d="M226 182 L306 168 M226 182 L306 208"/>
+  </g>
+  <path d="M140 156 L226 182 L306 208" stroke="#FF8F70" stroke-width="1.8" stroke-opacity=".8"/>
+  <g>
+    <circle cx="60"  cy="56"  r="8" fill="#14141A" stroke="#8A8A94" stroke-width="1.4"/>
+    <circle cx="140" cy="56"  r="6" fill="#14141A" stroke="#5A5A64"/>
+    <circle cx="140" cy="106" r="6" fill="#14141A" stroke="#5A5A64"/>
+    <circle cx="140" cy="156" r="7" fill="#14141A" stroke="#8A8A94" stroke-width="1.3"/>
+    <circle cx="226" cy="92"  r="5" fill="#14141A" stroke="#5A5A64"/>
+    <circle cx="226" cy="130" r="5" fill="#14141A" stroke="#5A5A64"/>
+    <circle cx="226" cy="182" r="6" fill="#14141A" stroke="#FF8F70" stroke-width="1.3"/>
+    <circle cx="306" cy="168" r="5" fill="#14141A" stroke="#5A5A64"/>
+    <circle cx="306" cy="208" r="7" fill="#FF8F70"/><circle cx="306" cy="208" r="13" stroke="#FF8F70" stroke-opacity=".3"/>
+  </g>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="9" letter-spacing=".05em" fill="#8A8A94">
+    <text x="42" y="38">Physics</text>
+    <text x="122" y="176">Mechanics</text>
+    <text x="204" y="202" fill="#FF8F70">Rotation</text>
+    <text x="272" y="234" fill="#FF8F70">Moment of Inertia</text>
+  </g>
+  <g>
+    <text x="60" y="254" font-family="ui-monospace,Menlo,monospace" font-size="9" letter-spacing=".1em" fill="#5A5A64">TOPIC MASTERY</text>
+    <rect x="60" y="264" width="300" height="6" rx="3" fill="#ffffff" fill-opacity=".07"/>
+    <rect x="60" y="264" width="112" height="6" rx="3" fill="#FF8F70"/>
+    <rect x="176" y="264" width="86" height="6" rx="3" fill="#F1BD15" fill-opacity=".8"/>
+    <rect x="266" y="264" width="94" height="6" rx="3" fill="#87E47C"/>
+  </g>
+</svg>

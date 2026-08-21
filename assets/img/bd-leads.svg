@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" fill="none" role="img" aria-label="Scraped listings narrowing through AI qualification into proposals">
+  <rect width="400" height="170" fill="#08080A"/>
+  <g>
+    <path d="M28 28h150l-16 30H44z"  fill="#9292F5" fill-opacity=".22"/>
+    <path d="M44 62h118l-16 30H60z"  fill="#6FA8FF" fill-opacity=".22"/>
+    <path d="M60 96h86l-16 30H76z"   fill="#F1BD15" fill-opacity=".22"/>
+    <path d="M76 130h54l-13 26H89z"  fill="#87E47C" fill-opacity=".34"/>
+  </g>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="8" letter-spacing=".06em" fill="#8A8A94">
+    <text x="196" y="48">SCRAPED   Upwork · Reddit · LinkedIn</text>
+    <text x="196" y="82">FILTERED  keywords · budget · negatives</text>
+    <text x="196" y="116" fill="#F1BD15">SCORED    Gemini qualification</text>
+    <text x="196" y="150" fill="#87E47C">DRAFTED   auto proposal + alert</text>
+  </g>
+  <g stroke="#ffffff" stroke-opacity=".08"><path d="M186 20v134"/></g>
+  <g fill="#87E47C"><circle cx="190" cy="146" r="2.4"/></g>
+  <g fill="#F1BD15"><circle cx="190" cy="112" r="2.4"/></g>
+  <g fill="#6FA8FF"><circle cx="190" cy="78" r="2.4"/></g>
+  <g fill="#9292F5"><circle cx="190" cy="44" r="2.4"/></g>
+</svg>

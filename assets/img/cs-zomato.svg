@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" fill="none" role="img" aria-label="Two retention curves diverging: with incentive vs without">
+  <defs>
+    <linearGradient id="zg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#87E47C" stop-opacity=".26"/><stop offset="1" stop-color="#87E47C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="zbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E0E12"/><stop offset="1" stop-color="#08080A"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="300" fill="url(#zbg)"/>
+  <g stroke="#ffffff" stroke-opacity=".055">
+    <path d="M40 60h340M40 110h340M40 160h340M40 210h340M40 250h340"/>
+    <path d="M96 44v206M152 44v206M208 44v206M264 44v206M320 44v206"/>
+  </g>
+  <path d="M40 214C96 206 152 194 208 170 264 146 320 118 376 96" stroke="#87E47C" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M40 214C96 206 152 194 208 170 264 146 320 118 376 96L376 250H40Z" fill="url(#zg)"/>
+  <path d="M40 216C96 216 152 220 208 226 264 231 320 235 376 238" stroke="#5A5A64" stroke-width="1.8" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <g fill="#87E47C"><circle cx="376" cy="96" r="4.5"/></g>
+  <circle cx="376" cy="96" r="10" stroke="#87E47C" stroke-opacity=".3"/>
+  <circle cx="376" cy="238" r="3.6" fill="#5A5A64"/>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="9.5" letter-spacing=".08em">
+    <text x="40" y="36" fill="#8A8A94">UPLIFT = P(retain | incentive) − P(retain | none)</text>
+    <text x="228" y="88" fill="#87E47C">+20 pts</text>
+    <text x="252" y="262" fill="#5A5A64">would return anyway</text>
+  </g>
+  <g stroke="#ffffff" stroke-opacity=".12"><path d="M40 250h336M40 44v206"/></g>
+</svg>
