@@ -128,7 +128,7 @@
     if (!ctx) return;
 
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    var W = 0, H = 0, stars = [], light = false, meteors = [], sinceMeteor = 0, nextMeteor = 40;
+    var W = 0, H = 0, stars = [], light = false, meteors = [], sinceMeteor = 0, nextMeteor = 25;
     var LINK = 170;            // px radius the pointer links stars within
     var pointer = { x: -9999, y: -9999, tx: -9999, ty: -9999, live: false };
 
@@ -192,9 +192,9 @@
       /* --- shooting stars --- */
       if (!still) {
         sinceMeteor++;
-        if (sinceMeteor > nextMeteor && meteors.length < 3) {
+        if (sinceMeteor > nextMeteor && meteors.length < 2) {
           sinceMeteor = 0;
-          nextMeteor = 150 + Math.floor(Math.random() * 420);   // ~2.5-9s apart at 60fps
+          nextMeteor = 90 + Math.floor(Math.random() * 170);    // ~1.5-4.3s apart at 60fps
           // Start the head inside the viewport and aim it across, so the whole
           // streak is on-screen. Spawning off the left edge wastes most of a
           // meteor's short life travelling into view.
@@ -207,9 +207,9 @@
             y: -20 + Math.random() * H * 0.34,
             vx: Math.cos(ang) * speed * dir,
             vy: Math.sin(ang) * speed,
-            len: 95 + Math.random() * 125,
+            len: 150 + Math.random() * 130,
             life: 0,
-            max: 46 + Math.random() * 26
+            max: 72 + Math.random() * 38
           });
         }
         for (var m = meteors.length - 1; m >= 0; m--) {
@@ -217,7 +217,8 @@
           mt.x += mt.vx; mt.y += mt.vy; mt.life++;
 
           var t = mt.life / mt.max;
-          var fade = t < 0.15 ? t / 0.15 : (1 - (t - 0.15) / 0.85);   // quick in, slow out
+          // ramp in fast, hold at full for most of the flight, then fall off
+          var fade = t < 0.12 ? t / 0.12 : (t < 0.55 ? 1 : 1 - (t - 0.55) / 0.45);
           if (fade <= 0 || mt.life > mt.max || mt.y > H + 90 ||
               mt.x < -mt.len - 40 || mt.x > W + mt.len + 40) { meteors.splice(m, 1); continue; }
 
@@ -225,26 +226,46 @@
           var tx = mt.x - (mt.vx / mag) * mt.len;
           var ty = mt.y - (mt.vy / mag) * mt.len;
 
-          var tg = ctx.createLinearGradient(mt.x, mt.y, tx, ty);
-          var head = light ? '31,158,67' : '190,255,185';
-          var tail = light ? '90,80,220' : '146,146,245';
-          tg.addColorStop(0,   'rgba(' + head + ',' + (0.85 * fade).toFixed(3) + ')');
-          tg.addColorStop(0.35,'rgba(' + tail + ',' + (0.30 * fade).toFixed(3) + ')');
-          tg.addColorStop(1,   'rgba(' + tail + ',0)');
+          var head = light ? '26,132,58'  : '235,255,232';
+          var mid  = light ? '31,158,67'   : '150,235,150';
+          var tail = light ? '90,80,220'   : '146,146,245';
 
+          var tg = ctx.createLinearGradient(mt.x, mt.y, tx, ty);
+          tg.addColorStop(0,    'rgba(' + head + ',' + (1.00 * fade).toFixed(3) + ')');
+          tg.addColorStop(0.14, 'rgba(' + mid  + ',' + (0.78 * fade).toFixed(3) + ')');
+          tg.addColorStop(0.45, 'rgba(' + tail + ',' + (0.40 * fade).toFixed(3) + ')');
+          tg.addColorStop(1,    'rgba(' + tail + ',0)');
+
+          ctx.lineCap = 'round';
+
+          // soft wide underlay so the streak reads against the background
           ctx.beginPath();
           ctx.moveTo(mt.x, mt.y);
           ctx.lineTo(tx, ty);
           ctx.strokeStyle = tg;
-          ctx.lineWidth = 1.7;
-          ctx.lineCap = 'round';
+          ctx.lineWidth = 4.5;
+          ctx.globalAlpha = 0.35;
+          ctx.stroke();
+
+          // crisp core
+          ctx.globalAlpha = 1;
+          ctx.lineWidth = 1.9;
           ctx.stroke();
           ctx.lineCap = 'butt';
 
-          // bright head
+          // glowing head
+          var hg = ctx.createRadialGradient(mt.x, mt.y, 0, mt.x, mt.y, 9);
+          hg.addColorStop(0,   'rgba(' + head + ',' + (0.95 * fade).toFixed(3) + ')');
+          hg.addColorStop(0.4, 'rgba(' + mid  + ',' + (0.45 * fade).toFixed(3) + ')');
+          hg.addColorStop(1,   'rgba(' + mid  + ',0)');
           ctx.beginPath();
-          ctx.arc(mt.x, mt.y, 1.7, 0, Math.PI * 2);
-          ctx.fillStyle = 'rgba(' + head + ',' + (0.95 * fade).toFixed(3) + ')';
+          ctx.arc(mt.x, mt.y, 9, 0, Math.PI * 2);
+          ctx.fillStyle = hg;
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.arc(mt.x, mt.y, 2.1, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(' + head + ',' + Math.min(1, 1.1 * fade).toFixed(3) + ')';
           ctx.fill();
         }
       }

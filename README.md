@@ -21,9 +21,10 @@ Personal portfolio site. Static HTML, CSS and vanilla JS. No framework, no build
 - **Cursor starfield**: a canvas field of parallax stars that drift slowly, lean toward the pointer
   by depth, brighten near it, and draw constellation lines between the closest ones. Degrades to a
   still field under `prefers-reduced-motion` and is skipped entirely on coarse pointers.
-- **Shooting stars**: meteors spawn on the same canvas every few seconds, streaking with a gradient
-  tail that fades from a bright head to nothing. They start inside the viewport so the whole streak
-  is visible.
+- **Shooting stars**: meteors spawn on the same canvas every 1.5-4.3 seconds and live about 1.5,
+  so one is on screen roughly 40% of the time. Each is a glowing head trailing a gradient tail that
+  fades from white-green through violet to nothing. They start inside the viewport so the whole
+  streak is visible.
 - **Cursor orb**: a small morphing gradient blob that trails the pointer with easing and swells over
   anything clickable. Removed outright under reduced-motion or on touch.
 - Scroll-reveal, sticky nav, reading-progress bar and TOC scroll-spy on case study pages.
