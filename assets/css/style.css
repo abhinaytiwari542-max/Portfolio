@@ -524,7 +524,7 @@ button{ font:inherit; }
 .ticker__track{
   display:flex; align-items:center; gap:16px; width:max-content;
   padding:16px 0 2px;
-  animation:tick 46s linear infinite;
+  animation:tick 26s linear infinite;
 }
 .ticker:hover .ticker__track{ animation-play-state:paused; }
 .ticker__track span{
@@ -533,7 +533,15 @@ button{ font:inherit; }
 }
 .ticker__track i{ width:3px; height:3px; border-radius:50%; background:var(--green); opacity:.5; flex:0 0 auto; }
 @keyframes tick{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
-@media (prefers-reduced-motion:reduce){ .ticker__track{ animation:none; } }
+@media (prefers-reduced-motion:reduce){
+  .ticker{ -webkit-mask-image:none; mask-image:none; }
+  .ticker__track{
+    animation:none; width:auto; flex-wrap:wrap; justify-content:center;
+    gap:10px 14px; padding-inline:12px;
+  }
+  /* the track is duplicated for a seamless loop; one copy is enough when static */
+  .ticker__track > :nth-child(n+25){ display:none; }
+}
 
 /* ---------- section heading ---------- */
 .shead{ margin-bottom:52px; }
