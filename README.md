@@ -1,4 +1,4 @@
-# Abhinay Tiwari — AI Product Manager Portfolio
+# Abhinay Tiwari, AI Product Manager Portfolio
 
 Personal portfolio site. Static HTML, CSS and vanilla JS. No framework, no build step, no page builder.
 
@@ -12,6 +12,16 @@ Personal portfolio site. Static HTML, CSS and vanilla JS. No framework, no build
 | Builds | Four shipped repos: Vriddhi, SecondoBrain, Leads Finder, Tracker |
 | Experience | Build AI, Renan, Aditya Birla Capital |
 | About | Education, certifications, toolkit, leadership |
+
+## Features
+
+- **Dark / light theme** toggled from the header, persisted in `localStorage`, defaulting to the
+  operating system preference. An inline `<head>` script applies it before first paint, so there is
+  no flash of the wrong theme.
+- **Cursor starfield**: a canvas field of parallax stars that drift slowly, lean toward the pointer
+  by depth, brighten near it, and draw constellation lines between the closest ones. Degrades to a
+  still field under `prefers-reduced-motion` and is skipped entirely on coarse pointers.
+- Scroll-reveal, sticky nav, reading-progress bar and TOC scroll-spy on case study pages.
 
 ## Structure
 

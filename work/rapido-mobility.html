@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rapido — an AI Marketplace Optimizer for bike taxis · Abhinay Tiwari</title>
+<title>Rapido: an AI Marketplace Optimizer for bike taxis · Abhinay Tiwari</title>
 <meta name="description" content="AI product case study: demand forecasting, ETA and cancellation prediction to improve marketplace liquidity and captain earnings on a two-wheeler mobility network.">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var t=localStorage.getItem('at-theme');if(!t)t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
 <body>
 
 <div class="cs-prog"></div>
+<canvas class="starfield" aria-hidden="true"></canvas>
 <div class="glow" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
@@ -25,14 +27,20 @@
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
       All work
     </a>
-    <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+    <span style="display:flex;align-items:center;gap:10px">
+      <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+      <button class="themebtn" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.8 6.8 0 0 0 10.9 10.9z"/></svg>
+      </button>
+    </span>
   </div>
 </header>
 
 <section class="cs-hero wrap">
   <span class="cs-kicker">Case study 02 · Two-sided marketplace</span>
   <h1>How bike taxis crack India's <em>last-mile problem</em></h1>
-  <p class="cs-sub">India has one of the largest privately owned two-wheeler fleets in the world — mostly idle for large parts of the day. Rapido's opportunity was to turn that into an affordable, scalable mobility network. The AI question is how you keep it liquid.</p>
+  <p class="cs-sub">India has one of the largest privately owned two-wheeler fleets in the world, mostly idle for large parts of the day. Rapido's opportunity was to turn that into an affordable, scalable mobility network. The AI question is how you keep it liquid.</p>
 
   <div class="cs-tags">
     <span class="tag tag--g">Demand forecasting</span>
@@ -49,7 +57,7 @@
     <div><dt>Reading time</dt><dd>~10 minutes</dd></div>
   </dl>
 
-  <p class="cs-note"><b>A note on this document.</b> This is a hypothetical, self-directed portfolio case study — not a Rapido-commissioned project or a report using internal company data. Facts about Rapido, Uber or Ola's actual pricing, take rates, regulatory status or AI capabilities are not asserted unless well-established public knowledge. Figures, models and experiment designs are illustrative assumptions built for analysis, not real financial or operational results.</p>
+  <p class="cs-note"><b>A note on this document.</b> This is a hypothetical, self-directed portfolio case study, not a Rapido-commissioned project or a report using internal company data. Facts about Rapido, Uber or Ola's actual pricing, take rates, regulatory status or AI capabilities are not asserted unless well-established public knowledge. Figures, models and experiment designs are illustrative assumptions built for analysis, not real financial or operational results.</p>
 </section>
 
 <div class="cs-layout">
@@ -76,7 +84,7 @@
 
     <section id="gap">
       <h2><span class="num">01</span>India's last-mile mobility gap</h2>
-      <p>India's urban mobility problem sits between two extremes: auto-rickshaws and cabs are relatively expensive and often unavailable on demand, while public transit rarely covers the final 3–10 km between a transit stop and a destination. Meanwhile, the country's enormous two-wheeler fleet sits idle for most of the day.</p>
+      <p>India's urban mobility problem sits between two extremes: auto-rickshaws and cabs are relatively expensive and often unavailable on demand, while public transit rarely covers the final 3-10 km between a transit stop and a destination. Meanwhile, the country's enormous two-wheeler fleet sits idle for most of the day.</p>
 
       <div class="mgrid">
         <div><h6>Rider problems</h6><ul><li>Costly short rides</li><li>Long waits</li><li>Unpredictable ETAs</li><li>Poor last-mile connectivity</li></ul></div>
@@ -86,7 +94,7 @@
 
       <div class="callout callout--key">
         <span class="callout__label">Core thesis</span>
-        <p>Two-wheelers are structurally well-suited to Indian traffic — they navigate congestion, need no parking search and are cheap to operate — making bike taxis a natural fit for short urban trips that are currently overserved by expensive cabs and underserved by unreliable autos.</p>
+        <p>Two-wheelers are structurally well-suited to Indian traffic. They navigate congestion, need no parking search and are cheap to operate, making bike taxis a natural fit for short urban trips that are currently overserved by expensive cabs and underserved by unreliable autos.</p>
       </div>
     </section>
 
@@ -95,14 +103,14 @@
       <div class="tbl-wrap"><table>
         <thead><tr><th>Factor</th><th>Bike taxi</th><th>Auto</th><th>Cab</th></tr></thead>
         <tbody>
-          <tr><td>Cost (3–10 km)</td><td>Lowest</td><td>Medium</td><td>Highest</td></tr>
-          <tr><td>Traffic navigation</td><td>Best — lane-splits, avoids jams</td><td>Moderate</td><td>Weakest in congestion</td></tr>
+          <tr><td>Cost (3-10 km)</td><td>Lowest</td><td>Medium</td><td>Highest</td></tr>
+          <tr><td>Traffic navigation</td><td>Best, lane-splits, avoids jams</td><td>Moderate</td><td>Weakest in congestion</td></tr>
           <tr><td>Parking / pickup friction</td><td>Minimal</td><td>Moderate</td><td>High in dense areas</td></tr>
-          <tr><td>Capacity</td><td>1 rider</td><td>2–3 riders</td><td>3–4 riders</td></tr>
+          <tr><td>Capacity</td><td>1 rider</td><td>2-3 riders</td><td>3-4 riders</td></tr>
           <tr><td>Best-fit segment</td><td>Solo, price- and time-sensitive</td><td>Small groups, moderate budget</td><td>Comfort-seeking, longer trips</td></tr>
         </tbody>
       </table></div>
-      <p>The strategic sweet spot is the <strong>3–10 km urban trip</strong>: too short to justify a cab's cost and wait, too far or too congested for an auto to feel efficient, and exactly the range where a bike taxi's speed-through-traffic advantage compounds.</p>
+      <p>The strategic sweet spot is the <strong>3-10 km urban trip</strong>: too short to justify a cab's cost and wait, too far or too congested for an auto to feel efficient, and exactly the range where a bike taxi's speed-through-traffic advantage compounds.</p>
     </section>
 
     <section id="users">
@@ -117,7 +125,7 @@
         </tbody>
       </table></div>
 
-      <h3>Rider journey — where the friction sits</h3>
+      <h3>Rider journey, where the friction sits</h3>
       <div class="flow">
         <span class="flow__node">Open app</span><span class="flow__arw">→</span>
         <span class="flow__node">Destination</span><span class="flow__arw">→</span>
@@ -129,12 +137,12 @@
         <span class="flow__node">Pay / rate</span>
       </div>
       <ul>
-        <li><strong>Captain search</strong> — the highest-anxiety step; the uncertainty is whether a captain will be found <em>at all</em>.</li>
-        <li><strong>Captain arrives</strong> — ETA <em>reliability</em> drives trust more than ETA speed alone.</li>
-        <li><strong>Payment / rating</strong> — friction here suppresses repeat usage more than it appears to.</li>
+        <li><strong>Captain search</strong>: the highest-anxiety step; the uncertainty is whether a captain will be found <em>at all</em>.</li>
+        <li><strong>Captain arrives</strong>: ETA <em>reliability</em> drives trust more than ETA speed alone.</li>
+        <li><strong>Payment / rating</strong>: friction here suppresses repeat usage more than it appears to.</li>
       </ul>
 
-      <h3>Captain journey — the underused moment</h3>
+      <h3>Captain journey, the underused moment</h3>
       <div class="flow">
         <span class="flow__node">Go online</span><span class="flow__arw">→</span>
         <span class="flow__node">Request</span><span class="flow__arw">→</span>
@@ -144,7 +152,7 @@
         <span class="flow__node">Payment</span><span class="flow__arw">→</span>
         <span class="flow__node flow__node--hot">Choose next location</span>
       </div>
-      <p><strong>"Choose next location"</strong> is the moment nobody instruments. Guidance here directly affects idle time and next-ride probability — which is why supply positioning made the AI MVP.</p>
+      <p><strong>"Choose next location"</strong> is the moment nobody instruments. Guidance here directly affects idle time and next-ride probability, which is why supply positioning made the AI MVP.</p>
     </section>
 
     <section id="liquidity">
@@ -157,7 +165,7 @@
         <span class="flow__node">More riders</span><span class="flow__arw">→</span>
         <span class="flow__node">Higher earnings</span><span class="flow__arw">↺</span>
       </div>
-      <p><strong>Liquidity</strong> — the platform's ability to reliably match supply and demand in real time — is the foundation everything else depends on. It's driven by supply density, demand density, match rate and time-to-match, and it flows directly into wait time, completion rate, satisfaction and repeat usage.</p>
+      <p><strong>Liquidity</strong>: the platform's ability to reliably match supply and demand in real time, is the foundation everything else depends on. It's driven by supply density, demand density, match rate and time-to-match, and it flows directly into wait time, completion rate, satisfaction and repeat usage.</p>
 
       <div class="flow">
         <span class="flow__node flow__node--hot">Liquidity</span><span class="flow__arw">→</span>
@@ -170,7 +178,7 @@
 
       <div class="callout callout--key">
         <span class="callout__label">MVP principle</span>
-        <p>The first version should optimise for liquidity and completed rides — reliable matching, tracking and payment — rather than breadth of features. <strong>A polished app with unreliable matching fails; a bare-bones app with high liquidity succeeds.</strong></p>
+        <p>The first version should optimise for liquidity and completed rides, reliable matching, tracking and payment, rather than breadth of features. <strong>A polished app with unreliable matching fails; a bare-bones app with high liquidity succeeds.</strong></p>
       </div>
     </section>
 
@@ -179,7 +187,7 @@
       <div class="nstar">
         <span>North Star</span>
         <strong>Completed Rides per Active Supply Hour</strong>
-        <p>It captures both marketplace health (matching is working) and captain value (utilisation) — rather than optimising rides or supply growth in isolation, where either can be inflated at the other's expense.</p>
+        <p>It captures both marketplace health (matching is working) and captain value (utilisation), rather than optimising rides or supply growth in isolation, where either can be inflated at the other's expense.</p>
       </div>
 
       <div class="mgrid">
@@ -199,12 +207,12 @@
         <span class="flow__node">Delivery / logistics</span><span class="flow__arw">→</span>
         <span class="flow__node flow__node--hot">Multimodal platform</span>
       </div>
-      <p>Expanding beyond bikes serves several goals at once: it raises captain utilisation (a captain idle for bike rides may accept auto, cab or delivery jobs), diversifies revenue, deepens retention through one app for more trip types — and reduces exposure to any single vehicle category's regulatory risk.</p>
+      <p>Expanding beyond bikes serves several goals at once: it raises captain utilisation (a captain idle for bike rides may accept auto, cab or delivery jobs), diversifies revenue, deepens retention through one app for more trip types, and reduces exposure to any single vehicle category's regulatory risk.</p>
 
       <div class="callout callout--risk">
         <span class="callout__label">Regulatory reality</span>
-        <p>Bike taxi legality in India varies by state and has been contested in several jurisdictions — commercial vs. private vehicle permit rules, licensing and insurance requirements differ by state and have changed over time. This is treated here as a <strong>live, evolving constraint requiring current, city-specific verification</strong>, not a settled fact assumed for the rest of the analysis.</p>
-        <p>It affects product strategy directly: which cities can launch bike taxis at all, how supply must be onboarded (permits, insurance, helmets), and how much unit economics can lean on this vehicle category long-term — reinforcing the strategic case for multimodal diversification.</p>
+        <p>Bike taxi legality in India varies by state and has been contested in several jurisdictions, commercial vs. private vehicle permit rules, licensing and insurance requirements differ by state and have changed over time. This is treated here as a <strong>live, evolving constraint requiring current, city-specific verification</strong>, not a settled fact assumed for the rest of the analysis.</p>
+        <p>It affects product strategy directly: which cities can launch bike taxis at all, how supply must be onboarded (permits, insurance, helmets), and how much unit economics can lean on this vehicle category long-term, reinforcing the strategic case for multimodal diversification.</p>
       </div>
     </section>
 
@@ -214,7 +222,7 @@
         <thead><tr><th>Dimension</th><th>Rapido</th><th>Uber</th><th>Ola</th></tr></thead>
         <tbody>
           <tr><td>Core vehicle focus</td><td>Bike-first, expanding multimodal</td><td>Cab-first, multimodal globally</td><td>Cab-first, multimodal in India</td></tr>
-          <tr><td>Target segment</td><td>Price- and time-sensitive short trips</td><td>Broad — comfort + reliability</td><td>Broad — price + comfort</td></tr>
+          <tr><td>Target segment</td><td>Price- and time-sensitive short trips</td><td>Broad, comfort + reliability</td><td>Broad, price + comfort</td></tr>
           <tr><td>Supply model</td><td>Two-wheeler-heavy, asset-light</td><td>Asset-light, car-heavy</td><td>Asset-light, car-heavy</td></tr>
         </tbody>
       </table></div>
@@ -223,17 +231,17 @@
 
     <section id="economics">
       <h2><span class="num">08</span>Unit economics <span style="font-size:.55em;color:var(--tx-4)">(illustrative)</span></h2>
-      <p>A constructed example to show the <em>shape</em> of a bike-taxi ride's economics — not real Rapido figures.</p>
+      <p>A constructed example to show the <em>shape</em> of a bike-taxi ride's economics, not real Rapido figures.</p>
       <div class="tbl-wrap"><table>
         <thead><tr><th>Line item</th><th>Illustrative ₹100 ride</th></tr></thead>
         <tbody>
-          <tr><td>Captain earnings</td><td>₹78–82</td></tr>
-          <tr><td>Platform revenue (take rate)</td><td>₹18–22</td></tr>
-          <tr><td>Payment processing</td><td>−₹1–2</td></tr>
-          <tr><td>Insurance / safety</td><td>−₹1–2</td></tr>
+          <tr><td>Captain earnings</td><td>₹78-82</td></tr>
+          <tr><td>Platform revenue (take rate)</td><td>₹18-22</td></tr>
+          <tr><td>Payment processing</td><td>−₹1-2</td></tr>
+          <tr><td>Insurance / safety</td><td>−₹1-2</td></tr>
           <tr><td>Support cost (amortised)</td><td>−₹1</td></tr>
-          <tr><td>Incentive cost (variable)</td><td>−₹3–8 · city- and period-dependent</td></tr>
-          <tr><td><strong>Illustrative contribution margin</strong></td><td><strong>₹5–12</strong></td></tr>
+          <tr><td>Incentive cost (variable)</td><td>−₹3-8 · city- and period-dependent</td></tr>
+          <tr><td><strong>Illustrative contribution margin</strong></td><td><strong>₹5-12</strong></td></tr>
         </tbody>
       </table></div>
 
@@ -241,19 +249,19 @@
 
       <div class="callout callout--key">
         <span class="callout__label">Key insight</span>
-        <p>Captain earnings <em>per hour</em> matter more than simply adding more captains. Too much supply relative to demand drives down individual utilisation and earnings, which increases churn even as raw fleet size grows — a growth metric that quietly destroys the thing it's measuring.</p>
+        <p>Captain earnings <em>per hour</em> matter more than simply adding more captains. Too much supply relative to demand drives down individual utilisation and earnings, which increases churn even as raw fleet size grows, a growth metric that quietly destroys the thing it's measuring.</p>
       </div>
     </section>
 
     <section id="ai">
       <h2><span class="num">09</span>The AI opportunity</h2>
-      <p>AI's role is to make the marketplace more liquid and more efficient at scale — forecasting demand, matching better than proximity alone, predicting problems before they happen, and personalising incentives instead of spending broadly.</p>
+      <p>AI's role is to make the marketplace more liquid and more efficient at scale, forecasting demand, matching better than proximity alone, predicting problems before they happen, and personalising incentives instead of spending broadly.</p>
 
       <div class="tbl-wrap"><table>
         <thead><tr><th>AI feature</th><th>What it does</th><th>Best technique</th></tr></thead>
         <tbody>
           <tr><td>Demand forecasting</td><td>Predicts demand by location/time from historical plus weather, event and traffic signals</td><td>Traditional ML (time-series / regression)</td></tr>
-          <tr><td>Intelligent matching</td><td>Matches on completion probability, not just proximity — the closest captain isn't always the best one</td><td>ML + optimisation</td></tr>
+          <tr><td>Intelligent matching</td><td>Matches on completion probability, not just proximity, the closest captain isn't always the best one</td><td>ML + optimisation</td></tr>
           <tr><td>ETA prediction</td><td>Bike-specific ETA from GPS, traffic and road type</td><td>Traditional ML</td></tr>
           <tr><td>Cancellation prediction</td><td>Flags high-risk assignments for proactive reassignment or incentive</td><td>Traditional ML (classification)</td></tr>
           <tr><td>Captain AI Copilot</td><td>Suggests repositioning toward predicted demand</td><td>ML forecast + rules; avoids unsafe / overwork nudges</td></tr>
@@ -266,7 +274,7 @@
 
       <div class="callout callout--decision">
         <span class="callout__label">ML vs. LLM</span>
-        <p>Forecasting, matching, ETA, cancellation and fraud are numerical and structured problems best served by traditional ML and optimisation. LLMs add value where language understanding matters — support, the captain assistant, natural-language interfaces — not as a universal replacement for prediction models.</p>
+        <p>Forecasting, matching, ETA, cancellation and fraud are numerical and structured problems best served by traditional ML and optimisation. LLMs add value where language understanding matters, support, the captain assistant, natural-language interfaces, not as a universal replacement for prediction models.</p>
       </div>
     </section>
 
@@ -293,17 +301,17 @@
           <tr><td>Matching</td><td>Completion rate, time-to-match</td></tr>
         </tbody>
       </table></div>
-      <p>Evaluation runs offline against historical backtests before any online A/B rollout. Production monitoring tracks model drift, latency, feature drift and — critically — <strong>business impact</strong>, not just model accuracy in isolation.</p>
+      <p>Evaluation runs offline against historical backtests before any online A/B rollout. Production monitoring tracks model drift, latency, feature drift and, critically, <strong>business impact</strong>, not just model accuracy in isolation.</p>
 
       <div class="callout callout--risk">
         <span class="callout__label">Safety guardrails</span>
-        <p>High-risk actions — fraud flags, safety alerts, pricing changes — route through human review rather than fully automated decisions. Riders and captains can appeal automated decisions. Predictions and interventions are logged for audit and fairness review.</p>
+        <p>High-risk actions, fraud flags, safety alerts, pricing changes, route through human review rather than fully automated decisions. Riders and captains can appeal automated decisions. Predictions and interventions are logged for audit and fairness review.</p>
       </div>
     </section>
 
     <section id="mvp">
       <h2><span class="num">11</span>AI MVP &amp; prioritisation</h2>
-      <p>The recommended AI MVP — an <strong>AI Marketplace Optimizer</strong> — starts with the four capabilities that most directly improve the North Star: demand forecasting, ETA prediction, cancellation prediction and supply positioning. Matching, personalised incentives and safety/fraud AI depend on this foundation and follow later.</p>
+      <p>The recommended AI MVP, an <strong>AI Marketplace Optimizer</strong>: starts with the four capabilities that most directly improve the North Star: demand forecasting, ETA prediction, cancellation prediction and supply positioning. Matching, personalised incentives and safety/fraud AI depend on this foundation and follow later.</p>
 
       <div class="tbl-wrap"><table>
         <thead><tr><th>Feature</th><th>Impact</th><th>Effort</th><th>Priority</th></tr></thead>
@@ -316,7 +324,7 @@
           <tr><td>Personalised incentives</td><td>High</td><td>High</td><td><span class="pri pri--p2">Phase 2</span></td></tr>
           <tr><td>Safety intelligence</td><td>Medium</td><td>Medium</td><td><span class="pri pri--p2">Phase 2</span></td></tr>
           <tr><td>Fraud detection</td><td>Medium</td><td>Medium</td><td><span class="pri pri--p2">Phase 2</span></td></tr>
-          <tr><td>AI support</td><td>Medium</td><td>Low</td><td><span class="pri pri--p3">Phase 1–2</span></td></tr>
+          <tr><td>AI support</td><td>Medium</td><td>Low</td><td><span class="pri pri--p3">Phase 1-2</span></td></tr>
         </tbody>
       </table></div>
     </section>
@@ -334,29 +342,29 @@
           <tr><td>AI support</td><td>Human-only support queue</td><td>AI auto-resolution + escalation</td><td>Time to resolution</td></tr>
         </tbody>
       </table></div>
-      <p>No experiment outcomes are fabricated here — each row is a proposed test design, to be run and measured, not a reported result.</p>
+      <p>No experiment outcomes are fabricated here, each row is a proposed test design, to be run and measured, not a reported result.</p>
     </section>
 
     <section id="roadmap">
       <h2><span class="num">13</span>Roadmap &amp; competitive moat</h2>
       <div class="road">
-        <div class="road__ph"><b>Phase 1 · 0–3 months</b><p>Data infrastructure, demand forecasting, ETA intelligence.</p></div>
-        <div class="road__ph"><b>Phase 2 · 3–9 months</b><p>AI matching, cancellation prediction, supply positioning, incentive optimisation.</p></div>
-        <div class="road__ph"><b>Phase 3 · 9–18 months</b><p>Captain AI Copilot; early AI Mobility Agent recommending mode, price and ETA.</p></div>
+        <div class="road__ph"><b>Phase 1 · 0-3 months</b><p>Data infrastructure, demand forecasting, ETA intelligence.</p></div>
+        <div class="road__ph"><b>Phase 2 · 3-9 months</b><p>AI matching, cancellation prediction, supply positioning, incentive optimisation.</p></div>
+        <div class="road__ph"><b>Phase 3 · 9-18 months</b><p>Captain AI Copilot; early AI Mobility Agent recommending mode, price and ETA.</p></div>
       </div>
 
       <div class="callout callout--key">
         <span class="callout__label">The moat</span>
-        <p>The durable advantage isn't any single model — it's the compounding loop of proprietary ride data, real-time marketplace signals and feedback tied to actual supply and distribution. <strong>A competitor could buy an LLM; replicating years of city-specific matching and demand data is far harder.</strong></p>
+        <p>The durable advantage isn't any single model. It's the compounding loop of proprietary ride data, real-time marketplace signals and feedback tied to actual supply and distribution. <strong>A competitor could buy an LLM; replicating years of city-specific matching and demand data is far harder.</strong></p>
       </div>
 
-      <p><strong>Future direction:</strong> an AI Mobility Agent that compares bike, auto and cab price and ETA against a stated goal — <em>"I need to reach Sector 17 by 9 AM, affordably"</em> — and books on confirmation. That requires careful design around payment authorisation, safety checks and graceful failure handling before any autonomous booking is allowed.</p>
+      <p><strong>Future direction:</strong> an AI Mobility Agent that compares bike, auto and cab price and ETA against a stated goal, <em>"I need to reach Sector 17 by 9 AM, affordably"</em>, and books on confirmation. That requires careful design around payment authorisation, safety checks and graceful failure handling before any autonomous booking is allowed.</p>
     </section>
 
     <section id="recommendation">
       <h2><span class="num">14</span>Final recommendation</h2>
       <ul>
-        <li><strong>Build</strong> an AI Marketplace Optimizer — demand forecasting → ETA → cancellation prediction → supply positioning — before broader AI features.</li>
+        <li><strong>Build</strong> an AI Marketplace Optimizer (demand forecasting → ETA → cancellation prediction → supply positioning) before broader AI features.</li>
         <li><strong>Why:</strong> these four levers most directly move the North Star and don't require matching or personalisation infrastructure to already exist.</li>
         <li><strong>For:</strong> riders (lower wait, more reliable ETA) and captains (better utilisation and earnings per hour).</li>
         <li><strong>Measured by:</strong> Completed Rides per Active Supply Hour, with wait time, cancellation rate and captain earnings/hour as supporting guardrails.</li>
@@ -371,7 +379,7 @@
         <p>Designed an AI Marketplace Optimizer strategy for Rapido's bike-taxi network, using demand forecasting, ETA prediction and cancellation prediction to improve marketplace liquidity and captain earnings.</p>
 
         <h3>The 50-word version</h3>
-        <p>India's last-mile mobility gap sits between expensive cabs and unreliable autos. I analysed Rapido's two-wheeler marketplace model and designed an AI Marketplace Optimizer — demand forecasting, ETA and cancellation prediction, and personalised incentives — to improve liquidity and captain earnings, backed by a metrics tree and experiment plan.</p>
+        <p>India's last-mile mobility gap sits between expensive cabs and unreliable autos. I analysed Rapido's two-wheeler marketplace model and designed an AI Marketplace Optimizer (demand forecasting, ETA and cancellation prediction, and personalised incentives) to improve liquidity and captain earnings, backed by a metrics tree and experiment plan.</p>
 
         <h3>What this demonstrates</h3>
         <ul>
@@ -386,7 +394,7 @@
 </div>
 
 <nav class="cs-next">
-  <a href="pw-learning-coach.html"><small>Next case study</small><b>Physics Wallah — personalisation at mass-market scale →</b></a>
+  <a href="pw-learning-coach.html"><small>Next case study</small><b>Physics Wallah: personalisation at mass-market scale →</b></a>
   <a href="zomato-retention.html"><small>Previous</small><b>← Beyond discounts: an AI retention engine for Zomato</b></a>
 </nav>
 

@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Physics Wallah — an AI Learning Coach at mass-market scale · Abhinay Tiwari</title>
+<title>Physics Wallah: an AI Learning Coach at mass-market scale · Abhinay Tiwari</title>
 <meta name="description" content="AI product case study: diagnostic profiling on a knowledge graph, a RAG-grounded multimodal doubt solver and slippage detection, with confidence-tiered human escalation.">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var t=localStorage.getItem('at-theme');if(!t)t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
 <body>
 
 <div class="cs-prog"></div>
+<canvas class="starfield" aria-hidden="true"></canvas>
 <div class="glow" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
@@ -25,14 +27,20 @@
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
       All work
     </a>
-    <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+    <span style="display:flex;align-items:center;gap:10px">
+      <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+      <button class="themebtn" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.8 6.8 0 0 0 10.9 10.9z"/></svg>
+      </button>
+    </span>
   </div>
 </header>
 
 <section class="cs-hero wrap">
   <span class="cs-kicker">Case study 03 · EdTech · RAG &amp; knowledge graphs</span>
   <h1>Affordable, personalised, <em>at scale</em></h1>
-  <p class="cs-sub">Affordable education can reach millions of students, but personalisation has historically been expensive. The next edge in exam coaching isn't more content — it's knowing what each student needs to study next.</p>
+  <p class="cs-sub">Affordable education can reach millions of students, but personalisation has historically been expensive. The next edge in exam coaching isn't more content. It's knowing what each student needs to study next.</p>
 
   <div class="cs-tags">
     <span class="tag tag--g">RAG grounding</span>
@@ -49,7 +57,7 @@
     <div><dt>Reading time</dt><dd>~9 minutes</dd></div>
   </dl>
 
-  <p class="cs-note"><b>A note on this document.</b> This is a hypothetical, self-directed portfolio case study — not a Physics Wallah–commissioned project. Claims about PW's, Allen's, Unacademy's or Vedantu's actual pricing, scale, results or AI capabilities are not asserted as fact; they are framed as research questions requiring validation from primary sources. No real financials, market share or user data are used.</p>
+  <p class="cs-note"><b>A note on this document.</b> This is a hypothetical, self-directed portfolio case study, not a Physics Wallah-commissioned project. Claims about PW's, Allen's, Unacademy's or Vedantu's actual pricing, scale, results or AI capabilities are not asserted as fact; they are framed as research questions requiring validation from primary sources. No real financials, market share or user data are used.</p>
 </section>
 
 <div class="cs-layout">
@@ -77,7 +85,7 @@
     <section id="problem">
       <h2><span class="num">01</span>The problem: scale vs. personalisation</h2>
       <p>India's competitive-exam coaching market has a structural trade-off: high-touch coaching can offer individualised support but doesn't scale cheaply; affordable, mass-market platforms reach far more students but historically struggle to personalise at that volume.</p>
-      <p>Physics Wallah built its position on affordability and reach. The open question this case study explores is whether AI can let a mass-market platform deliver some of the benefits of high-touch coaching — knowing what a student is weak at, what to study next, and when they need help — <strong>without a proportional increase in human cost</strong>.</p>
+      <p>Physics Wallah built its position on affordability and reach. The open question this case study explores is whether AI can let a mass-market platform deliver some of the benefits of high-touch coaching, knowing what a student is weak at, what to study next, and when they need help, <strong>without a proportional increase in human cost</strong>.</p>
 
       <div class="callout callout--key">
         <span class="callout__label">Problem statement</span>
@@ -120,13 +128,13 @@
       </table></div>
 
       <div class="pquote">"I have hundreds of hours of content and thousands of questions, but I don't know what I should study today, what I'm actually weak at, or whether I'm on track for my target score."</div>
-      <p>The problem is <strong>too much content with too little personalisation</strong> — not too little content. That distinction changes what you build.</p>
+      <p>The problem is <strong>too much content with too little personalisation</strong>: not too little content. That distinction changes what you build.</p>
     </section>
 
     <section id="journey">
       <h2><span class="num">04</span>User journey: current vs. future</h2>
       <div class="tbl-wrap"><table>
-        <thead><tr><th>Current state</th><th>Future state — AI Learning Coach</th></tr></thead>
+        <thead><tr><th>Current state</th><th>Future state, AI Learning Coach</th></tr></thead>
         <tbody>
           <tr><td>Enrol → choose batch → attend lectures</td><td>Enrol → diagnostic assessment → AI learning profile</td></tr>
           <tr><td>Homework → tests → see score</td><td>Personal daily study plan → AI doubt solver</td></tr>
@@ -134,18 +142,18 @@
           <tr><td>Decide what to study, ask doubts, repeat</td><td>Plan adapts automatically; teacher intervenes when AI flags real risk</td></tr>
         </tbody>
       </table></div>
-      <p><strong>Key current-state friction:</strong> generic schedules, delayed doubt resolution, difficulty self-diagnosing root weaknesses, and poor prioritisation — all of which compound as a student falls further behind.</p>
+      <p><strong>Key current-state friction:</strong> generic schedules, delayed doubt resolution, difficulty self-diagnosing root weaknesses, and poor prioritisation, all of which compound as a student falls further behind.</p>
     </section>
 
     <section id="solution">
       <h2><span class="num">05</span>The solution: AI Learning Coach</h2>
-      <p>Positioned as a 24/7 personalised academic operating system — <strong>not a replacement for teachers</strong>. It answers five questions for every student: What should I study? What am I weak at? What should I practise? Am I on track? When do I need human help?</p>
+      <p>Positioned as a 24/7 personalised academic operating system, and explicitly <strong>not a replacement for teachers</strong>. It answers five questions for every student: What should I study? What am I weak at? What should I practise? Am I on track? When do I need human help?</p>
 
       <div class="tbl-wrap"><table>
         <thead><tr><th>Feature</th><th>What it does</th></tr></thead>
         <tbody>
           <tr><td>Diagnostic + Learning Profile</td><td>Topic-level mastery map from a diagnostic test plus performance history</td></tr>
-          <tr><td>AI Study Plan</td><td>A specific daily plan — topic, duration, question count — that adapts to progress and fatigue</td></tr>
+          <tr><td>AI Study Plan</td><td>A specific daily plan (topic, duration, question count) that adapts to progress and fatigue</td></tr>
           <tr><td>Multimodal Doubt Solver</td><td>Student photographs a question; AI extracts, classifies and explains it</td></tr>
           <tr><td>Exam Readiness Score</td><td>Predicts topic-level risk and overall readiness, not just a raw percentage</td></tr>
           <tr><td>Slippage Detection</td><td>Flags when a student is falling behind syllabus pace, before it compounds</td></tr>
@@ -170,12 +178,12 @@
 
       <div class="callout callout--hyp">
         <span class="callout__label">On thresholds</span>
-        <p>Any specific confidence cutoff (e.g. 95%) is illustrative only. Real thresholds require calibration against an expert-labelled evaluation set before launch — a number picked in a doc is a guess, not a threshold.</p>
+        <p>Any specific confidence cutoff (e.g. 95%) is illustrative only. Real thresholds require calibration against an expert-labelled evaluation set before launch, a number picked in a doc is a guess, not a threshold.</p>
       </div>
 
       <div class="callout callout--key">
         <span class="callout__label">The teacher's role in the future state</span>
-        <p>AI absorbs first-line doubts, repetition and progress tracking, freeing teachers for complex problems, motivation, strategy and high-risk students — <strong>increasing teacher leverage rather than replacing them</strong>.</p>
+        <p>AI absorbs first-line doubts, repetition and progress tracking, freeing teachers for complex problems, motivation, strategy and high-risk students, <strong>increasing teacher leverage rather than replacing them</strong>.</p>
       </div>
     </section>
 
@@ -200,7 +208,7 @@
         <span class="flow__node">Question</span><span class="flow__arw">→</span>
         <span class="flow__node">Common error</span>
       </div>
-      <p>A knowledge graph lets the system locate <em>exactly</em> which sub-concept a student is weak in — Physics → Mechanics → Rotational Motion → Moment of Inertia — rather than reporting "you're weak at Physics." The doubt solver retrieves from approved course material, notes and question banks (RAG) rather than letting the LLM invent explanations, which matters when a wrong formula has real academic consequences.</p>
+      <p>A knowledge graph lets the system locate <em>exactly</em> which sub-concept a student is weak in, Physics → Mechanics → Rotational Motion → Moment of Inertia, rather than reporting "you're weak at Physics." The doubt solver retrieves from approved course material, notes and question banks (RAG) rather than letting the LLM invent explanations, which matters when a wrong formula has real academic consequences.</p>
 
       <div class="tbl-wrap"><table>
         <thead><tr><th>Layer</th><th>Used for</th></tr></thead>
@@ -214,11 +222,11 @@
     <section id="risks">
       <h2><span class="num">08</span>Risks &amp; guardrails</h2>
       <ul>
-        <li><strong>Hallucination</strong> — a wrong formula or explanation; mitigated by RAG grounding and confidence-based escalation.</li>
-        <li><strong>Dependency</strong> — students may stop reasoning independently if answers are handed over too readily. The solver should default to explaining <em>concepts</em>, not just final answers.</li>
-        <li><strong>Misdiagnosis</strong> — the system may mislabel a weakness; teacher review and student-reported corrections act as a check.</li>
-        <li><strong>Bias</strong> — different student groups could receive uneven support quality; requires evaluation segmented by cohort, not just in aggregate.</li>
-        <li><strong>Privacy</strong> — performance and doubt data are sensitive and require strict access controls and audit logging.</li>
+        <li><strong>Hallucination</strong>: a wrong formula or explanation; mitigated by RAG grounding and confidence-based escalation.</li>
+        <li><strong>Dependency</strong>: students may stop reasoning independently if answers are handed over too readily. The solver should default to explaining <em>concepts</em>, not just final answers.</li>
+        <li><strong>Misdiagnosis</strong>: the system may mislabel a weakness; teacher review and student-reported corrections act as a check.</li>
+        <li><strong>Bias</strong>: different student groups could receive uneven support quality; requires evaluation segmented by cohort, not just in aggregate.</li>
+        <li><strong>Privacy</strong>: performance and doubt data are sensitive and require strict access controls and audit logging.</li>
       </ul>
     </section>
 
@@ -256,7 +264,7 @@
         <div><h6>Accuracy</h6><ul><li>Doubt-solver answers validated against an expert-labelled benchmark before launch</li></ul></div>
         <div><h6>Latency</h6><ul><li>Study-plan and doubt-solver responses in seconds, not minutes</li></ul></div>
         <div><h6>Privacy</h6><ul><li>Student performance and doubt history access-controlled and audit-logged</li></ul></div>
-        <div><h6>Accessibility</h6><ul><li>Works on low-bandwidth connections and lower-end devices — non-negotiable for a mass-market base</li></ul></div>
+        <div><h6>Accessibility</h6><ul><li>Works on low-bandwidth connections and lower-end devices, non-negotiable for a mass-market base</li></ul></div>
       </div>
     </section>
 
@@ -269,7 +277,7 @@
         <li>Basic recommended-practice suggestions</li>
         <li>Simple progress dashboard for students and teachers</li>
       </ul>
-      <p>Full adaptive study planning, slippage detection and the teacher copilot are valuable but depend on the diagnostic and doubt-solver data pipeline existing first — deferred rather than built in parallel.</p>
+      <p>Full adaptive study planning, slippage detection and the teacher copilot are valuable but depend on the diagnostic and doubt-solver data pipeline existing first, deferred rather than built in parallel.</p>
 
       <div class="tbl-wrap"><table>
         <thead><tr><th>Feature</th><th>Impact</th><th>Effort</th><th>Priority</th></tr></thead>
@@ -290,7 +298,7 @@
       <div class="nstar">
         <span>North Star</span>
         <strong>% of active students demonstrating measurable topic-mastery improvement per study cycle</strong>
-        <p>A learning-<em>outcome</em> metric, not an engagement one — engagement alone can mask a student who is busy but not improving, which is precisely the failure mode this product exists to fix.</p>
+        <p>A learning-<em>outcome</em> metric, not an engagement one. Engagement alone can mask a student who is busy but not improving, which is precisely the failure mode this product exists to fix.</p>
       </div>
 
       <div class="mgrid">
@@ -313,13 +321,13 @@
           <tr><td>Teacher tooling</td><td>Standard dashboard</td><td>AI-prioritised teacher dashboard</td><td>Teacher time saved + student improvement</td></tr>
         </tbody>
       </table></div>
-      <p>No experiment results are fabricated here — each entry is a proposed test design to be run, not a reported outcome.</p>
+      <p>No experiment results are fabricated here, each entry is a proposed test design to be run, not a reported outcome.</p>
     </section>
 
     <section id="impact">
       <h2><span class="num">13</span>Business impact &amp; unit economics</h2>
       <div class="formula">Contribution Margin <span>=</span> Revenue/Student <span>−</span> Content <span>−</span> Teacher <span>−</span> AI Inference <span>−</span> Support <span>−</span> Acquisition</div>
-      <p>The strategic hypothesis: AI can lower the marginal cost of first-line academic support — doubt resolution, progress tracking — while improving retention through visible learning progress. No specific revenue or margin figure is claimed; that would require real financial data to validate.</p>
+      <p>The strategic hypothesis: AI can lower the marginal cost of first-line academic support such as doubt resolution and progress tracking, while improving retention through visible learning progress. No specific revenue or margin figure is claimed; that would require real financial data to validate.</p>
 
       <h3>The retention loop</h3>
       <div class="flow">
@@ -335,10 +343,10 @@
     <section id="roadmap">
       <h2><span class="num">14</span>Roadmap</h2>
       <div class="road">
-        <div class="road__ph"><b>Phase 1 · 0–3 months</b><p>Diagnostic + Learning Profile, AI Doubt Solver, basic practice recommendations.</p></div>
-        <div class="road__ph"><b>Phase 2 · 3–8 months</b><p>Adaptive study planner, slippage detection.</p></div>
-        <div class="road__ph"><b>Phase 3 · 8–12 months</b><p>Teacher copilot with AI-prioritised at-risk lists.</p></div>
-        <div class="road__ph"><b>Phase 4 · 12–18 months</b><p>Conversational AI Exam Coach — e.g. "90 days to improve my score" goal planning.</p></div>
+        <div class="road__ph"><b>Phase 1 · 0-3 months</b><p>Diagnostic + Learning Profile, AI Doubt Solver, basic practice recommendations.</p></div>
+        <div class="road__ph"><b>Phase 2 · 3-8 months</b><p>Adaptive study planner, slippage detection.</p></div>
+        <div class="road__ph"><b>Phase 3 · 8-12 months</b><p>Teacher copilot with AI-prioritised at-risk lists.</p></div>
+        <div class="road__ph"><b>Phase 4 · 12-18 months</b><p>Conversational AI Exam Coach, e.g. "90 days to improve my score" goal planning.</p></div>
       </div>
     </section>
 
@@ -349,13 +357,13 @@
         <p>Designed an AI Learning Coach strategy that lets a mass-market exam-prep platform deliver personalised study plans, doubt resolution and early intervention at a fraction of human-only tutoring cost.</p>
 
         <h3>The 50-word version</h3>
-        <p>Affordable exam-prep platforms reach millions but struggle to personalise at scale. I designed an AI Learning Coach — diagnostic profiling, adaptive study plans, a RAG-grounded multimodal doubt solver, and slippage detection with teacher escalation — to close that gap while keeping teachers focused on where human judgement matters most.</p>
+        <p>Affordable exam-prep platforms reach millions but struggle to personalise at scale. I designed an AI Learning Coach, diagnostic profiling, adaptive study plans, a RAG-grounded multimodal doubt solver, and slippage detection with teacher escalation, to close that gap while keeping teachers focused on where human judgement matters most.</p>
 
         <h3>What this demonstrates</h3>
         <ul>
-          <li>Designed an AI product strategy giving a mass-market EdTech platform student-level personalisation — diagnostics, adaptive plans, slippage detection — at a fraction of human-tutoring marginal cost.</li>
+          <li>Designed an AI product strategy giving a mass-market EdTech platform student-level personalisation (diagnostics, adaptive plans, slippage detection) at a fraction of human-tutoring marginal cost.</li>
           <li>Proposed a RAG-grounded, confidence-tiered architecture separating ML (tracking and prediction), LLM (explanation and tutoring) and human escalation by task suitability.</li>
-          <li>Developed a learning-outcome-first metrics framework and experiment plan — North Star plus four A/B tests — to validate AI-driven retention impact before scaling.</li>
+          <li>Developed a learning-outcome-first metrics framework and experiment plan (North Star plus four A/B tests) to validate AI-driven retention impact before scaling.</li>
         </ul>
       </div>
     </section>
@@ -364,7 +372,7 @@
 </div>
 
 <nav class="cs-next">
-  <a href="youtube-creator-os.html"><small>Next case study</small><b>The Creator AI OS — rebuilding YouTube Studio around AI →</b></a>
+  <a href="youtube-creator-os.html"><small>Next case study</small><b>The Creator AI OS: rebuilding YouTube Studio around AI →</b></a>
   <a href="rapido-mobility.html"><small>Previous</small><b>← Rapido: how bike taxis crack India's last-mile problem</b></a>
 </nav>
 

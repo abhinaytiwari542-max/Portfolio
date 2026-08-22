@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Creator AI OS — rebuilding YouTube Studio around AI · Abhinay Tiwari</title>
+<title>The Creator AI OS: rebuilding YouTube Studio around AI · Abhinay Tiwari</title>
 <meta name="description" content="AI product case study: an Analytics Copilot, Idea Engine and Thumbnail/Title Lab as the MVP for turning YouTube from an upload destination into a creator operating system.">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var t=localStorage.getItem('at-theme');if(!t)t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
 <body>
 
 <div class="cs-prog"></div>
+<canvas class="starfield" aria-hidden="true"></canvas>
 <div class="glow" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
@@ -25,7 +27,13 @@
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
       All work
     </a>
-    <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+    <span style="display:flex;align-items:center;gap:10px">
+      <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+      <button class="themebtn" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.8 6.8 0 0 0 10.9 10.9z"/></svg>
+      </button>
+    </span>
   </div>
 </header>
 
@@ -86,7 +94,7 @@
 
       <div class="callout callout--key">
         <span class="callout__label">Product thesis</span>
-        <p>YouTube should evolve from a platform where creators upload content into an AI-powered <strong>creator operating system</strong>, a central intelligence layer for ideation, creation, growth and monetisation, rather than a place creators visit only to publish and check stats.</p>
+        <p>YouTube should evolve from a platform where creators upload content into an AI-powered <strong>creator operating system</strong>: a central intelligence layer for ideation, creation, growth and monetisation, rather than a place creators visit only to publish and check stats.</p>
       </div>
     </section>
 
@@ -213,12 +221,12 @@
       </div>
 
       <ul>
-        <li><strong>Hallucination</strong> — idea and analytics suggestions are recommendations with visible confidence, not asserted facts.</li>
-        <li><strong>Homogenisation risk</strong> — if every creator gets similar AI-optimised titles and topics, content converges. Recommendations must be personalised to each creator's own audience data, never a shared global template.</li>
-        <li><strong>Creator dependency</strong> — tools are framed as copilots that explain their reasoning, so creators build judgement rather than just following prompts.</li>
-        <li><strong>Deepfake and likeness misuse</strong> — identity protection includes false-positive and false-negative handling, consent checks, and a creator appeals path, not automatic takedowns.</li>
-        <li><strong>Privacy</strong> — creator analytics and audience data stay within the creator's own account scope; no cross-creator data sharing without consent.</li>
-        <li><strong>Burnout signal</strong> — the system flags workflow health (a sustained drop in publishing cadence) and offers workflow simplification, without making any psychological diagnosis.</li>
+        <li><strong>Hallucination</strong>: idea and analytics suggestions are recommendations with visible confidence, not asserted facts.</li>
+        <li><strong>Homogenisation risk</strong>: if every creator gets similar AI-optimised titles and topics, content converges. Recommendations must be personalised to each creator's own audience data, never a shared global template.</li>
+        <li><strong>Creator dependency</strong>: tools are framed as copilots that explain their reasoning, so creators build judgement rather than just following prompts.</li>
+        <li><strong>Deepfake and likeness misuse</strong>: identity protection includes false-positive and false-negative handling, consent checks, and a creator appeals path, not automatic takedowns.</li>
+        <li><strong>Privacy</strong>: creator analytics and audience data stay within the creator's own account scope; no cross-creator data sharing without consent.</li>
+        <li><strong>Burnout signal</strong>: the system flags workflow health (a sustained drop in publishing cadence) and offers workflow simplification, without making any psychological diagnosis.</li>
       </ul>
     </section>
 
@@ -324,7 +332,7 @@
         <p>Designed a Creator AI OS strategy for YouTube, with an AI Analytics Copilot, Idea Engine and Thumbnail/Title Lab as the MVP, to close the gap between creator data and creator action.</p>
 
         <h3>The 50-word version</h3>
-        <p>Creators juggle ten disconnected tools around YouTube Studio. I proposed a Creator AI OS, with an Analytics Copilot, Idea Engine and Thumbnail/Title Lab as the MVP, that turns creator data into concrete next actions, with clear human-in-the-loop guardrails against clickbait, homogenisation and identity misuse.</p>
+        <p>Creators juggle ten disconnected tools around YouTube Studio. I proposed a Creator AI OS (an Analytics Copilot, Idea Engine and Thumbnail/Title Lab as the MVP) that turns creator data into concrete next actions, with clear human-in-the-loop guardrails against clickbait, homogenisation and identity misuse.</p>
 
         <h3>What this demonstrates</h3>
         <ul>

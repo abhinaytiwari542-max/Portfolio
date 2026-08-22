@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beyond Discounts — an AI retention engine for Zomato · Abhinay Tiwari</title>
+<title>Beyond Discounts: an AI retention engine for Zomato · Abhinay Tiwari</title>
 <meta name="description" content="AI product case study: replacing blanket discounting at Zomato with uplift-modelled, budget-constrained incentives and proactive service recovery.">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var t=localStorage.getItem('at-theme');if(!t)t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
 <body>
 
 <div class="cs-prog"></div>
+<canvas class="starfield" aria-hidden="true"></canvas>
 <div class="glow" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
@@ -25,14 +27,20 @@
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
       All work
     </a>
-    <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+    <span style="display:flex;align-items:center;gap:10px">
+      <a class="nav__brand" href="../index.html"><span class="nav__dot"></span> Abhinay Tiwari</a>
+      <button class="themebtn" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.4A8.6 8.6 0 1 1 9.6 3.5a6.8 6.8 0 0 0 10.9 10.9z"/></svg>
+      </button>
+    </span>
   </div>
 </header>
 
 <section class="cs-hero wrap">
   <span class="cs-kicker">Case study 01 · Retention &amp; incentive economics</span>
   <h1>Beyond discounts: an AI retention engine for <em>Zomato</em></h1>
-  <p class="cs-sub">Food delivery is a multi-homing market — customers don't have to choose Zomato <em>or</em> Swiggy, they can use both. The easiest way to win one order is a discount. The easiest way to wreck unit economics is to make discounts the only reason customers come back.</p>
+  <p class="cs-sub">Food delivery is a multi-homing market: customers don't have to choose Zomato <em>or</em> Swiggy, they can use both. The easiest way to win one order is a discount. The easiest way to wreck unit economics is to make discounts the only reason customers come back.</p>
 
   <div class="cs-tags">
     <span class="tag tag--g">Uplift modelling</span>
@@ -49,7 +57,7 @@
     <div><dt>Reading time</dt><dd>~9 minutes</dd></div>
   </dl>
 
-  <p class="cs-note"><b>A note on this document.</b> This is a hypothetical, self-directed portfolio case study — not a Zomato-commissioned project or a report on real internal data. Claims about Zomato's or Swiggy's actual discount strategy, service quality or market share are not asserted as fact; they are framed as hypotheses requiring validation. No real retention rates, revenues or experiment results are used — all figures are illustrative.</p>
+  <p class="cs-note"><b>A note on this document.</b> This is a hypothetical, self-directed portfolio case study, not a Zomato-commissioned project or a report on real internal data. Claims about Zomato's or Swiggy's actual discount strategy, service quality or market share are not asserted as fact; they are framed as hypotheses requiring validation. No real retention rates, revenues or experiment results are used, all figures are illustrative.</p>
 </section>
 
 <div class="cs-layout">
@@ -76,8 +84,8 @@
 
     <section id="problem">
       <h2><span class="num">01</span>The problem</h2>
-      <p>Zomato competes in a multi-homing marketplace: most customers have both Zomato and Swiggy installed, so switching cost is near zero and every order is a fresh competitive decision. The instinctive lever is discounting — but discounts are easy to match, expensive to sustain, and can train customers to only order when a promotion is active.</p>
-      <p>The real question is not how to give bigger discounts. It's how to retain customers <strong>efficiently</strong> — without discount spend growing faster than retention does.</p>
+      <p>Zomato competes in a multi-homing marketplace: most customers have both Zomato and Swiggy installed, so switching cost is near zero and every order is a fresh competitive decision. The instinctive lever is discounting, but discounts are easy to match, expensive to sustain, and can train customers to only order when a promotion is active.</p>
+      <p>The real question is not how to give bigger discounts. It's how to retain customers <strong>efficiently</strong>: without discount spend growing faster than retention does.</p>
 
       <div class="callout callout--key">
         <span class="callout__label">Problem statement</span>
@@ -105,7 +113,7 @@
       <div class="tbl-wrap"><table>
         <thead><tr><th>Segment</th><th>Profile</th><th>Retention objective</th></tr></thead>
         <tbody>
-          <tr><td>Heavy Users</td><td>8–15 orders/month</td><td>Protect retention with low-cost loyalty benefits</td></tr>
+          <tr><td>Heavy Users</td><td>8-15 orders/month</td><td>Protect retention with low-cost loyalty benefits</td></tr>
           <tr><td>Discount Seekers</td><td>Orders mainly when offers exist</td><td>Lift frequency without escalating discount dependency</td></tr>
           <tr><td>At-Risk Users</td><td>Previously active, frequency declining</td><td>Prevent churn before it happens</td></tr>
           <tr><td>Churned Users</td><td>No order in a long period</td><td>Win back at acceptable cost</td></tr>
@@ -114,14 +122,14 @@
       </table></div>
 
       <div class="callout callout--hyp">
-        <span class="callout__label">Research plan — not yet conducted</span>
-        <p>15 customer interviews covering platform choice, discount sensitivity, delivery reliability and support experience, plus hypotheses to be tested — e.g. <em>"customers with declining order frequency are more likely to churn,"</em> and <em>"delivery reliability matters more than discount size for some segments."</em> These are not treated as findings until validated.</p>
+        <span class="callout__label">Research plan, not yet conducted</span>
+        <p>15 customer interviews covering platform choice, discount sensitivity, delivery reliability and support experience, plus hypotheses to be tested, e.g. <em>"customers with declining order frequency are more likely to churn,"</em> and <em>"delivery reliability matters more than discount size for some segments."</em> These are not treated as findings until validated.</p>
       </div>
     </section>
 
     <section id="market">
       <h2><span class="num">03</span>Marketplace dynamics &amp; competitive landscape</h2>
-      <p>Zomato and Swiggy both operate two-sided marketplaces (restaurants + customers), and neither platform has an inherent lock-in. No claim is made here that either has better discounts, service or restaurant selection — those are open questions for research, and likely vary by city and segment.</p>
+      <p>Zomato and Swiggy both operate two-sided marketplaces (restaurants + customers), and neither platform has an inherent lock-in. No claim is made here that either has better discounts, service or restaurant selection, those are open questions for research, and likely vary by city and segment.</p>
 
       <h3>The multi-homing flywheel</h3>
       <div class="flow">
@@ -131,7 +139,7 @@
         <span class="flow__node">More orders</span><span class="flow__arw">→</span>
         <span class="flow__node">More restaurant demand</span><span class="flow__arw">↺</span>
       </div>
-      <p>Discounts can accelerate this flywheel in the short term — more orders means more restaurant interest. But if customers only respond to price, the flywheel becomes dependent on ever-increasing subsidy rather than genuine product loyalty.</p>
+      <p>Discounts can accelerate this flywheel in the short term, more orders means more restaurant interest. But if customers only respond to price, the flywheel becomes dependent on ever-increasing subsidy rather than genuine product loyalty.</p>
 
       <h3>Dimensions to research (not assumed)</h3>
       <ul>
@@ -157,7 +165,7 @@
 
       <div class="callout callout--key">
         <span class="callout__label">Key insight</span>
-        <p>The goal isn't to maximise discounts — it's to maximise <strong>incremental retention per rupee of incentive spend</strong>. A customer who would have reordered anyway represents wasted discount spend; a customer who reorders <em>only</em> because of the incentive represents real ROI.</p>
+        <p>The goal isn't to maximise discounts. It's to maximise <strong>incremental retention per rupee of incentive spend</strong>. A customer who would have reordered anyway represents wasted discount spend; a customer who reorders <em>only</em> because of the incentive represents real ROI.</p>
       </div>
 
       <div class="formula">Incremental Retention ROI <span>=</span> Incremental retained customers <span>/</span> Incremental discount spend<br>
@@ -166,7 +174,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
 
     <section id="solution">
       <h2><span class="num">05</span>The solution: Zomato Smart Rewards</h2>
-      <p>An AI-powered retention engine that decides <strong>who</strong> should receive an incentive, <strong>when</strong>, <strong>what kind</strong>, <strong>how much</strong> to spend, and <strong>why</strong> — rather than applying one discount rule to everyone.</p>
+      <p>An AI-powered retention engine that decides <strong>who</strong> should receive an incentive, <strong>when</strong>, <strong>what kind</strong>, <strong>how much</strong> to spend, and <strong>why</strong>: rather than applying one discount rule to everyone.</p>
 
       <h3>Decision flow</h3>
       <div class="flow">
@@ -191,12 +199,12 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
 
       <div class="callout callout--decision">
         <span class="callout__label">Architecture decision</span>
-        <p>An LLM is <strong>not</strong> used to predict churn or set discount amounts. That's a job for calibrated ML models where precision and auditability matter — and where you need to explain to a finance team why a specific rupee amount was chosen.</p>
+        <p>An LLM is <strong>not</strong> used to predict churn or set discount amounts. That's a job for calibrated ML models where precision and auditability matter, and where you need to explain to a finance team why a specific rupee amount was chosen.</p>
       </div>
     </section>
 
     <section id="uplift">
-      <h2><span class="num">06</span>Uplift modelling — the central idea</h2>
+      <h2><span class="num">06</span>Uplift modelling, the central idea</h2>
       <p>A high churn-probability score alone doesn't justify an incentive: some high-risk customers would churn regardless, and some low-risk customers wouldn't respond to an offer either. What matters is the <strong>incremental effect of the intervention</strong>.</p>
 
       <div class="formula">Uplift <span>=</span> P(retention | incentive) <span>−</span> P(retention | no incentive)</div>
@@ -204,28 +212,28 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
       <div class="tbl-wrap"><table>
         <thead><tr><th>Customer</th><th>Retention w/o incentive</th><th>Retention w/ ₹100</th><th>Uplift</th><th>Good target?</th></tr></thead>
         <tbody>
-          <tr><td>A</td><td>40%</td><td>60%</td><td>+20 pts</td><td><span class="pri pri--mvp">Yes — incentive changes behaviour</span></td></tr>
-          <tr><td>B</td><td>85%</td><td>87%</td><td>+2 pts</td><td><span class="pri pri--later">No — would return anyway</span></td></tr>
+          <tr><td>A</td><td>40%</td><td>60%</td><td>+20 pts</td><td><span class="pri pri--mvp">Yes, incentive changes behaviour</span></td></tr>
+          <tr><td>B</td><td>85%</td><td>87%</td><td>+2 pts</td><td><span class="pri pri--later">No, would return anyway</span></td></tr>
         </tbody>
       </table></div>
 
       <div class="callout callout--key">
         <span class="callout__label">Why this matters</span>
-        <p>Customer A is the better incentive target even though Customer B has a far higher absolute retention probability. That gap is the difference between <strong>propensity modelling</strong> and <strong>uplift modelling</strong> — and it's the mechanism that keeps incentive spend efficient rather than merely well-targeted.</p>
+        <p>Customer A is the better incentive target even though Customer B has a far higher absolute retention probability. That gap is the difference between <strong>propensity modelling</strong> and <strong>uplift modelling</strong>: and it's the mechanism that keeps incentive spend efficient rather than merely well-targeted.</p>
       </div>
     </section>
 
     <section id="recovery">
       <h2><span class="num">07</span>Service recovery as a retention lever</h2>
-      <p>Customer service is treated as part of the retention system, not a separate function. When a customer experiences a late delivery, missing item or quality issue, the system recommends an appropriate recovery action — refund, credit, free delivery, or priority support — with human policy as the final authority for sensitive or high-value cases.</p>
+      <p>Customer service is treated as part of the retention system, not a separate function. When a customer experiences a late delivery, missing item or quality issue, the system recommends an appropriate recovery action, refund, credit, free delivery, or priority support, with human policy as the final authority for sensitive or high-value cases.</p>
 
       <div class="tbl-wrap"><table>
         <thead><tr><th>Situation</th><th>Generic approach</th><th>Personalised approach</th></tr></thead>
         <tbody>
-          <tr><td>At-risk, price-insensitive customer</td><td>"₹100 OFF" banner</td><td>"Your next delivery is on us" — matches known delivery-fee sensitivity</td></tr>
-          <tr><td>Churned 30+ days</td><td>No message</td><td>"We've missed you — ₹100 off your next order"</td></tr>
-          <tr><td>Loyal, frequent customer</td><td>Another discount</td><td>"You've ordered 10 times this month — free delivery this weekend"</td></tr>
-          <tr><td>Recent late delivery</td><td>Nothing / generic apology</td><td>"Sorry your last order was late — free delivery next time"</td></tr>
+          <tr><td>At-risk, price-insensitive customer</td><td>"₹100 OFF" banner</td><td>"Your next delivery is on us", matches known delivery-fee sensitivity</td></tr>
+          <tr><td>Churned 30+ days</td><td>No message</td><td>"We've missed you, ₹100 off your next order"</td></tr>
+          <tr><td>Loyal, frequent customer</td><td>Another discount</td><td>"You've ordered 10 times this month, free delivery this weekend"</td></tr>
+          <tr><td>Recent late delivery</td><td>Nothing / generic apology</td><td>"Sorry your last order was late, free delivery next time"</td></tr>
         </tbody>
       </table></div>
     </section>
@@ -262,7 +270,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
 
       <h3>Key non-functional requirements</h3>
       <div class="mgrid">
-        <div><h6>Latency</h6><ul><li>Offer decision available before app-open render — &lt;500ms from cache/precompute</li></ul></div>
+        <div><h6>Latency</h6><ul><li>Offer decision available before app-open render, &lt;500ms from cache/precompute</li></ul></div>
         <div><h6>Explainability</h6><ul><li>Every recommended incentive carries a human-readable reason code</li></ul></div>
         <div><h6>Privacy</h6><ul><li>Order history, location and support data used only for retention modelling, never shared externally</li></ul></div>
         <div><h6>Scalability</h6><ul><li>Churn and propensity scoring runs across the full active user base daily</li></ul></div>
@@ -271,7 +279,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
 
     <section id="mvp">
       <h2><span class="num">09</span>MVP &amp; prioritisation</h2>
-      <h3>MVP scope — phase 1</h3>
+      <h3>MVP scope, phase 1</h3>
       <ul>
         <li>Rule-based customer segmentation</li>
         <li>Churn prediction model</li>
@@ -279,7 +287,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
         <li>A/B testing infrastructure with a permanent holdout group</li>
         <li>Retention dashboard for the product team</li>
       </ul>
-      <p>Uplift modelling, AI service recovery and a conversational retention agent are deliberately deferred — they depend on having reliable churn and propensity data plus experiment infrastructure already in place.</p>
+      <p>Uplift modelling, AI service recovery and a conversational retention agent are deliberately deferred. They depend on having reliable churn and propensity data plus experiment infrastructure already in place.</p>
 
       <div class="tbl-wrap"><table>
         <thead><tr><th>Feature</th><th>Impact</th><th>Effort</th><th>Priority</th></tr></thead>
@@ -287,7 +295,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
           <tr><td>Churn prediction</td><td>High</td><td>Medium</td><td><span class="pri pri--mvp">MVP</span></td></tr>
           <tr><td>Basic offer recommendation</td><td>High</td><td>Medium</td><td><span class="pri pri--mvp">MVP</span></td></tr>
           <tr><td>A/B testing + holdout group</td><td>High</td><td>Low</td><td><span class="pri pri--mvp">MVP</span></td></tr>
-          <tr><td>Uplift modelling</td><td>High</td><td>High</td><td><span class="pri pri--p3">Phase 2–3</span></td></tr>
+          <tr><td>Uplift modelling</td><td>High</td><td>High</td><td><span class="pri pri--p3">Phase 2-3</span></td></tr>
           <tr><td>Service recovery engine</td><td>High</td><td>Medium</td><td><span class="pri pri--p2">Phase 2</span></td></tr>
           <tr><td>Conversational retention agent</td><td>Medium</td><td>High</td><td><span class="pri pri--later">Later</span></td></tr>
         </tbody>
@@ -325,19 +333,19 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
 
       <div class="callout callout--key">
         <span class="callout__label">Why a holdout group matters</span>
-        <p>Some customers would reorder with no incentive at all. Without a <strong>permanent</strong> control/holdout group, Zomato risks attributing organic reorders to discounts and systematically overstating incentive ROI — the failure mode that makes discount budgets grow forever while looking successful in every dashboard.</p>
+        <p>Some customers would reorder with no incentive at all. Without a <strong>permanent</strong> control/holdout group, Zomato risks attributing organic reorders to discounts and systematically overstating incentive ROI, the failure mode that makes discount budgets grow forever while looking successful in every dashboard.</p>
       </div>
     </section>
 
     <section id="ethics">
       <h2><span class="num">12</span>Ethics, fairness &amp; trade-offs</h2>
       <ul>
-        <li><strong>Price discrimination</strong> — different customers seeing different offers must be explainable and non-exploitative, not arbitrary.</li>
-        <li><strong>Vulnerable customers</strong> — avoid incentive designs that exploit compulsive ordering behaviour.</li>
-        <li><strong>Transparency</strong> — personalisation should be understandable to the customer, not a black box.</li>
-        <li><strong>Privacy</strong> — order history, location and support interactions require strict access controls.</li>
-        <li><strong>Notification fatigue</strong> — more targeting doesn't mean more messages. Over-targeting is a guardrail metric, not a success metric.</li>
-        <li><strong>Model risk</strong> — a wrong churn or uplift prediction should default to a low-cost, low-risk action, not an aggressive discount.</li>
+        <li><strong>Price discrimination</strong>: different customers seeing different offers must be explainable and non-exploitative, not arbitrary.</li>
+        <li><strong>Vulnerable customers</strong>: avoid incentive designs that exploit compulsive ordering behaviour.</li>
+        <li><strong>Transparency</strong>: personalisation should be understandable to the customer, not a black box.</li>
+        <li><strong>Privacy</strong>: order history, location and support interactions require strict access controls.</li>
+        <li><strong>Notification fatigue</strong>: more targeting doesn't mean more messages. Over-targeting is a guardrail metric, not a success metric.</li>
+        <li><strong>Model risk</strong>: a wrong churn or uplift prediction should default to a low-cost, low-risk action, not an aggressive discount.</li>
       </ul>
     </section>
 
@@ -355,7 +363,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
     <section id="impact">
       <h2><span class="num">14</span>Business impact &amp; unit economics</h2>
       <div class="formula">Contribution Value <span>=</span> CLV <span>−</span> Acquisition Cost <span>−</span> Discount Cost <span>−</span> Delivery Subsidy <span>−</span> Support Cost</div>
-      <p>The framework's goal is to move discount spend from a blanket cost line to a targeted investment: reducing spend on customers who'd return anyway, and concentrating it on customers whose behaviour a well-chosen incentive can actually change. No revenue or margin figures are asserted here — they would be established through the experiments above.</p>
+      <p>The framework's goal is to move discount spend from a blanket cost line to a targeted investment: reducing spend on customers who'd return anyway, and concentrating it on customers whose behaviour a well-chosen incentive can actually change. No revenue or margin figures are asserted here. They would be established through the experiments above.</p>
     </section>
 
     <section id="summary">
@@ -365,7 +373,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
         <p>Designed an AI-powered retention engine for Zomato that replaces blanket discounting with uplift-modelled, budget-constrained incentives and proactive service recovery.</p>
 
         <h3>The 50-word version</h3>
-        <p>In a multi-homing food-delivery market, discounts alone don't build loyalty. I designed an AI retention system that predicts churn, models the incremental effect (uplift) of an incentive per customer, and selects the lowest-cost intervention — including service recovery — likely to actually change behaviour, validated through holdout-controlled experiments.</p>
+        <p>In a multi-homing food-delivery market, discounts alone don't build loyalty. I designed an AI retention system that predicts churn, models the incremental effect (uplift) of an incentive per customer, and selects the lowest-cost intervention (including service recovery) likely to actually change behaviour, validated through holdout-controlled experiments.</p>
 
         <h3>What this demonstrates</h3>
         <ul>
@@ -380,7 +388,7 @@ Cost per Retained Customer <span>=</span> Total incremental incentive cost <span
 </div>
 
 <nav class="cs-next">
-  <a href="rapido-mobility.html"><small>Next case study</small><b>Rapido — an AI Marketplace Optimizer for bike taxis →</b></a>
+  <a href="rapido-mobility.html"><small>Next case study</small><b>Rapido: an AI Marketplace Optimizer for bike taxis →</b></a>
   <a href="../index.html#work"><small>Back</small><b>All five case studies</b></a>
 </nav>
 
