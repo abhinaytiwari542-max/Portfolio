@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" fill="none" role="img" aria-label="Four role portals reading one Postgres schema through row-level security, feeding a reconciliation and payout pipeline">
+  <rect width="400" height="170" fill="#08080A"/>
+
+  <!-- four role portals -->
+  <g font-family="ui-monospace,Menlo,monospace" font-size="7.5" letter-spacing=".06em">
+    <rect x="16"  y="18" width="60" height="20" rx="6" fill="#14141A" stroke="#87E47C" stroke-opacity=".42"/>
+    <text x="30"  y="31" fill="#87E47C">AGENT</text>
+    <rect x="86"  y="18" width="60" height="20" rx="6" fill="#14141A" stroke="#6FA8FF" stroke-opacity=".42"/>
+    <text x="105" y="31" fill="#6FA8FF">OPS</text>
+    <rect x="156" y="18" width="60" height="20" rx="6" fill="#14141A" stroke="#9292F5" stroke-opacity=".42"/>
+    <text x="172" y="31" fill="#9292F5">ADMIN</text>
+    <rect x="226" y="18" width="72" height="20" rx="6" fill="#14141A" stroke="#F1BD15" stroke-opacity=".42"/>
+    <text x="236" y="31" fill="#F1BD15">CUSTOMER</text>
+  </g>
+
+  <!-- converge into the RLS gate -->
+  <g stroke="#5A5A64" stroke-width="1" fill="none" stroke-opacity=".8">
+    <path d="M46 38 C 46 52 150 50 157 60"/>
+    <path d="M116 38 C 116 52 156 54 160 60"/>
+    <path d="M186 38 C 186 50 176 54 172 60"/>
+    <path d="M262 38 C 262 52 190 52 180 60"/>
+  </g>
+
+  <rect x="120" y="60" width="112" height="22" rx="7" fill="#F1BD15" fill-opacity=".10" stroke="#F1BD15" stroke-opacity=".45"/>
+  <text x="132" y="74" font-family="ui-monospace,Menlo,monospace" font-size="8" fill="#F1BD15" letter-spacing=".07em">ROW-LEVEL SECURITY</text>
+
+  <path d="M176 82v10" stroke="#5A5A64" stroke-width="1"/>
+  <path d="M173 90l3 4 3-4" fill="#5A5A64"/>
+
+  <!-- the schema -->
+  <rect x="96" y="96" width="160" height="20" rx="6" fill="#14141A" stroke="#ffffff" stroke-opacity=".14"/>
+  <text x="108" y="110" font-family="ui-monospace,Menlo,monospace" font-size="8" fill="#C2C2C7" letter-spacing=".06em">POSTGRES  ·  18 TABLES</text>
+
+  <!-- money pipeline -->
+  <g font-family="ui-monospace,Menlo,monospace" font-size="7.5" letter-spacing=".05em">
+    <rect x="14"  y="130" width="66" height="19" rx="6" fill="#14141A" stroke="#ffffff" stroke-opacity=".11"/>
+    <text x="22"  y="143" fill="#8A8A94">STATEMENT</text>
+    <rect x="98"  y="130" width="70" height="19" rx="6" fill="#14141A" stroke="#ffffff" stroke-opacity=".11"/>
+    <text x="106" y="143" fill="#8A8A94">RECONCILE</text>
+    <rect x="186" y="130" width="72" height="19" rx="6" fill="#14141A" stroke="#ffffff" stroke-opacity=".11"/>
+    <text x="194" y="143" fill="#8A8A94">COMMISSION</text>
+    <rect x="276" y="130" width="62" height="19" rx="6" fill="#87E47C" fill-opacity=".13" stroke="#87E47C" stroke-opacity=".45"/>
+    <text x="288" y="143" fill="#87E47C">PAYOUT</text>
+  </g>
+  <g stroke="#5A5A64" stroke-width="1"><path d="M80 139h14M168 139h14M258 139h14"/></g>
+  <g fill="#5A5A64"><path d="M92 136.5l4 2.5-4 2.5zM180 136.5l4 2.5-4 2.5zM270 136.5l4 2.5-4 2.5z"/></g>
+
+  <text x="14" y="164" font-family="ui-monospace,Menlo,monospace" font-size="7.5" fill="#5A5A64" letter-spacing=".07em">AUTHORISATION LIVES IN THE DATABASE, NOT THE CLIENT</text>
+</svg>

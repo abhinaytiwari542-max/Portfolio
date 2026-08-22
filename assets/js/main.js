@@ -128,7 +128,7 @@
     if (!ctx) return;
 
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    var W = 0, H = 0, stars = [], light = false;
+    var W = 0, H = 0, stars = [], light = false, meteors = [], sinceMeteor = 0, nextMeteor = 40;
     var LINK = 170;            // px radius the pointer links stars within
     var pointer = { x: -9999, y: -9999, tx: -9999, ty: -9999, live: false };
 
@@ -187,6 +187,66 @@
         ctx.beginPath();
         ctx.arc(pointer.x, pointer.y, R, 0, Math.PI * 2);
         ctx.fill();
+      }
+
+      /* --- shooting stars --- */
+      if (!still) {
+        sinceMeteor++;
+        if (sinceMeteor > nextMeteor && meteors.length < 3) {
+          sinceMeteor = 0;
+          nextMeteor = 150 + Math.floor(Math.random() * 420);   // ~2.5-9s apart at 60fps
+          // Start the head inside the viewport and aim it across, so the whole
+          // streak is on-screen. Spawning off the left edge wastes most of a
+          // meteor's short life travelling into view.
+          var dir = Math.random() < 0.5 ? 1 : -1;
+          var ang = (0.17 + Math.random() * 0.15) * Math.PI;    // ~31-58 deg
+          var speed = 9 + Math.random() * 7;
+          meteors.push({
+            x: dir === 1 ? W * (0.02 + Math.random() * 0.42)
+                         : W * (0.56 + Math.random() * 0.42),
+            y: -20 + Math.random() * H * 0.34,
+            vx: Math.cos(ang) * speed * dir,
+            vy: Math.sin(ang) * speed,
+            len: 95 + Math.random() * 125,
+            life: 0,
+            max: 46 + Math.random() * 26
+          });
+        }
+        for (var m = meteors.length - 1; m >= 0; m--) {
+          var mt = meteors[m];
+          mt.x += mt.vx; mt.y += mt.vy; mt.life++;
+
+          var t = mt.life / mt.max;
+          var fade = t < 0.15 ? t / 0.15 : (1 - (t - 0.15) / 0.85);   // quick in, slow out
+          if (fade <= 0 || mt.life > mt.max || mt.y > H + 90 ||
+              mt.x < -mt.len - 40 || mt.x > W + mt.len + 40) { meteors.splice(m, 1); continue; }
+
+          var mag = Math.sqrt(mt.vx * mt.vx + mt.vy * mt.vy) || 1;
+          var tx = mt.x - (mt.vx / mag) * mt.len;
+          var ty = mt.y - (mt.vy / mag) * mt.len;
+
+          var tg = ctx.createLinearGradient(mt.x, mt.y, tx, ty);
+          var head = light ? '31,158,67' : '190,255,185';
+          var tail = light ? '90,80,220' : '146,146,245';
+          tg.addColorStop(0,   'rgba(' + head + ',' + (0.85 * fade).toFixed(3) + ')');
+          tg.addColorStop(0.35,'rgba(' + tail + ',' + (0.30 * fade).toFixed(3) + ')');
+          tg.addColorStop(1,   'rgba(' + tail + ',0)');
+
+          ctx.beginPath();
+          ctx.moveTo(mt.x, mt.y);
+          ctx.lineTo(tx, ty);
+          ctx.strokeStyle = tg;
+          ctx.lineWidth = 1.7;
+          ctx.lineCap = 'round';
+          ctx.stroke();
+          ctx.lineCap = 'butt';
+
+          // bright head
+          ctx.beginPath();
+          ctx.arc(mt.x, mt.y, 1.7, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(' + head + ',' + (0.95 * fade).toFixed(3) + ')';
+          ctx.fill();
+        }
       }
 
       var near = [];
@@ -290,13 +350,51 @@
     var rt;
     window.addEventListener('resize', function () {
       clearTimeout(rt);
-      rt = setTimeout(function () { build(); if (still) frame(); }, 180);
+      rt = setTimeout(function () { meteors = []; build(); if (still) frame(); }, 180);
     });
 
     palette();
     build();
     canvas.classList.add('ready');
     frame();   // paint the first frame synchronously; frame() re-schedules itself
+  })();
+
+
+  /* ---------------------------------------------------------
+     an abstract blob that trails the pointer, so the page has
+     something alive in it without competing with the content
+     --------------------------------------------------------- */
+  (function cursorOrb() {
+    var orb = document.querySelector('.orb');
+    if (!orb) return;
+    if (window.matchMedia('(hover: none)').matches) { orb.remove(); return; }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { orb.remove(); return; }
+
+    var x = -200, y = -200, tx = -200, ty = -200, shown = false, raf = null;
+
+    function loop() {
+      x += (tx - x) * 0.13;
+      y += (ty - y) * 0.13;
+      orb.style.transform = 'translate3d(' + (x - 19) + 'px,' + (y - 19) + 'px,0)';
+      raf = requestAnimationFrame(loop);
+    }
+
+    window.addEventListener('pointermove', function (e) {
+      tx = e.clientX; ty = e.clientY;
+      if (!shown) {
+        shown = true; x = tx; y = ty;
+        orb.classList.add('on');
+        if (!raf) raf = requestAnimationFrame(loop);
+      }
+    }, { passive: true });
+
+    window.addEventListener('pointerleave', function () { orb.classList.remove('on'); shown = false; });
+
+    // grows over anything clickable
+    document.addEventListener('pointerover', function (e) {
+      var t = e.target.closest && e.target.closest('a,button,.work,.build,.ccard');
+      orb.classList.toggle('big', !!t);
+    });
   })();
 
   /* current year */

@@ -22,6 +22,7 @@
 <body>
 
 <canvas class="starfield" aria-hidden="true"></canvas>
+<div class="orb" aria-hidden="true"></div>
 <div class="glow" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
@@ -82,10 +83,23 @@
   </div>
 
   <div class="hero__stats">
-    <div class="hero__stat"><b>5</b><span>Case studies</span></div>
-    <div class="hero__stat"><b>4</b><span>Shipped builds</span></div>
-    <div class="hero__stat"><b>3</b><span>0→1 roles</span></div>
-    <div class="hero__stat"><b>52</b><span>Tests, 1 build</span></div>
+    <div class="hero__stat"><b data-a="green">5</b><span>Case studies</span></div>
+    <div class="hero__stat"><b data-a="violet">5</b><span>Shipped builds</span></div>
+    <div class="hero__stat"><b data-a="blue">3</b><span>Founder-side roles</span></div>
+    <div class="hero__stat"><b data-a="amber">52</b><span>Automated tests</span></div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Uplift modelling</span><i></i><span>RAG grounding</span><i></i><span>Metrics trees</span><i></i>
+      <span>Holdout experiments</span><i></i><span>RICE prioritisation</span><i></i><span>PRDs</span><i></i>
+      <span>Agentic guardrails</span><i></i><span>Cohort analysis</span><i></i><span>Unit economics</span><i></i>
+      <span>Model evaluation</span><i></i><span>0&#8594;1 discovery</span><i></i><span>GTM</span><i></i>
+      <span>Uplift modelling</span><i></i><span>RAG grounding</span><i></i><span>Metrics trees</span><i></i>
+      <span>Holdout experiments</span><i></i><span>RICE prioritisation</span><i></i><span>PRDs</span><i></i>
+      <span>Agentic guardrails</span><i></i><span>Cohort analysis</span><i></i><span>Unit economics</span><i></i>
+      <span>Model evaluation</span><i></i><span>0&#8594;1 discovery</span><i></i><span>GTM</span><i></i>
+    </div>
   </div>
 </section>
 
@@ -232,7 +246,7 @@
   <div class="shead rv">
     <span class="shead__eyebrow">Things I've shipped</span>
     <h2>PM who writes the spec, then <em>writes the code.</em></h2>
-    <p>Four working systems on GitHub. Not prototypes: auth that survives XSS, policy engines that block the LLM from spending money, fail-closed PII redaction. Building them is how I learn what a spec actually costs.</p>
+    <p>Five working systems on GitHub. Not prototypes: auth that survives XSS, policy engines that block the LLM from spending money, fail-closed PII redaction. Building them is how I learn what a spec actually costs.</p>
   </div>
 
   <div class="builds">
@@ -296,6 +310,27 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
           </a>
           <span class="link-muted">Scrape → qualify → draft → alert</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="build rv">
+      <div class="build__art"><img src="assets/img/bd-loandsa.svg" alt="Four role portals reading one Postgres schema through row-level security, feeding a reconciliation and payout pipeline" loading="lazy" width="400" height="170"></div>
+      <div class="build__in">
+        <div class="build__top">
+          <h3>Loan DSA Platform</h3>
+          <span class="tag tag--c">Fintech ops</span>
+        </div>
+        <p>A loan direct-selling-agent platform with four portals on one schema: agents file applications, ops work a queue, admins set commission rules, and customers upload documents through a tokenised link with no account at all. The money path runs end to end, from bank statement import through reconciliation to commission transactions and payout batches. <strong>Authorisation lives in the database</strong>, as Postgres row-level security keyed to helper functions, so a bug in the client cannot widen what a role can read.</p>
+        <div class="build__stack">
+          <span class="stackchip">React 19</span><span class="stackchip">TypeScript</span><span class="stackchip">Supabase</span>
+          <span class="stackchip">Postgres RLS</span><span class="stackchip">TanStack Query</span><span class="stackchip">Tailwind v4</span>
+        </div>
+        <div class="build__links">
+          <a class="link-arrow" href="https://github.com/abhinaytiwari542-max/Loan-DSA" target="_blank" rel="noopener">GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <span class="link-muted">18 tables · 6 migrations · 4 roles</span>
         </div>
       </div>
     </article>
@@ -503,45 +538,45 @@
 
   <div class="contact__grid rv">
     <a class="ccard" href="mailto:abhinaytiwari542@gmail.com">
-      <span class="ccard__ico" style="background:rgba(135,228,124,.09);border-color:rgba(135,228,124,.28)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#87E47C" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m2.5 7 9.5 6 9.5-6"/></svg>
+      <span class="ccard__ico" data-accent="green">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="5" width="18.5" height="14" rx="2.5"/><path d="m3.5 7.5 8.5 5.5 8.5-5.5"/></svg>
       </span>
-      <span><b data-copy-label>Email</b><span>abhinaytiwari542@gmail.com</span></span>
+      <span class="ccard__tx"><b>Email</b><span>abhinaytiwari542@gmail.com</span></span>
     </a>
 
     <a class="ccard" href="https://www.linkedin.com/in/abhinay-tiwari22/" target="_blank" rel="noopener">
-      <span class="ccard__ico" style="background:rgba(111,168,255,.09);border-color:rgba(111,168,255,.28)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="#6FA8FF"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C20.6 8.75 22 11 22 14.4V21h-4v-5.9c0-1.4-.03-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H9z"/></svg>
+      <span class="ccard__ico" data-accent="blue">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="3.5"/><path d="M7 10.5V17M7 7.4v.1"/><path d="M11.4 17v-6.5M11.4 13.2c0-1.6 1-2.7 2.5-2.7s2.7 1 2.7 2.9V17"/></svg>
       </span>
-      <span><b>LinkedIn</b><span>/in/abhinay-tiwari22</span></span>
+      <span class="ccard__tx"><b>LinkedIn</b><span>/in/abhinay-tiwari22</span></span>
     </a>
 
     <a class="ccard" href="https://github.com/abhinaytiwari542-max" target="_blank" rel="noopener">
-      <span class="ccard__ico" style="background:rgba(146,146,245,.09);border-color:rgba(146,146,245,.28)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="#9292F5"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.9c-2.78.62-3.37-1.2-3.37-1.2-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+      <span class="ccard__ico" data-accent="violet">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.3 19.4c-4 1.2-4-2.2-5.6-2.6m11.2 5.2v-3.2c0-.9.1-1.3-.4-1.8 2.3-.3 4.5-1.2 4.5-5a3.9 3.9 0 0 0-1.1-2.7 3.6 3.6 0 0 0-.1-2.7s-.9-.3-2.9 1.1a10 10 0 0 0-5.2 0C7.7 4.3 6.8 4.6 6.8 4.6a3.6 3.6 0 0 0-.1 2.7 3.9 3.9 0 0 0-1.1 2.8c0 3.7 2.2 4.6 4.5 4.9-.3.3-.5.8-.5 1.4v3.6"/></svg>
       </span>
-      <span><b>GitHub</b><span>@abhinaytiwari542-max</span></span>
+      <span class="ccard__tx"><b>GitHub</b><span>@abhinaytiwari542-max</span></span>
     </a>
 
     <a class="ccard" href="tel:+919604966007">
-      <span class="ccard__ico" style="background:rgba(241,189,21,.09);border-color:rgba(241,189,21,.28)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F1BD15" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span class="ccard__ico" data-accent="amber">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 16.9v2.6a2 2 0 0 1-2.2 2 19.6 19.6 0 0 1-8.5-3 19.3 19.3 0 0 1-6-6 19.6 19.6 0 0 1-3-8.6 2 2 0 0 1 2-2.2h2.6a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.2 9.8a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
       </span>
-      <span><b>Phone</b><span>+91 96049 66007</span></span>
+      <span class="ccard__tx"><b>Phone</b><span>+91 96049 66007</span></span>
     </a>
 
     <a class="ccard" href="https://drive.google.com/file/d/1qxyGEIRskjYCb9Ry_yulhfnbb-nR_Trk/view?usp=sharing" target="_blank" rel="noopener">
-      <span class="ccard__ico" style="background:rgba(255,143,112,.09);border-color:rgba(255,143,112,.28)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF8F70" stroke-width="1.6"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5M9 13h6M9 17h4"/></svg>
+      <span class="ccard__ico" data-accent="coral">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 2.75H7A2.25 2.25 0 0 0 4.75 5v14A2.25 2.25 0 0 0 7 21.25h10A2.25 2.25 0 0 0 19.25 19V8.5z"/><path d="M13.5 2.75V8.5h5.75"/><path d="M8.75 13.5h6.5M8.75 17h4"/></svg>
       </span>
-      <span><b>Résumé</b><span>Google Drive · one page</span></span>
+      <span class="ccard__tx"><b>R&eacute;sum&eacute;</b><span>Google Drive &middot; one page</span></span>
     </a>
 
     <a class="ccard" href="#work">
-      <span class="ccard__ico" style="background:rgba(255,143,163,.09);border-color:rgba(255,143,163,.28)">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF8FA3" stroke-width="1.6"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-1.5z"/><path d="M9 7h7M9 11h5"/></svg>
+      <span class="ccard__ico" data-accent="pink">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.75 5A2.25 2.25 0 0 1 7 2.75h12.25v15.5H7A2.25 2.25 0 0 0 4.75 20.5z"/><path d="M4.75 18.25A2.25 2.25 0 0 1 7 16h12.25"/><path d="M9 7h6.5"/></svg>
       </span>
-      <span><b>Case studies</b><span>Five, start anywhere</span></span>
+      <span class="ccard__tx"><b>Case studies</b><span>Five, start anywhere</span></span>
     </a>
   </div>
 

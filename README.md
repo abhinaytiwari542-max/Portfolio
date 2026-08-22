@@ -9,7 +9,7 @@ Personal portfolio site. Static HTML, CSS and vanilla JS. No framework, no build
 | Section | Content |
 |---|---|
 | Case studies | Five self-directed AI product case studies: Zomato retention, Rapido mobility, Physics Wallah learning coach, YouTube Creator AI OS, One-Tap Playlists |
-| Builds | Four shipped repos: Vriddhi, SecondoBrain, Leads Finder, Tracker |
+| Builds | Five shipped repos: Vriddhi, SecondoBrain, Leads Finder, Loan DSA Platform, Tracker |
 | Experience | Build AI, Renan, Aditya Birla Capital |
 | About | Education, certifications, toolkit, leadership |
 
@@ -21,6 +21,11 @@ Personal portfolio site. Static HTML, CSS and vanilla JS. No framework, no build
 - **Cursor starfield**: a canvas field of parallax stars that drift slowly, lean toward the pointer
   by depth, brighten near it, and draw constellation lines between the closest ones. Degrades to a
   still field under `prefers-reduced-motion` and is skipped entirely on coarse pointers.
+- **Shooting stars**: meteors spawn on the same canvas every few seconds, streaking with a gradient
+  tail that fades from a bright head to nothing. They start inside the viewport so the whole streak
+  is visible.
+- **Cursor orb**: a small morphing gradient blob that trails the pointer with easing and swells over
+  anything clickable. Removed outright under reduced-motion or on touch.
 - Scroll-reveal, sticky nav, reading-progress bar and TOC scroll-spy on case study pages.
 
 ## Structure
