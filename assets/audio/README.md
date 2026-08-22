@@ -1,9 +1,12 @@
 # Background track
 
-`track.m4a` is an original ambient loop written for this site: a slow four-chord
-pad with a sparse bell line over it, 30 seconds, crossfaded so it repeats
-seamlessly. It was generated rather than sourced, so there is no licence
-attached and it is safe to publish from a public repo.
+`track.m4a` is an original instrumental written for this site: a 45-second
+chill electronic loop at 84 BPM with synthesised drums, bass, electric-piano
+chords and a sparse pentatonic melody. Everything in it is generated from
+scratch here, so there is no licence attached and it is safe to serve from a
+public repo.
+
+It is crossfaded at the seam, so it repeats without an audible click.
 
 ## Swapping it out
 
@@ -20,7 +23,7 @@ To change the tooltip text, edit `.vinylbtn__tip` in each page.
 
 **One caveat.** This folder is served publicly and the repo is public, so
 whatever sits here is distributed to every visitor. That is fine for something
-you recorded, something you bought a distribution licence for, or something
-released under CC0 or a Creative Commons licence. It is not fine for a
-commercial single downloaded from a ripping site, regardless of how it is
-named locally.
+you recorded yourself, something you bought a distribution licence for, or
+something released under CC0 or Creative Commons. It is not fine for a
+commercial track pulled through a download converter, however it is named or
+packaged locally.
