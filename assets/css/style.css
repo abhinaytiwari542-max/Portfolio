@@ -618,7 +618,22 @@ button{ font:inherit; }
   font-family:var(--mono); font-size:10.5px; letter-spacing:.03em; padding:3.5px 8px;
   border-radius:6px; background:rgba(128,128,140,.09); border:1px solid var(--line); color:var(--tx-3);
 }
-.build__links{ display:flex; gap:16px; align-items:center; margin-top:auto; padding-top:4px; }
+
+/* live demo link on a build card */
+.link-live{
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:14px; font-weight:500; color:var(--tx);
+}
+.link-live .dot{
+  width:6px; height:6px; border-radius:50%; background:var(--green); flex:0 0 auto;
+  box-shadow:0 0 0 3px rgba(135,228,124,.16);
+  animation:pulse 2.6s var(--ease) infinite;
+}
+.link-live svg{ transition:transform .25s var(--ease); }
+.build:hover .link-live svg{ transform:translate(3px,-3px); }
+.link-live:hover{ color:var(--green); }
+
+.build__links{ display:flex; gap:16px; align-items:center; flex-wrap:wrap; row-gap:8px; margin-top:auto; padding-top:4px; }
 
 /* an odd number of builds leaves a gap: let the last one span the row
    and lay it out horizontally so it reads as deliberate, not stretched */
