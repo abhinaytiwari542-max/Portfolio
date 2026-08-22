@@ -27,6 +27,11 @@ Personal portfolio site. Static HTML, CSS and vanilla JS. No framework, no build
   streak is visible.
 - **Cursor orb**: a small morphing gradient blob that trails the pointer with easing and swells over
   anything clickable. Removed outright under reduced-motion or on touch.
+- **Vinyl player**: a record in the bottom-left corner. Tap it to start optional background music,
+  tap again to stop. The disc spins, the tone arm swings down, and the track name slides out from
+  behind it. Playback carries across page navigations via `sessionStorage` and pauses when the tab
+  is hidden. Drop an audio file at `assets/audio/track.mp3` to enable it; with no file present the
+  control hides itself rather than sitting there dead. See `assets/audio/README.md`.
 - Scroll-reveal, sticky nav, reading-progress bar and TOC scroll-spy on case study pages.
 
 ## Structure

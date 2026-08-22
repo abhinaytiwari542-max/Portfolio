@@ -418,6 +418,89 @@
     });
   })();
 
+
+  /* ---------------------------------------------------------
+     vinyl player: tap the record to start, tap again to stop.
+     Hides itself entirely if no track is present, so the site
+     never shows a control that cannot do anything.
+     --------------------------------------------------------- */
+  (function vinyl() {
+    var el = document.querySelector('.vinyl');
+    if (!el) return;
+
+    var btn = el.querySelector('.vinyl__btn');
+    var src = el.getAttribute('data-src');
+    if (!btn || !src) return;
+
+    var audio = new Audio();
+    audio.loop = true;
+    audio.preload = 'metadata';
+    audio.volume = 0;
+    audio.src = src;
+
+    var TARGET = 0.45;
+    var fadeTimer = null;
+
+    function fadeTo(to, done) {
+      clearInterval(fadeTimer);
+      var step = (to - audio.volume) / 14;
+      fadeTimer = setInterval(function () {
+        var v = audio.volume + step;
+        if ((step > 0 && v >= to) || (step < 0 && v <= to) || step === 0) {
+          audio.volume = Math.min(1, Math.max(0, to));
+          clearInterval(fadeTimer);
+          if (done) done();
+        } else {
+          audio.volume = Math.min(1, Math.max(0, v));
+        }
+      }, 28);
+    }
+
+    function paint(on) {
+      el.classList.toggle('is-playing', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.setAttribute('aria-label', on ? 'Stop the music' : 'Play music while you read');
+      try { sessionStorage.setItem('at-music', on ? '1' : '0'); } catch (e) {}
+    }
+
+    function start() {
+      var p = audio.play();
+      if (p && p.catch) {
+        p.then(function () { paint(true); fadeTo(TARGET); })
+         .catch(function () { paint(false); });   // browser blocked it
+      } else {
+        paint(true); fadeTo(TARGET);
+      }
+    }
+
+    function stop() {
+      fadeTo(0, function () { audio.pause(); });
+      paint(false);
+    }
+
+    btn.addEventListener('click', function () {
+      if (audio.paused) start(); else stop();
+    });
+
+    // A missing or unplayable file should remove the control, not break it.
+    audio.addEventListener('error', function () { el.hidden = true; });
+    audio.addEventListener('canplay', function () { el.hidden = false; }, { once: true });
+
+    // Carry playback across page navigations. Browsers may still refuse to
+    // autoplay on the new page; if so we fall back to the stopped state.
+    try {
+      if (sessionStorage.getItem('at-music') === '1') start();
+    } catch (e) {}
+
+    // Pause while the tab is hidden so it does not play into an empty room.
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden && !audio.paused) { audio.pause(); }
+      else if (!document.hidden && el.classList.contains('is-playing') && audio.paused) {
+        var p = audio.play(); if (p && p.catch) p.catch(function () { paint(false); });
+      }
+    });
+  })();
+
   /* current year */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = new Date().getFullYear();
