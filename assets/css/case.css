@@ -49,13 +49,6 @@
 }
 .cs-meta dd{ margin:0; font-size:14.2px; color:var(--tx); letter-spacing:-.015em; line-height:1.45; }
 
-/* ---------- disclaimer ---------- */
-.cs-note{
-  margin:34px 0 0; padding:16px 20px; border-radius:var(--r);
-  border:1px solid rgba(241,189,21,.22); background:rgba(241,189,21,.05);
-  font-size:13.4px; color:var(--tx-3); line-height:1.62;
-}
-.cs-note b{ color:var(--amber); font-weight:500; }
 
 /* ---------- body layout ---------- */
 .cs-layout{
