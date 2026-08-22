@@ -434,26 +434,46 @@ button{ font:inherit; }
 }
 .hero__badge b{ color:var(--green); font-weight:500; }
 
-.hero h1{
-  margin:0; font-weight:400; letter-spacing:-.045em; line-height:1.02;
-  font-size:clamp(2.6rem, 7.4vw, 5.7rem);
+/* the name is the first thing anyone should read */
+.hero__name{
+  margin:0; font-weight:400; letter-spacing:-.05em; line-height:.98;
+  font-size:clamp(3rem, 9vw, 6.4rem);
 }
-.hero h1 .ln{ display:block; }
-.hero h1 em{
+.hero__name em{
+  font-family:var(--serif); font-style:normal; font-weight:400;
+  color:var(--green); letter-spacing:-.025em;
+}
+
+.hero__role{
+  margin:20px 0 0; display:flex; justify-content:center; align-items:center;
+  flex-wrap:wrap; gap:11px;
+  font-family:var(--mono); font-size:11.5px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--tx-3);
+}
+.hero__role i{ width:3px; height:3px; border-radius:50%; background:var(--tx-4); flex:0 0 auto; }
+
+.hero__line{
+  margin:32px auto 0; max-width:none;
+  font-weight:400; letter-spacing:-.038em; line-height:1.16;
+  font-size:clamp(1.42rem, 3.5vw, 2.6rem); color:var(--tx);
+  text-wrap:balance;
+}
+.hero__line .ln{ display:block; }
+.hero__line em{
   font-family:var(--serif); font-style:normal; font-weight:400;
   color:var(--green); letter-spacing:-.02em;
 }
-.hero h1 .emo{
+.hero__line .emo{
   display:inline-flex; gap:6px; vertical-align:middle;
-  font-size:.46em; transform:translateY(-.1em);
+  font-size:.44em; transform:translateY(-.12em);
 }
-.hero h1 .emo span{
+.hero__line .emo span{
   width:1.62em; height:1.62em; display:grid; place-items:center;
   background:var(--bg-3); border:1px solid var(--line); border-radius:50%;
 }
 
 .hero__bio{
-  max-width:640px; margin:34px auto 0; font-size:clamp(1rem,1.7vw,1.14rem);
+  max-width:610px; margin:26px auto 0; font-size:clamp(1rem,1.7vw,1.14rem);
   color:var(--tx-2); line-height:1.65;
 }
 .hero__bio a, .hero__bio .hl{ color:var(--violet); text-decoration:none; }
@@ -757,6 +777,7 @@ a:focus-visible, button:focus-visible{
   .nav__burger{ display:block; }
   .themebtn{ margin-left:0; margin-right:4px; }
   .section{ padding-block:72px; }
+  .hero__role{ font-size:10px; letter-spacing:.10em; gap:8px; }
   .hero__stats{ grid-template-columns:repeat(2,minmax(0,1fr)); }
   .hero__stat:nth-child(3){ border-left:0; }
   .hero__stat:nth-child(-n+2){ border-bottom:1px solid var(--line); }
