@@ -78,107 +78,71 @@
 :root[data-theme="light"] 
 
 
-/* ---------- vinyl player ---------- */
-.vinyl{
-  position:fixed; left:26px; bottom:24px; z-index:40;
-  display:flex; align-items:center; gap:0;
-}
-.vinyl[hidden]{ display:none; }
 
-.vinyl__btn{
-  position:relative; width:56px; height:56px; flex:0 0 auto;
+
+/* ---------- vinyl button (in the header) ---------- */
+.vinylbtn{
+  position:relative; width:34px; height:34px; flex:0 0 auto;
   padding:0; border:0; background:none; cursor:pointer; border-radius:50%;
-  isolation:isolate;
+  margin-left:6px;
 }
+.vinylbtn[hidden]{ display:none; }
 
-/* the record */
-.vinyl__disc{
+.vinylbtn__disc{
   position:absolute; inset:0; border-radius:50%;
   background:
     repeating-radial-gradient(circle at 50% 50%,
-      rgba(255,255,255,.055) 0 1px, rgba(0,0,0,0) 1px 3px),
-    radial-gradient(circle at 50% 50%, #23232b 0 34%, #101015 34% 100%);
-  box-shadow:0 6px 20px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.09);
-  animation:vinylSpin 3.2s linear infinite;
+      rgba(255,255,255,.07) 0 1px, rgba(0,0,0,0) 1px 2.5px),
+    radial-gradient(circle at 50% 50%, #26262f 0 30%, #0e0e13 30% 100%);
+  box-shadow:inset 0 0 0 1px var(--line-2), 0 2px 8px rgba(0,0,0,.45);
+  animation:vinylSpin 3s linear infinite;
   animation-play-state:paused;
-}
-/* sheen sweeping across the grooves */
-.vinyl__disc::after{
-  content:""; position:absolute; inset:0; border-radius:50%;
-  background:linear-gradient(115deg, transparent 38%, rgba(255,255,255,.13) 48%, transparent 58%);
+  transition:box-shadow .22s var(--ease);
 }
 /* centre label */
-.vinyl__disc::before{
-  content:""; position:absolute; inset:34%; border-radius:50%;
+.vinylbtn__disc::before{
+  content:""; position:absolute; inset:30%; border-radius:50%;
   background:conic-gradient(from 210deg, var(--green), var(--violet), var(--blue), var(--green));
-  box-shadow:inset 0 0 0 1px rgba(0,0,0,.4);
 }
-.vinyl.is-playing .vinyl__disc{ animation-play-state:running; }
+/* sheen across the grooves */
+.vinylbtn__disc::after{
+  content:""; position:absolute; inset:0; border-radius:50%;
+  background:linear-gradient(115deg, transparent 40%, rgba(255,255,255,.16) 50%, transparent 60%);
+}
+.vinylbtn.is-playing .vinylbtn__disc{ animation-play-state:running; }
+.vinylbtn:hover .vinylbtn__disc{ box-shadow:inset 0 0 0 1px var(--line-3), 0 3px 12px rgba(0,0,0,.55); }
+.vinylbtn:focus-visible{ outline:2px solid var(--green); outline-offset:3px; }
 
-/* spindle hole + the play/pause glyph sitting on the label */
-.vinyl__ico{
+/* play / pause glyph sits on the label and does not spin with the disc */
+.vinylbtn__ico{
   position:absolute; left:50%; top:50%; translate:-50% -50%;
-  width:20px; height:20px; display:grid; place-items:center;
-  color:#07070a; z-index:2; pointer-events:none;
+  display:grid; place-items:center; color:#07070a; z-index:2; pointer-events:none;
 }
-.vinyl__ico svg{ width:12px; height:12px; filter:drop-shadow(0 1px 1px rgba(255,255,255,.35)); }
-.vinyl__ico .i-pause{ display:none; }
-.vinyl.is-playing .vinyl__ico .i-play{ display:none; }
-.vinyl.is-playing .vinyl__ico .i-pause{ display:block; }
+.vinylbtn__ico svg{ width:9px; height:9px; }
+.vinylbtn__ico .i-pause{ display:none; }
+.vinylbtn.is-playing .i-play{ display:none; }
+.vinylbtn.is-playing .i-pause{ display:block; }
 
-/* tone arm, swings onto the record while it plays */
-.vinyl__arm{
-  position:absolute; right:-3px; top:1px; width:30px; height:30px;
-  transform-origin:88% 12%; rotate:-32deg; z-index:3;
-  transition:rotate .5s var(--ease); pointer-events:none;
+/* label on hover */
+.vinylbtn__tip{
+  position:absolute; top:calc(100% + 9px); left:50%; translate:-50% 0;
+  padding:5px 10px; border-radius:7px; white-space:nowrap;
+  background:var(--bg-3); border:1px solid var(--line-2); color:var(--tx-2);
+  font-family:var(--mono); font-size:10px; letter-spacing:.07em; text-transform:uppercase;
+  opacity:0; pointer-events:none; transition:opacity .22s var(--ease), translate .22s var(--ease);
+  translate:-50% -4px;
 }
-.vinyl__arm::before{
-  content:""; position:absolute; right:2px; top:2px; width:2px; height:26px;
-  background:linear-gradient(180deg, var(--tx-3), var(--tx-4));
-  border-radius:2px; transform-origin:top; rotate:24deg;
-}
-.vinyl__arm::after{
-  content:""; position:absolute; right:0; top:0; width:7px; height:7px;
-  border-radius:50%; background:var(--tx-3);
-  box-shadow:0 0 0 1px rgba(0,0,0,.35);
-}
-.vinyl.is-playing .vinyl__arm{ rotate:6deg; }
-
-.vinyl__btn:hover .vinyl__disc{ box-shadow:0 8px 26px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.18); }
-.vinyl__btn:focus-visible{ outline:2px solid var(--green); outline-offset:4px; }
-
-/* track name, slides out from behind the record */
-.vinyl__meta{
-  display:flex; flex-direction:column; justify-content:center;
-  max-width:0; overflow:hidden; white-space:nowrap;
-  padding:7px 0; border-radius:0 999px 999px 0;
-  background:var(--bg-2); border:1px solid var(--line); border-left:0;
-  margin-left:-28px; padding-left:34px;
-  opacity:0; transition:max-width .45s var(--ease), opacity .35s var(--ease), padding-right .45s var(--ease);
-  pointer-events:none;
-}
-.vinyl:hover .vinyl__meta, .vinyl.is-playing .vinyl__meta{
-  max-width:230px; opacity:1; padding-right:18px;
-}
-.vinyl__meta b{ font-size:12.5px; font-weight:500; letter-spacing:-.01em; color:var(--tx); line-height:1.3; }
-.vinyl__meta span{ font-size:10.5px; font-family:var(--mono); letter-spacing:.07em;
-  text-transform:uppercase; color:var(--tx-4); line-height:1.3; }
+.vinylbtn:hover .vinylbtn__tip{ opacity:1; translate:-50% 0; }
 
 @keyframes vinylSpin{ to{ rotate:360deg; } }
 
 /* the record still plays under reduced motion, it just does not spin */
 @media (prefers-reduced-motion:reduce){
-  .vinyl__disc{ animation:none; }
-  .vinyl.is-playing .vinyl__disc{ animation:none; }
-  .vinyl__arm{ transition:none; }
+  .vinylbtn__disc, .vinylbtn.is-playing .vinylbtn__disc{ animation:none; }
 }
-
 @media (max-width:720px){
-  .vinyl{ left:16px; bottom:16px; }
-  .vinyl__btn{ width:46px; height:46px; }
-  .vinyl__arm{ width:24px; height:24px; }
-  .vinyl:hover .vinyl__meta{ max-width:0; opacity:0; padding-right:0; }
-  .vinyl.is-playing .vinyl__meta{ max-width:170px; opacity:1; padding-right:14px; }
+  .vinylbtn{ margin-left:0; margin-right:2px; }
+  .vinylbtn__tip{ display:none; }
 }
 
 /* ---------- cursor orb ---------- */
@@ -280,107 +244,71 @@ button{ font:inherit; }
 
 
 
-/* ---------- vinyl player ---------- */
-.vinyl{
-  position:fixed; left:26px; bottom:24px; z-index:40;
-  display:flex; align-items:center; gap:0;
-}
-.vinyl[hidden]{ display:none; }
 
-.vinyl__btn{
-  position:relative; width:56px; height:56px; flex:0 0 auto;
+
+/* ---------- vinyl button (in the header) ---------- */
+.vinylbtn{
+  position:relative; width:34px; height:34px; flex:0 0 auto;
   padding:0; border:0; background:none; cursor:pointer; border-radius:50%;
-  isolation:isolate;
+  margin-left:6px;
 }
+.vinylbtn[hidden]{ display:none; }
 
-/* the record */
-.vinyl__disc{
+.vinylbtn__disc{
   position:absolute; inset:0; border-radius:50%;
   background:
     repeating-radial-gradient(circle at 50% 50%,
-      rgba(255,255,255,.055) 0 1px, rgba(0,0,0,0) 1px 3px),
-    radial-gradient(circle at 50% 50%, #23232b 0 34%, #101015 34% 100%);
-  box-shadow:0 6px 20px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.09);
-  animation:vinylSpin 3.2s linear infinite;
+      rgba(255,255,255,.07) 0 1px, rgba(0,0,0,0) 1px 2.5px),
+    radial-gradient(circle at 50% 50%, #26262f 0 30%, #0e0e13 30% 100%);
+  box-shadow:inset 0 0 0 1px var(--line-2), 0 2px 8px rgba(0,0,0,.45);
+  animation:vinylSpin 3s linear infinite;
   animation-play-state:paused;
-}
-/* sheen sweeping across the grooves */
-.vinyl__disc::after{
-  content:""; position:absolute; inset:0; border-radius:50%;
-  background:linear-gradient(115deg, transparent 38%, rgba(255,255,255,.13) 48%, transparent 58%);
+  transition:box-shadow .22s var(--ease);
 }
 /* centre label */
-.vinyl__disc::before{
-  content:""; position:absolute; inset:34%; border-radius:50%;
+.vinylbtn__disc::before{
+  content:""; position:absolute; inset:30%; border-radius:50%;
   background:conic-gradient(from 210deg, var(--green), var(--violet), var(--blue), var(--green));
-  box-shadow:inset 0 0 0 1px rgba(0,0,0,.4);
 }
-.vinyl.is-playing .vinyl__disc{ animation-play-state:running; }
+/* sheen across the grooves */
+.vinylbtn__disc::after{
+  content:""; position:absolute; inset:0; border-radius:50%;
+  background:linear-gradient(115deg, transparent 40%, rgba(255,255,255,.16) 50%, transparent 60%);
+}
+.vinylbtn.is-playing .vinylbtn__disc{ animation-play-state:running; }
+.vinylbtn:hover .vinylbtn__disc{ box-shadow:inset 0 0 0 1px var(--line-3), 0 3px 12px rgba(0,0,0,.55); }
+.vinylbtn:focus-visible{ outline:2px solid var(--green); outline-offset:3px; }
 
-/* spindle hole + the play/pause glyph sitting on the label */
-.vinyl__ico{
+/* play / pause glyph sits on the label and does not spin with the disc */
+.vinylbtn__ico{
   position:absolute; left:50%; top:50%; translate:-50% -50%;
-  width:20px; height:20px; display:grid; place-items:center;
-  color:#07070a; z-index:2; pointer-events:none;
+  display:grid; place-items:center; color:#07070a; z-index:2; pointer-events:none;
 }
-.vinyl__ico svg{ width:12px; height:12px; filter:drop-shadow(0 1px 1px rgba(255,255,255,.35)); }
-.vinyl__ico .i-pause{ display:none; }
-.vinyl.is-playing .vinyl__ico .i-play{ display:none; }
-.vinyl.is-playing .vinyl__ico .i-pause{ display:block; }
+.vinylbtn__ico svg{ width:9px; height:9px; }
+.vinylbtn__ico .i-pause{ display:none; }
+.vinylbtn.is-playing .i-play{ display:none; }
+.vinylbtn.is-playing .i-pause{ display:block; }
 
-/* tone arm, swings onto the record while it plays */
-.vinyl__arm{
-  position:absolute; right:-3px; top:1px; width:30px; height:30px;
-  transform-origin:88% 12%; rotate:-32deg; z-index:3;
-  transition:rotate .5s var(--ease); pointer-events:none;
+/* label on hover */
+.vinylbtn__tip{
+  position:absolute; top:calc(100% + 9px); left:50%; translate:-50% 0;
+  padding:5px 10px; border-radius:7px; white-space:nowrap;
+  background:var(--bg-3); border:1px solid var(--line-2); color:var(--tx-2);
+  font-family:var(--mono); font-size:10px; letter-spacing:.07em; text-transform:uppercase;
+  opacity:0; pointer-events:none; transition:opacity .22s var(--ease), translate .22s var(--ease);
+  translate:-50% -4px;
 }
-.vinyl__arm::before{
-  content:""; position:absolute; right:2px; top:2px; width:2px; height:26px;
-  background:linear-gradient(180deg, var(--tx-3), var(--tx-4));
-  border-radius:2px; transform-origin:top; rotate:24deg;
-}
-.vinyl__arm::after{
-  content:""; position:absolute; right:0; top:0; width:7px; height:7px;
-  border-radius:50%; background:var(--tx-3);
-  box-shadow:0 0 0 1px rgba(0,0,0,.35);
-}
-.vinyl.is-playing .vinyl__arm{ rotate:6deg; }
-
-.vinyl__btn:hover .vinyl__disc{ box-shadow:0 8px 26px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.18); }
-.vinyl__btn:focus-visible{ outline:2px solid var(--green); outline-offset:4px; }
-
-/* track name, slides out from behind the record */
-.vinyl__meta{
-  display:flex; flex-direction:column; justify-content:center;
-  max-width:0; overflow:hidden; white-space:nowrap;
-  padding:7px 0; border-radius:0 999px 999px 0;
-  background:var(--bg-2); border:1px solid var(--line); border-left:0;
-  margin-left:-28px; padding-left:34px;
-  opacity:0; transition:max-width .45s var(--ease), opacity .35s var(--ease), padding-right .45s var(--ease);
-  pointer-events:none;
-}
-.vinyl:hover .vinyl__meta, .vinyl.is-playing .vinyl__meta{
-  max-width:230px; opacity:1; padding-right:18px;
-}
-.vinyl__meta b{ font-size:12.5px; font-weight:500; letter-spacing:-.01em; color:var(--tx); line-height:1.3; }
-.vinyl__meta span{ font-size:10.5px; font-family:var(--mono); letter-spacing:.07em;
-  text-transform:uppercase; color:var(--tx-4); line-height:1.3; }
+.vinylbtn:hover .vinylbtn__tip{ opacity:1; translate:-50% 0; }
 
 @keyframes vinylSpin{ to{ rotate:360deg; } }
 
 /* the record still plays under reduced motion, it just does not spin */
 @media (prefers-reduced-motion:reduce){
-  .vinyl__disc{ animation:none; }
-  .vinyl.is-playing .vinyl__disc{ animation:none; }
-  .vinyl__arm{ transition:none; }
+  .vinylbtn__disc, .vinylbtn.is-playing .vinylbtn__disc{ animation:none; }
 }
-
 @media (max-width:720px){
-  .vinyl{ left:16px; bottom:16px; }
-  .vinyl__btn{ width:46px; height:46px; }
-  .vinyl__arm{ width:24px; height:24px; }
-  .vinyl:hover .vinyl__meta{ max-width:0; opacity:0; padding-right:0; }
-  .vinyl.is-playing .vinyl__meta{ max-width:170px; opacity:1; padding-right:14px; }
+  .vinylbtn{ margin-left:0; margin-right:2px; }
+  .vinylbtn__tip{ display:none; }
 }
 
 /* ---------- cursor orb ---------- */

@@ -2,10 +2,3 @@
 Thumbs.db
 *.log
 node_modules/
-
-# Audio: the player reads assets/audio/track.mp3 at runtime.
-# Not committed, so nothing unlicensed ends up published from a public repo.
-assets/audio/*.mp3
-assets/audio/*.m4a
-assets/audio/*.ogg
-assets/audio/*.wav

@@ -420,46 +420,56 @@
 
 
   /* ---------------------------------------------------------
-     vinyl player: tap the record to start, tap again to stop.
-     Hides itself entirely if no track is present, so the site
-     never shows a control that cannot do anything.
+     vinyl button: tap the record to start, tap again to stop.
+     Tries each candidate source in turn and hides itself if
+     none of them can play, so the header never shows a control
+     that does nothing.
      --------------------------------------------------------- */
   (function vinyl() {
-    var el = document.querySelector('.vinyl');
-    if (!el) return;
+    var btn = document.querySelector('.vinylbtn');
+    if (!btn) return;
 
-    var btn = el.querySelector('.vinyl__btn');
-    var src = el.getAttribute('data-src');
-    if (!btn || !src) return;
+    var list = (btn.getAttribute('data-src') || '').split(',')
+                 .map(function (x) { return x.trim(); }).filter(Boolean);
+    if (!list.length) { btn.hidden = true; return; }
 
     var audio = new Audio();
     audio.loop = true;
     audio.preload = 'metadata';
     audio.volume = 0;
-    audio.src = src;
 
-    var TARGET = 0.45;
-    var fadeTimer = null;
+    var TARGET = 0.4, at = 0, ready = false, fadeTimer = null;
+    var wantPlaying = false;   // intent, which is not the same as audio.paused
+
+    function tryNext() {
+      if (at >= list.length) { btn.hidden = true; return; }
+      audio.src = list[at++];
+      audio.load();
+    }
+    audio.addEventListener('error', function () { if (!ready) tryNext(); });
+    audio.addEventListener('loadedmetadata', function () { ready = true; btn.hidden = false; });
+    tryNext();
 
     function fadeTo(to, done) {
       clearInterval(fadeTimer);
       var step = (to - audio.volume) / 14;
       fadeTimer = setInterval(function () {
         var v = audio.volume + step;
-        if ((step > 0 && v >= to) || (step < 0 && v <= to) || step === 0) {
+        if (step === 0 || (step > 0 && v >= to) || (step < 0 && v <= to)) {
           audio.volume = Math.min(1, Math.max(0, to));
           clearInterval(fadeTimer);
           if (done) done();
-        } else {
-          audio.volume = Math.min(1, Math.max(0, v));
-        }
+        } else { audio.volume = Math.min(1, Math.max(0, v)); }
       }, 28);
     }
 
     function paint(on) {
-      el.classList.toggle('is-playing', on);
+      wantPlaying = on;
+      btn.classList.toggle('is-playing', on);
       btn.setAttribute('aria-pressed', on ? 'true' : 'false');
       btn.setAttribute('aria-label', on ? 'Stop the music' : 'Play music while you read');
+      var tip = btn.querySelector('.vinylbtn__tip');
+      if (tip) tip.textContent = on ? 'Tap to stop' : 'Play music';
       try { sessionStorage.setItem('at-music', on ? '1' : '0'); } catch (e) {}
     }
 
@@ -467,35 +477,22 @@
       var p = audio.play();
       if (p && p.catch) {
         p.then(function () { paint(true); fadeTo(TARGET); })
-         .catch(function () { paint(false); });   // browser blocked it
-      } else {
-        paint(true); fadeTo(TARGET);
-      }
+         .catch(function () { paint(false); });     // browser refused to autoplay
+      } else { paint(true); fadeTo(TARGET); }
     }
-
-    function stop() {
-      fadeTo(0, function () { audio.pause(); });
-      paint(false);
-    }
+    function stop() { fadeTo(0, function () { audio.pause(); }); paint(false); }
 
     btn.addEventListener('click', function () {
-      if (audio.paused) start(); else stop();
+      if (wantPlaying) stop(); else start();
     });
 
-    // A missing or unplayable file should remove the control, not break it.
-    audio.addEventListener('error', function () { el.hidden = true; });
-    audio.addEventListener('canplay', function () { el.hidden = false; }, { once: true });
+    // carry playback across page navigations
+    try { if (sessionStorage.getItem('at-music') === '1') start(); } catch (e) {}
 
-    // Carry playback across page navigations. Browsers may still refuse to
-    // autoplay on the new page; if so we fall back to the stopped state.
-    try {
-      if (sessionStorage.getItem('at-music') === '1') start();
-    } catch (e) {}
-
-    // Pause while the tab is hidden so it does not play into an empty room.
+    // don't play into an empty room
     document.addEventListener('visibilitychange', function () {
-      if (document.hidden && !audio.paused) { audio.pause(); }
-      else if (!document.hidden && el.classList.contains('is-playing') && audio.paused) {
+      if (document.hidden && !audio.paused) audio.pause();
+      else if (!document.hidden && wantPlaying && audio.paused) {
         var p = audio.play(); if (p && p.catch) p.catch(function () { paint(false); });
       }
     });
