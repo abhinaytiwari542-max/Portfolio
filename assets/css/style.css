@@ -20,7 +20,7 @@
   --tx:            #FFFFFF;
   --tx-2:          #C2C2C7;
   --tx-3:          #8A8A94;
-  --tx-4:          #5A5A64;
+  --tx-4:          #80808C;
 
   /* accents */
   --green:         #87E47C;
@@ -59,7 +59,7 @@
   --tx:      #08080B;
   --tx-2:    #3B3B44;
   --tx-3:    #63636E;
-  --tx-4:    #8E8E99;
+  --tx-4:    #68686F;
 
   --green:   #1F9E43;
   --violet:  #5A50DC;
@@ -561,7 +561,7 @@ button{ font:inherit; }
   transition:background .3s var(--ease); position:relative;
 }
 .xp__row:hover{ background:rgba(128,128,140,.05); }
-.xp__when{ font-family:var(--mono); font-size:12.5px; color:var(--tx-4); letter-spacing:.02em; padding-top:4px; }
+.xp__when{ font-family:var(--mono); font-size:12.5px; color:var(--tx-3); letter-spacing:.02em; padding-top:4px; }
 .xp__when span{ display:block; color:var(--tx-4); margin-top:5px; }
 .xp__head{ display:flex; align-items:baseline; gap:11px; flex-wrap:wrap; margin-bottom:6px; }
 .xp__head h3{ margin:0; font-size:1.22rem; font-weight:500; letter-spacing:-.028em; }
