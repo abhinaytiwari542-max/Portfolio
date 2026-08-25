@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" fill="none" role="img" aria-label="City grid with predicted demand heat cells and a matched route">
+  <defs><linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E0E12"/><stop offset="1" stop-color="#08080A"/></linearGradient></defs>
+  <rect width="420" height="300" fill="url(#rbg)"/>
+  <g stroke="#ffffff" stroke-opacity=".05">
+    <path d="M30 40h360M30 92h360M30 144h360M30 196h360M30 248h360"/>
+    <path d="M82 30v240M134 30v240M186 30v240M238 30v240M290 30v240M342 30v240"/>
+  </g>
+  <g>
+    <rect x="82" y="92" width="52" height="52" fill="#87E47C" fill-opacity=".22"/>
+    <rect x="134" y="92" width="52" height="52" fill="#87E47C" fill-opacity=".40"/>
+    <rect x="134" y="144" width="52" height="52" fill="#87E47C" fill-opacity=".28"/>
+    <rect x="186" y="40" width="52" height="52" fill="#87E47C" fill-opacity=".14"/>
+    <rect x="238" y="144" width="52" height="52" fill="#F1BD15" fill-opacity=".20"/>
+    <rect x="290" y="196" width="52" height="52" fill="#9292F5" fill-opacity=".18"/>
+    <rect x="82" y="196" width="52" height="52" fill="#9292F5" fill-opacity=".10"/>
+  </g>
+  <path d="M108 222 C 140 210 150 168 168 140 C 186 112 226 106 264 118 C 300 130 316 150 340 158"
+        stroke="#87E47C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 7"/>
+  <g>
+    <circle cx="108" cy="222" r="6" fill="#87E47C"/><circle cx="108" cy="222" r="12" stroke="#87E47C" stroke-opacity=".28"/>
+    <circle cx="340" cy="158" r="5" fill="#9292F5"/><circle cx="340" cy="158" r="11" stroke="#9292F5" stroke-opacity=".28"/>
+  </g>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="9.5" letter-spacing=".08em">
+    <text x="30" y="24" fill="#8A8A94">FORECAST → MATCH → ETA</text>
+    <text x="146" y="122" fill="#0E0E12" font-weight="700">HIGH</text>
+    <text x="292" y="278" fill="#5A5A64">supply gap</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/preview/editorial/page": "app/preview/editorial/page.js",
+  "/preview/gallery/page": "app/preview/gallery/page.js",
+  "/preview/hybrid/page": "app/preview/hybrid/page.js",
+  "/preview/inline/page": "app/preview/inline/page.js",
+  "/preview/page": "app/preview/page.js",
+  "/preview/terminal/page": "app/preview/terminal/page.js",
+  "/work/[slug]/page": "app/work/[slug]/page.js"
+}

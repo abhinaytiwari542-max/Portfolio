@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" fill="none" role="img" aria-label="Thumbnail A/B variants above an analytics waveform">
+  <defs><linearGradient id="ybg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E0E12"/><stop offset="1" stop-color="#08080A"/></linearGradient></defs>
+  <rect width="420" height="300" fill="url(#ybg)"/>
+  <g>
+    <rect x="36"  y="44" width="104" height="60" rx="8" fill="#14141A" stroke="#ffffff" stroke-opacity=".1"/>
+    <rect x="158" y="44" width="104" height="60" rx="8" fill="#14141A" stroke="#87E47C" stroke-opacity=".5"/>
+    <rect x="280" y="44" width="104" height="60" rx="8" fill="#14141A" stroke="#ffffff" stroke-opacity=".1"/>
+    <path d="M78 66l16 8-16 8z" fill="#5A5A64"/>
+    <path d="M200 66l16 8-16 8z" fill="#87E47C"/>
+    <path d="M322 66l16 8-16 8z" fill="#5A5A64"/>
+    <rect x="158" y="112" width="42" height="14" rx="7" fill="#87E47C" fill-opacity=".16"/>
+    <text x="165" y="122" font-family="ui-monospace,Menlo,monospace" font-size="8" fill="#87E47C" letter-spacing=".06em">WINNER</text>
+  </g>
+  <g>
+    <text x="36" y="160" font-family="ui-monospace,Menlo,monospace" font-size="9" letter-spacing=".1em" fill="#5A5A64">CTR &#215; RETENTION (NOT CTR ALONE)</text>
+  </g>
+  <g fill="#9292F5" fill-opacity=".55">
+    <rect x="36"  y="196" width="6" height="28" rx="3"/><rect x="50" y="184" width="6" height="40" rx="3"/>
+    <rect x="64"  y="204" width="6" height="20" rx="3"/><rect x="78" y="176" width="6" height="48" rx="3"/>
+    <rect x="92"  y="190" width="6" height="34" rx="3"/><rect x="106" y="208" width="6" height="16" rx="3"/>
+    <rect x="120" y="182" width="6" height="42" rx="3"/><rect x="134" y="198" width="6" height="26" rx="3"/>
+  </g>
+  <g fill="#87E47C">
+    <rect x="148" y="168" width="6" height="56" rx="3"/><rect x="162" y="156" width="6" height="68" rx="3"/>
+    <rect x="176" y="146" width="6" height="78" rx="3"/><rect x="190" y="160" width="6" height="64" rx="3"/>
+    <rect x="204" y="150" width="6" height="74" rx="3"/><rect x="218" y="164" width="6" height="60" rx="3"/>
+  </g>
+  <g fill="#ffffff" fill-opacity=".14">
+    <rect x="232" y="186" width="6" height="38" rx="3"/><rect x="246" y="196" width="6" height="28" rx="3"/>
+    <rect x="260" y="180" width="6" height="44" rx="3"/><rect x="274" y="202" width="6" height="22" rx="3"/>
+    <rect x="288" y="188" width="6" height="36" rx="3"/><rect x="302" y="194" width="6" height="30" rx="3"/>
+    <rect x="316" y="178" width="6" height="46" rx="3"/><rect x="330" y="200" width="6" height="24" rx="3"/>
+    <rect x="344" y="190" width="6" height="34" rx="3"/><rect x="358" y="184" width="6" height="40" rx="3"/>
+    <rect x="372" y="198" width="6" height="26" rx="3"/>
+  </g>
+  <path d="M36 240h348" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="150" y="258" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#87E47C" letter-spacing=".06em">watch-time guardrail held</text>
+</svg>

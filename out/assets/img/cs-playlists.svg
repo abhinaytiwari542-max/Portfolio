@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" fill="none" role="img" aria-label="A discovery session of tracks collapsing into one saved playlist">
+  <defs><linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E0E12"/><stop offset="1" stop-color="#08080A"/></linearGradient></defs>
+  <rect width="420" height="300" fill="url(#mbg)"/>
+  <text x="34" y="40" font-family="ui-monospace,Menlo,monospace" font-size="9" letter-spacing=".1em" fill="#5A5A64">DISCOVERY SESSION</text>
+  <g>
+    <rect x="34" y="54"  width="150" height="24" rx="6" fill="#14141A" stroke="#ffffff" stroke-opacity=".08"/>
+    <rect x="34" y="86"  width="150" height="24" rx="6" fill="#14141A" stroke="#87E47C" stroke-opacity=".4"/>
+    <rect x="34" y="118" width="150" height="24" rx="6" fill="#14141A" stroke="#ffffff" stroke-opacity=".08"/>
+    <rect x="34" y="150" width="150" height="24" rx="6" fill="#14141A" stroke="#87E47C" stroke-opacity=".4"/>
+    <rect x="34" y="182" width="150" height="24" rx="6" fill="#14141A" stroke="#ffffff" stroke-opacity=".08"/>
+    <rect x="34" y="214" width="150" height="24" rx="6" fill="#14141A" stroke="#87E47C" stroke-opacity=".4"/>
+  </g>
+  <g fill="#5A5A64">
+    <circle cx="48" cy="66" r="3.5"/><circle cx="48" cy="130" r="3.5"/><circle cx="48" cy="194" r="3.5"/>
+  </g>
+  <g fill="#87E47C"><circle cx="48" cy="98" r="3.5"/><circle cx="48" cy="162" r="3.5"/><circle cx="48" cy="226" r="3.5"/></g>
+  <g fill="#ffffff" fill-opacity=".1">
+    <rect x="60" y="62" width="82" height="4" rx="2"/><rect x="60" y="94" width="98" height="4" rx="2"/>
+    <rect x="60" y="126" width="70" height="4" rx="2"/><rect x="60" y="158" width="90" height="4" rx="2"/>
+    <rect x="60" y="190" width="76" height="4" rx="2"/><rect x="60" y="222" width="86" height="4" rx="2"/>
+  </g>
+  <g stroke="#87E47C" stroke-opacity=".45" stroke-width="1.4" fill="none">
+    <path d="M190 98 C 226 98 226 146 262 146"/>
+    <path d="M190 162 C 226 162 226 146 262 146"/>
+    <path d="M190 226 C 226 226 226 146 262 146"/>
+  </g>
+  <g>
+    <rect x="266" y="104" width="118" height="84" rx="12" fill="#14141A" stroke="#87E47C" stroke-opacity=".55"/>
+    <rect x="272" y="98"  width="106" height="84" rx="12" fill="#0E0E12" stroke="#87E47C" stroke-opacity=".3"/>
+    <rect x="278" y="92"  width="94"  height="84" rx="12" fill="#08080A" stroke="#87E47C" stroke-opacity=".16"/>
+    <circle cx="325" cy="130" r="17" stroke="#87E47C" stroke-width="1.6"/>
+    <path d="M320 122l12 8-12 8z" fill="#87E47C"/>
+  </g>
+  <text x="272" y="212" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="#87E47C" letter-spacing=".06em">ONE TAP → PLAYLIST</text>
+  <text x="34" y="266" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#5A5A64" letter-spacing=".06em">LLM SELECTS ONLY FROM THE CANDIDATE SET — NEVER GENERATES TRACKS</text>
+</svg>

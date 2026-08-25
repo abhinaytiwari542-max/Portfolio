@@ -1,0 +1,52 @@
+{
+  "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/preview/editorial/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/preview/gallery/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/preview/hybrid/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/preview/inline/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/preview/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/preview/terminal/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ],
+    "[project]/app/work/[slug]/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2",
+      "static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

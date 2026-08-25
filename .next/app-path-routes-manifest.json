@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/preview/editorial/page": "/preview/editorial",
+  "/preview/gallery/page": "/preview/gallery",
+  "/preview/hybrid/page": "/preview/hybrid",
+  "/preview/inline/page": "/preview/inline",
+  "/preview/page": "/preview",
+  "/preview/terminal/page": "/preview/terminal",
+  "/work/[slug]/page": "/work/[slug]"
+}

@@ -1,0 +1,1496 @@
+module.exports = [
+"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+var mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+
+module.exports = mod;
+}),
+"[project]/app/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$ArrowRight$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/ArrowRight.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$ArrowUpRight$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/ArrowUpRight.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$GithubLogo$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/GithubLogo.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$LinkedinLogo$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/LinkedinLogo.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$EnvelopeSimple$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/EnvelopeSimple.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$Phone$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/Phone.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$FileText$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/FileText.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$BookOpen$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/BookOpen.es.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Nav$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Nav.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Section.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/motion-primitives.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/content.ts [app-rsc] (ecmascript)");
+;
+;
+;
+;
+;
+;
+const RESUME = 'https://drive.google.com/file/d/1qxyGEIRskjYCb9Ry_yulhfnbb-nR_Trk/view?usp=sharing';
+const CONTACT = [
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$EnvelopeSimple$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["EnvelopeSimple"],
+        label: 'Email',
+        value: 'abhinaytiwari542@gmail.com',
+        href: 'mailto:abhinaytiwari542@gmail.com'
+    },
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$LinkedinLogo$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LinkedinLogo"],
+        label: 'LinkedIn',
+        value: '/in/abhinay-tiwari22',
+        href: 'https://www.linkedin.com/in/abhinay-tiwari22/'
+    },
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$GithubLogo$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GithubLogo"],
+        label: 'GitHub',
+        value: '@abhinaytiwari542-max',
+        href: 'https://github.com/abhinaytiwari542-max'
+    },
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$Phone$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Phone"],
+        label: 'Phone',
+        value: '+91 96049 66007',
+        href: 'tel:+919604966007'
+    },
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$FileText$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FileText"],
+        label: 'Resume',
+        value: 'Google Drive',
+        href: RESUME
+    },
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$BookOpen$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["BookOpen"],
+        label: 'Case studies',
+        value: 'Five, start anywhere',
+        href: '/#work'
+    }
+];
+function Home() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Nav$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                id: "top",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        className: "relative flex min-h-[100dvh] items-center overflow-hidden pt-28 pb-20",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                "aria-hidden": true,
+                                className: "pointer-events-none absolute -left-[10%] -top-[20%] size-[46rem] rounded-full opacity-[0.07] blur-3xl",
+                                style: {
+                                    background: 'radial-gradient(circle, var(--color-accent), transparent 65%)'
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Shell"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid items-end gap-14 lg:grid-cols-[1.5fr_1fr]",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "mb-8 inline-flex items-center gap-2.5 rounded-full border border-ink-800 px-3.5 py-1.5 text-[0.78rem] text-ink-400",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LiveDot"], {}, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 34,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            "Open to AI PM roles"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 33,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                        className: "text-[clamp(3rem,8.5vw,6.5rem)] font-normal leading-[0.95] tracking-[-0.05em]",
+                                                        children: [
+                                                            "Abhinay",
+                                                            ' ',
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "font-editorial text-accent",
+                                                                style: {
+                                                                    fontFamily: 'var(--font-editorial)'
+                                                                },
+                                                                children: "Tiwari"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 40,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "mt-6 font-mono text-[0.7rem] uppercase tracking-[0.16em] text-ink-500",
+                                                        children: [
+                                                            "AI Product Manager ",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "mx-2 text-ink-700",
+                                                                children: "/"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 46,
+                                                                columnNumber: 38
+                                                            }, this),
+                                                            " 0 to 1 with founders"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 45,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "mt-8 max-w-[46ch] text-[1.05rem] leading-relaxed text-ink-200",
+                                                        children: [
+                                                            "I take products ",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-accent",
+                                                                children: "0 to 1"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 50,
+                                                                columnNumber: 35
+                                                            }, this),
+                                                            " alongside founders: the PRDs, the metrics trees, the GTM. Then I ship it myself."
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 49,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mt-10 flex flex-wrap gap-3",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                href: "#work",
+                                                                className: "tactile inline-flex items-center gap-2 rounded-full bg-ink-50 px-5 py-3 text-sm font-medium text-ink-950 transition-colors hover:bg-white",
+                                                                children: [
+                                                                    "See the case studies ",
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$ArrowRight$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ArrowRight"], {
+                                                                        size: 15,
+                                                                        weight: "bold"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 56,
+                                                                        columnNumber: 42
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 55,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                href: "mailto:abhinaytiwari542@gmail.com",
+                                                                className: "tactile inline-flex items-center gap-2 rounded-full border border-ink-700 px-5 py-3 text-sm transition-colors hover:border-ink-500",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$EnvelopeSimple$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["EnvelopeSimple"], {
+                                                                        size: 15
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 59,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    " Get in touch"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 58,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 54,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 32,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Stagger"], {
+                                                className: "grid grid-cols-2 gap-x-8 gap-y-7 lg:grid-cols-1 lg:gap-y-0",
+                                                amount: 0.2,
+                                                children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["stats"].map(([n, label], i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Rise"], {
+                                                        className: `border-t border-ink-800 pt-4 ${i === 0 ? 'lg:border-t-0 lg:pt-0' : 'lg:mt-6'}`,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "font-mono text-[2rem] leading-none tracking-tight text-ink-50",
+                                                                children: n
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 68,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "mt-2 text-[0.78rem] text-ink-500",
+                                                                children: label
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 69,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, label, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 67,
+                                                        columnNumber: 19
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 65,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-20 flex flex-wrap gap-x-6 gap-y-2 border-t border-ink-850 pt-6",
+                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ticker"].map((t)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "font-mono text-[0.66rem] uppercase tracking-[0.1em] text-ink-700",
+                                                children: t
+                                            }, t, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 77,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 75,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 30,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        id: "work",
+                        className: "py-24 lg:py-32",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Shell"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SectionHead"], {
+                                    title: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                        children: [
+                                            "Five AI products, from a messy problem to a ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    fontFamily: 'var(--font-editorial)'
+                                                },
+                                                className: "text-accent",
+                                                children: "metrics tree."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 87,
+                                                columnNumber: 68
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 87,
+                                        columnNumber: 22
+                                    }, this),
+                                    lead: "Self-directed case studies. Each goes from problem framing through architecture, technique selection, MVP scoping, experiment design and guardrails."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 86,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Stagger"], {
+                                    className: "grid gap-px bg-ink-850",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["works"].map((w, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Rise"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: w.href,
+                                                className: `group grid gap-8 bg-ink-950 py-10 transition-colors hover:bg-ink-900/60 lg:grid-cols-[1fr_1.6fr] lg:gap-14 ${i % 2 ? 'lg:[direction:rtl]' : ''}`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "[direction:ltr] overflow-hidden rounded-2xl border border-ink-800 bg-ink-900",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                            src: w.img,
+                                                            alt: "",
+                                                            loading: "lazy",
+                                                            width: 420,
+                                                            height: 300,
+                                                            className: "h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 95,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 94,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "[direction:ltr] flex flex-col justify-center",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "font-mono text-[0.65rem] uppercase tracking-[0.14em] text-ink-500",
+                                                                children: w.idx
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 98,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                className: "mt-3 text-[1.45rem] font-normal leading-snug tracking-[-0.03em] text-ink-50",
+                                                                children: w.h3
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 99,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "mt-3 max-w-[60ch] text-[0.92rem] leading-relaxed text-ink-400",
+                                                                dangerouslySetInnerHTML: {
+                                                                    __html: w.p
+                                                                }
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 100,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "mt-5 border-l border-accent/50 py-1 pl-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "font-mono text-[0.6rem] uppercase tracking-[0.14em] text-accent",
+                                                                        children: "North Star"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 102,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "mt-1 text-[0.85rem] text-ink-200",
+                                                                        children: w.northStar
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 103,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 101,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "mt-5 flex flex-wrap gap-2",
+                                                                children: w.tags.map((t)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "rounded-full border border-ink-800 px-2.5 py-1 text-[0.7rem] text-ink-400",
+                                                                        children: t
+                                                                    }, t, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 107,
+                                                                        columnNumber: 27
+                                                                    }, this))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 105,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "mt-6 inline-flex items-center gap-2 text-sm text-ink-50",
+                                                                children: [
+                                                                    "Read case study",
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$ArrowRight$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ArrowRight"], {
+                                                                        size: 15,
+                                                                        weight: "bold",
+                                                                        className: "transition-transform group-hover:translate-x-1"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 112,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 110,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 97,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 93,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, w.href, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 92,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 90,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 85,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 84,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        id: "builds",
+                        className: "py-24 lg:py-32",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Shell"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SectionHead"], {
+                                    title: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                        children: [
+                                            "PM who writes the spec, then ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    fontFamily: 'var(--font-editorial)'
+                                                },
+                                                className: "text-accent",
+                                                children: "writes the code."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 126,
+                                                columnNumber: 53
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 126,
+                                        columnNumber: 22
+                                    }, this),
+                                    lead: "Five working systems on GitHub. Auth that survives XSS, policy engines that block the LLM from spending money, fail-closed PII redaction."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 125,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Stagger"], {
+                                    className: "grid gap-5 md:grid-cols-6",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["builds"].map((b, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Rise"], {
+                                            className: i < 2 ? 'md:col-span-3' : i === 4 ? 'md:col-span-6' : 'md:col-span-2',
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                                                className: "flex h-full flex-col overflow-hidden rounded-3xl border border-ink-800 bg-ink-900 transition-colors hover:border-ink-700",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "border-b border-ink-800 bg-ink-950/40",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                            src: b.img,
+                                                            alt: "",
+                                                            loading: "lazy",
+                                                            width: 400,
+                                                            height: 170,
+                                                            className: "h-36 w-full object-cover"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 134,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 133,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-1 flex-col p-7",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-start justify-between gap-4",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                        className: "text-[1.05rem] font-medium tracking-[-0.02em] text-ink-50",
+                                                                        children: b.h3
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 138,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "shrink-0 rounded-full border border-ink-800 px-2.5 py-1 text-[0.68rem] text-ink-400",
+                                                                        children: b.tag
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 139,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 137,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "mt-3 flex-1 text-[0.87rem] leading-relaxed text-ink-400",
+                                                                dangerouslySetInnerHTML: {
+                                                                    __html: b.p
+                                                                }
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 141,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "mt-5 flex flex-wrap gap-1.5",
+                                                                children: b.stack.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "rounded-md border border-ink-800 px-2 py-0.5 font-mono text-[0.62rem] text-ink-500",
+                                                                        children: s
+                                                                    }, s, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 144,
+                                                                        columnNumber: 27
+                                                                    }, this))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 142,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "mt-6 flex flex-wrap items-center gap-x-5 gap-y-2",
+                                                                children: [
+                                                                    b.live && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                        href: b.live,
+                                                                        target: "_blank",
+                                                                        rel: "noopener",
+                                                                        className: "inline-flex items-center gap-2 text-sm text-ink-50 hover:text-accent",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LiveDot"], {}, void 0, false, {
+                                                                                fileName: "[project]/app/page.tsx",
+                                                                                lineNumber: 150,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            " Live demo ",
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$ArrowUpRight$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ArrowUpRight"], {
+                                                                                size: 14,
+                                                                                weight: "bold"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/page.tsx",
+                                                                                lineNumber: 150,
+                                                                                columnNumber: 51
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 149,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                        href: b.github,
+                                                                        target: "_blank",
+                                                                        rel: "noopener",
+                                                                        className: "inline-flex items-center gap-1.5 text-[0.82rem] text-ink-500 hover:text-ink-200",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$GithubLogo$2e$es$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GithubLogo"], {
+                                                                                size: 14
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/page.tsx",
+                                                                                lineNumber: 154,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            " GitHub"
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 153,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 147,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 136,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 132,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, b.h3, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 131,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 129,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 124,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 123,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        id: "how",
+                        className: "py-24 lg:py-32",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Shell"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SectionHead"], {
+                                    title: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                        children: [
+                                            "Opinions I keep ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    fontFamily: 'var(--font-editorial)'
+                                                },
+                                                className: "text-accent",
+                                                children: "having to defend."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 168,
+                                                columnNumber: 51
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 168,
+                                        columnNumber: 33
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 168,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Stagger"], {
+                                    className: "grid gap-x-16 gap-y-10 md:grid-cols-2",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["caps"].map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Rise"], {
+                                            className: "border-t border-ink-800 pt-6",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-[0.98rem] font-medium tracking-[-0.02em] text-ink-50",
+                                                    children: c.h3
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 172,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "mt-2.5 max-w-[52ch] text-[0.88rem] leading-relaxed text-ink-400",
+                                                    children: c.p
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 173,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, c.h3, true, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 171,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 169,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 167,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 166,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        id: "experience",
+                        className: "py-24 lg:py-32",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Shell"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SectionHead"], {
+                                    title: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                        children: [
+                                            "0 to 1 work, mostly ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    fontFamily: 'var(--font-editorial)'
+                                                },
+                                                className: "text-accent",
+                                                children: "next to founders."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 183,
+                                                columnNumber: 55
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 183,
+                                        columnNumber: 33
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 183,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Stagger"], {
+                                    className: "border-t border-ink-800",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["xp"].map((r)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Rise"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "grid gap-4 border-b border-ink-800 py-9 lg:grid-cols-[13rem_1fr] lg:gap-12",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "pt-1 font-mono text-[0.72rem] text-ink-500",
+                                                        children: [
+                                                            r.when,
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "mt-1 block text-ink-700",
+                                                                children: r.where
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 190,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 188,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex flex-wrap items-baseline gap-x-3",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                        className: "text-[1.15rem] font-medium tracking-[-0.025em] text-ink-50",
+                                                                        children: r.role
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 194,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        style: {
+                                                                            fontFamily: 'var(--font-editorial)'
+                                                                        },
+                                                                        className: "text-[1.15rem] text-accent",
+                                                                        children: r.co
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 195,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 193,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                                className: "mt-4 grid gap-2",
+                                                                children: r.bullets.map((b, k)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                        className: "relative max-w-[70ch] pl-5 text-[0.9rem] leading-relaxed text-ink-400",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "absolute left-0 top-[0.6rem] size-1 rounded-full bg-ink-700"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/page.tsx",
+                                                                                lineNumber: 200,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            b
+                                                                        ]
+                                                                    }, k, true, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 199,
+                                                                        columnNumber: 27
+                                                                    }, this))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 197,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "mt-5 flex flex-wrap gap-2",
+                                                                children: r.chips.map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "rounded-full border border-ink-800 px-2.5 py-1 text-[0.68rem] text-ink-500",
+                                                                        children: c
+                                                                    }, c, false, {
+                                                                        fileName: "[project]/app/page.tsx",
+                                                                        lineNumber: 207,
+                                                                        columnNumber: 27
+                                                                    }, this))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 205,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 192,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 187,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, r.role + r.co, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 186,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 184,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 182,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 181,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        id: "about",
+                        className: "py-24 lg:py-32",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Shell"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SectionHead"], {
+                                    title: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                        children: [
+                                            "How I got ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    fontFamily: 'var(--font-editorial)'
+                                                },
+                                                className: "text-accent",
+                                                children: "here."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 221,
+                                                columnNumber: 45
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 221,
+                                        columnNumber: 33
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 221,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid gap-12 lg:grid-cols-[1.25fr_1fr]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid gap-5",
+                                            children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["aboutParas"].map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: i === 0 ? 'max-w-[60ch] text-[1.15rem] leading-relaxed tracking-[-0.02em] text-ink-50' : 'max-w-[64ch] text-[0.93rem] leading-relaxed text-ink-400',
+                                                    dangerouslySetInnerHTML: {
+                                                        __html: p
+                                                    }
+                                                }, i, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 225,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 223,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid content-start gap-8",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "border-t border-ink-800 pt-5",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "font-mono text-[0.63rem] uppercase tracking-[0.13em] text-ink-500",
+                                                            children: "Education"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 230,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "mt-3 text-[0.92rem] text-ink-50",
+                                                            children: "B.E., Electronics & Communication Engineering"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 231,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "mt-1 text-[0.82rem] text-ink-500",
+                                                            children: "UIET, Panjab University · Aug 2023 to May 2027"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 232,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 229,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "border-t border-ink-800 pt-5",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "font-mono text-[0.63rem] uppercase tracking-[0.13em] text-ink-500",
+                                                            children: "Certifications"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 235,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "mt-3 grid gap-2.5 text-[0.88rem] text-ink-200",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: "McKinsey.org Forward Program"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/page.tsx",
+                                                                    lineNumber: 237,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: "Finlatics Investment Banking Experience"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/page.tsx",
+                                                                    lineNumber: 238,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: "Forage Virtual IB & M&A Simulation"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/page.tsx",
+                                                                    lineNumber: 239,
+                                                                    columnNumber: 21
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 236,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 234,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "border-t border-ink-800 pt-5",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "font-mono text-[0.63rem] uppercase tracking-[0.13em] text-ink-500",
+                                                            children: "Leadership"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 243,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "mt-3 grid gap-2.5 text-[0.88rem] text-ink-200",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: "National Cadet Corps, 100+ cadets"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/page.tsx",
+                                                                    lineNumber: 245,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: "Mind Sustain (NGO), Founder"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/page.tsx",
+                                                                    lineNumber: 246,
+                                                                    columnNumber: 21
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 244,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 242,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 228,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 222,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 220,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 219,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        id: "contact",
+                        className: "py-24 lg:py-32",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Shell"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SectionHead"], {
+                                    title: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                        children: [
+                                            "I'd love to ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    fontFamily: 'var(--font-editorial)'
+                                                },
+                                                className: "text-accent",
+                                                children: "connect."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 258,
+                                                columnNumber: 41
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 258,
+                                        columnNumber: 22
+                                    }, this),
+                                    lead: "Looking for an AI Product Manager role where the hard part is judgement, not headcount."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 257,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Stagger"], {
+                                    className: "grid gap-px bg-ink-850 sm:grid-cols-2 lg:grid-cols-3",
+                                    children: CONTACT.map(({ Icon, label, value, href })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Rise"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: href,
+                                                target: href.startsWith('http') ? '_blank' : undefined,
+                                                rel: "noopener",
+                                                className: "flex h-full items-center gap-4 bg-ink-950 p-6 transition-colors hover:bg-ink-900",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                        size: 19,
+                                                        className: "shrink-0 text-accent",
+                                                        weight: "regular"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 265,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "min-w-0",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "block text-[0.88rem] text-ink-50",
+                                                                children: label
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 267,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "block truncate text-[0.78rem] text-ink-500",
+                                                                children: value
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 268,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/page.tsx",
+                                                        lineNumber: 266,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 264,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, label, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 263,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 261,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                                    className: "mt-20 flex flex-wrap items-center justify-between gap-4 border-t border-ink-850 pt-7 text-[0.78rem] text-ink-600",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: "© 2026 Abhinay Tiwari"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 276,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "flex gap-5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "https://www.linkedin.com/in/abhinay-tiwari22/",
+                                                    target: "_blank",
+                                                    rel: "noopener",
+                                                    className: "hover:text-ink-200",
+                                                    children: "LinkedIn"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 278,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "https://github.com/abhinaytiwari542-max",
+                                                    target: "_blank",
+                                                    rel: "noopener",
+                                                    className: "hover:text-ink-200",
+                                                    children: "GitHub"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 279,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "#top",
+                                                    className: "hover:text-ink-200",
+                                                    children: "Back to top"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 280,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 277,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 275,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 256,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 255,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/page.tsx",
+        lineNumber: 20,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", (function(__turbopack_context__){
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/app/page.tsx [app-rsc] (ecmascript)"));
+}),
+"[project]/components/Nav.tsx [app-rsc] (client reference proxy)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call the default export of [project]/components/Nav.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/Nav.tsx", "default");
+}),
+"[project]/components/Nav.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call the default export of [project]/components/Nav.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/Nav.tsx <module evaluation>", "default");
+}),
+"[project]/components/Nav.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Nav$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/components/Nav.tsx [app-rsc] (client reference proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Nav$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/components/Nav.tsx [app-rsc] (client reference proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Nav$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
+}),
+"[project]/components/Section.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "SectionHead",
+    ()=>SectionHead,
+    "Shell",
+    ()=>Shell
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+function SectionHead({ title, lead, id }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        id: id,
+        className: "mb-14 max-w-3xl",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-[clamp(1.7rem,3.4vw,2.6rem)] font-normal leading-[1.1] tracking-[-0.04em] text-ink-50",
+                children: title
+            }, void 0, false, {
+                fileName: "[project]/components/Section.tsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this),
+            lead && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "mt-4 max-w-[62ch] text-[0.95rem] leading-relaxed text-ink-400",
+                children: lead
+            }, void 0, false, {
+                fileName: "[project]/components/Section.tsx",
+                lineNumber: 12,
+                columnNumber: 16
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Section.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+function Shell({ children, className = '' }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: `mx-auto w-full max-w-7xl px-6 lg:px-10 ${className}`,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/components/Section.tsx",
+        lineNumber: 18,
+        columnNumber: 10
+    }, this);
+}
+}),
+"[project]/components/motion-primitives.tsx [app-rsc] (client reference proxy)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "LiveDot",
+    ()=>LiveDot,
+    "Rise",
+    ()=>Rise,
+    "Stagger",
+    ()=>Stagger,
+    "riseIn",
+    ()=>riseIn,
+    "stagger",
+    ()=>stagger
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const LiveDot = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call LiveDot() from the server but LiveDot is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx", "LiveDot");
+const Rise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Rise() from the server but Rise is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx", "Rise");
+const Stagger = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Stagger() from the server but Stagger is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx", "Stagger");
+const riseIn = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call riseIn() from the server but riseIn is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx", "riseIn");
+const stagger = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call stagger() from the server but stagger is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx", "stagger");
+}),
+"[project]/components/motion-primitives.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "LiveDot",
+    ()=>LiveDot,
+    "Rise",
+    ()=>Rise,
+    "Stagger",
+    ()=>Stagger,
+    "riseIn",
+    ()=>riseIn,
+    "stagger",
+    ()=>stagger
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const LiveDot = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call LiveDot() from the server but LiveDot is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx <module evaluation>", "LiveDot");
+const Rise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Rise() from the server but Rise is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx <module evaluation>", "Rise");
+const Stagger = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Stagger() from the server but Stagger is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx <module evaluation>", "Stagger");
+const riseIn = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call riseIn() from the server but riseIn is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx <module evaluation>", "riseIn");
+const stagger = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call stagger() from the server but stagger is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/motion-primitives.tsx <module evaluation>", "stagger");
+}),
+"[project]/components/motion-primitives.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/components/motion-primitives.tsx [app-rsc] (client reference proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/components/motion-primitives.tsx [app-rsc] (client reference proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$motion$2d$primitives$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
+}),
+"[project]/lib/cases.json.[json].cjs [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = JSON.parse("[{\"slug\":\"one-tap-playlists\",\"title\":\"One-Tap Playlists: closing the discovery-to-collection gap · Abhinay Tiwari\",\"description\":\"AI product case study: turning a music discovery session into a saved playlist in one tap, with an LLM orchestration layer constrained to a real candidate set.\",\"ogTitle\":\"One-Tap Playlists: closing the discovery-to-collection gap\",\"ogDesc\":\"Turning a music discovery session into a saved playlist in one tap, with the LLM constrained to a real candidate set.\",\"ogImage\":\"https://abhinaytiwari.netlify.app/assets/img/og-playlists.png\",\"kicker\":\"Case study 05 · Consumer · 0 to 1 feature\",\"h1\":\"One-Tap <em>Playlists</em>\",\"sub\":\"I kept discovering songs I loved through autoplay, but the moment the session ended, I had no easy way to turn that discovery into a playlist.\",\"tags\":[\"JTBD\",\"Constrained LLM orchestration\",\"Structured output contract\",\"A/B design\",\"Consumer 0 to 1\"],\"meta\":[[\"Type\",\"Self-directed AI PM case study\"],[\"Domain\",\"Music streaming\"],[\"Focus\",\"Discovery to collection\"],[\"Reading time\",\"~7 minutes\"]],\"toc\":[[\"problem\",\"The problem\"],[\"jtbd\",\"Users &amp; JTBD\"],[\"solution\",\"Discovery Session\"],[\"ai\",\"Where AI adds value\"],[\"prd\",\"Product requirements\"],[\"mvp\",\"MVP &amp; prioritisation\"],[\"metrics\",\"Metrics\"],[\"experiments\",\"Experimentation\"],[\"risks\",\"Trade-offs &amp; risks\"],[\"roadmap\",\"Roadmap\"],[\"impact\",\"Business impact\"],[\"summary\",\"Summary\"]],\"prose\":\"<section id=\\\"problem\\\">\\n      <h2><span class=\\\"num\\\">01</span>The problem</h2>\\n      <p>Music streaming platforms are very good at discovery: a user plays a song, and autoplay or radio surfaces a stream of similar tracks. Often several of those recommended songs genuinely land. What the product doesn't handle well is the moment right after: turning a good listening session into <strong>something the user keeps</strong>.</p>\\n      <p>Today, converting a liked sequence of recommended songs into a playlist requires remembering each song, finding it again, opening it, and adding it individually, repeated per song. Most users abandon the process partway through, or never start it.</p>\\n\\n      <div class=\\\"callout callout--decision\\\">\\n        <span class=\\\"callout__label\\\">Framing</span>\\n        <p>This is not a claim that recommendation algorithms are bad. <strong>Discovery is working.</strong> The gap is between discovery and collection: a persistent-artifact problem, not a relevance problem. That distinction is what keeps this out of the recommender team's backlog and inside a feature you can actually ship.</p>\\n      </div>\\n\\n      <p><strong>Opportunity:</strong> convert passive music discovery into an actionable playlist with minimal user effort.</p>\\n    </section>\\n\\n    <section id=\\\"jtbd\\\">\\n      <h2><span class=\\\"num\\\">02</span>Users &amp; job to be done</h2>\\n      <div class=\\\"pquote\\\">When I discover several songs I enjoy during a recommendation session, I want to save them together, so I can revisit them later without re-finding each one.</div>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Persona</th><th>Behaviour</th><th>Primary pain</th></tr></thead>\\n        <tbody>\\n          <tr><td>Discovery Listener (18 to 25), primary target</td><td>Leans on autoplay and radio; likes new artists; doesn't maintain playlists</td><td>Finds great songs, then forgets them entirely</td></tr>\\n          <tr><td>Playlist Curator (20 to 30)</td><td>Builds mood and activity playlists deliberately</td><td>Manual curation is slow and repetitive</td></tr>\\n          <tr><td>Passive Listener (25 to 40)</td><td>Relies on autoplay, rarely opens playlist tools</td><td>Wants good music without managing it</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <p>The <strong>Discovery Listener</strong> is the primary target: this group generates the most recommendation-session volume and has the largest gap between \\\"songs enjoyed\\\" and \\\"songs saved,\\\" which is where the conversion opportunity is biggest.</p>\\n\\n      <div class=\\\"callout callout--hyp\\\">\\n        <span class=\\\"callout__label\\\">Research plan, not yet conducted</span>\\n        <p>10 user interviews (for example, \\\"What do you do when you hear a song you really like?\\\" and \\\"Have you ever wanted to save multiple recommended songs at once?\\\") plus an 8 to 10 question survey on discovery and playlist habits. Anything referenced below is a hypothesis to validate before build.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"solution\\\">\\n      <h2><span class=\\\"num\\\">03</span>The solution: Discovery Session</h2>\\n      <p>Every recommendation or autoplay stream is automatically tracked as a temporary <strong>Discovery Session</strong>: songs played, skipped, replayed, liked, and listening duration. At any point the user can save it as a playlist with one tap.</p>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Save all</h6><ul><li>Every song in the session</li></ul></div>\\n        <div><h6>Save favourites</h6><ul><li>Only songs the user liked or replayed</li></ul></div>\\n        <div><h6>Customise</h6><ul><li>Manually select individual tracks</li></ul></div>\\n        <div><h6>AI curate</h6><ul><li>Describe an intent (\\\"make this more chill,\\\" \\\"good for driving\\\") and let AI select and order</li></ul></div>\\n      </div>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Step</th><th>Current experience</th><th>With Discovery Session</th></tr></thead>\\n        <tbody>\\n          <tr><td>1</td><td>User enjoys several recommended songs in a row</td><td>Same, no change to discovery</td></tr>\\n          <tr><td>2</td><td>User tries to remember which songs they liked</td><td>Session is already tracked automatically</td></tr>\\n          <tr><td>3</td><td>User searches for and re-opens each song</td><td>User taps \\\"Save Session\\\" once</td></tr>\\n          <tr><td>4</td><td>User adds each song to a playlist one at a time</td><td>User reviews an auto-generated preview, removes anything unwanted</td></tr>\\n          <tr><td>5</td><td>User gives up partway or saves only a few songs</td><td>Playlist is created in one step, named and ready to revisit</td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"ai\\\">\\n      <h2><span class=\\\"num\\\">04</span>Where AI adds value</h2>\\n      <p>The recommendation engine (collaborative filtering and embeddings-based similarity) stays responsible for candidate generation and ranking, because that's what it's good at. An AI orchestration layer sits on top and handles the parts a traditional ranking system can't:</p>\\n      <ul>\\n        <li>Interpreting natural-language intent (\\\"make this a 45-minute late-night playlist\\\")</li>\\n        <li>Reordering and trimming a session into a coherent, mood-consistent playlist</li>\\n        <li>Explaining <em>why</em> songs were included, to build trust in an auto-generated list</li>\\n        <li>Supporting conversational edits after the first draft (\\\"swap out anything too high-energy\\\")</li>\\n      </ul>\\n\\n      <div class=\\\"callout callout--decision\\\">\\n        <span class=\\\"callout__label\\\">Key architectural decision</span>\\n        <p>The LLM <strong>never generates songs freeform.</strong> It selects and orders only from a candidate set already produced by the recommendation system and the user's own session history. This eliminates hallucinated tracks <em>by construction</em> rather than by prompting, and keeps the recommender, not the LLM, as the source of truth for what music exists and is licensed.</p>\\n      </div>\\n\\n      <div class=\\\"formula\\\">{ <span>\\\"playlist_name\\\"</span>: \\\"\\\", <span>\\\"songs\\\"</span>: [track_ids], <span>\\\"reason\\\"</span>: \\\"\\\", <span>\\\"estimated_duration\\\"</span>: \\\"\\\" }</div>\\n    </section>\\n\\n    <section id=\\\"prd\\\">\\n      <h2><span class=\\\"num\\\">05</span>Product requirements</h2>\\n      <div class=\\\"split\\\">\\n        <div>\\n          <h6>Goals</h6>\\n          <ul>\\n            <li>Let users convert a recommendation session into a playlist in one tap</li>\\n            <li>Increase the share of discovery sessions that result in a saved playlist</li>\\n            <li>Preserve full user control over the final playlist</li>\\n          </ul>\\n        </div>\\n        <div>\\n          <h6>Non-goals (v1)</h6>\\n          <ul>\\n            <li>Fully autonomous playlist management without user review</li>\\n            <li>Cross-platform import from other streaming services</li>\\n            <li>Social or collaborative session sharing</li>\\n          </ul>\\n        </div>\\n      </div>\\n\\n      <h3>Representative user stories</h3>\\n      <ul>\\n        <li>As a listener, I want to save my recent discovery session so I don't lose songs I enjoyed.</li>\\n        <li>As a listener, I want to save only the songs I actively liked, not the whole session.</li>\\n        <li>As a listener, I want to describe a vibe (\\\"driving,\\\" \\\"chill\\\") and get a playlist matching it.</li>\\n        <li>As a listener, I want to preview and remove songs before the playlist is saved.</li>\\n        <li>As a listener, I want duplicate songs and artists automatically minimised.</li>\\n      </ul>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Latency</h6><ul><li>Session-to-preview generation under roughly 3 seconds for AI curation</li></ul></div>\\n        <div><h6>Reliability</h6><ul><li>Session data must survive app restarts and network drops</li></ul></div>\\n        <div><h6>Privacy</h6><ul><li>Session and listening data used for curation only, never shared externally</li></ul></div>\\n        <div><h6>Accessibility</h6><ul><li>Full save and curate flow usable via screen reader and keyboard</li></ul></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"mvp\\\">\\n      <h2><span class=\\\"num\\\">06</span>MVP &amp; prioritisation</h2>\\n      <h3>MVP scope</h3>\\n      <ul>\\n        <li>Automatic session tracking during recommendation and autoplay</li>\\n        <li>Save All and Select Songs flows</li>\\n        <li>Duplicate removal</li>\\n        <li>Basic AI ordering, sequencing only, not full conversational curation</li>\\n      </ul>\\n      <p>Conversational AI curation, social sharing and voice creation are deferred. They add cost and complexity without being required to prove the core hypothesis that one-tap saving increases conversion.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Feature</th><th>Impact</th><th>Effort</th><th>Priority</th></tr></thead>\\n        <tbody>\\n          <tr><td>Save Session (all / select)</td><td>High</td><td>Low</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Duplicate removal</td><td>Medium</td><td>Low</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Basic AI ordering</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>AI conversational curation</td><td>High</td><td>High</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Social sharing</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--p3\\\">Phase 3+</span></td></tr>\\n          <tr><td>Voice playlist creation</td><td>Low</td><td>High</td><td><span class=\\\"pri pri--later\\\">Not planned</span></td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"metrics\\\">\\n      <h2><span class=\\\"num\\\">07</span>Metrics</h2>\\n      <div class=\\\"nstar\\\">\\n        <span>North Star</span>\\n        <strong>Recommendation-to-Playlist Conversion Rate</strong>\\n        <p>The share of discovery sessions that result in a saved playlist. It measures the exact gap the feature exists to close, and it can't be gamed by playing more music.</p>\\n      </div>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Discovery</h6><ul><li>Songs played</li><li>Completion rate</li><li>Skip rate</li></ul></div>\\n        <div><h6>Activation</h6><ul><li>Discovery sessions created</li><li>Save-Session taps</li></ul></div>\\n        <div><h6>Conversion</h6><ul><li>Session to playlist rate</li><li>Songs saved per session</li></ul></div>\\n        <div><h6>Engagement</h6><ul><li>Playlist replays</li><li>Playlist completion rate</li></ul></div>\\n        <div><h6>Retention</h6><ul><li>D7 / D30 retention for users who save a session</li></ul></div>\\n        <div><h6>AI quality</h6><ul><li>Playlist acceptance</li><li>Edit rate</li><li>Regeneration rate</li></ul></div>\\n        <div><h6>Guardrails</h6><ul><li>Playlist deletion rate</li><li>Recommendation dissatisfaction</li></ul></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"experiments\\\">\\n      <h2><span class=\\\"num\\\">08</span>Experimentation</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Experiment</th><th>Control</th><th>Treatment</th><th>Primary metric</th></tr></thead>\\n        <tbody>\\n          <tr><td>Save Session existence</td><td>No save-session entry point</td><td>Save Session button</td><td>Session to playlist conversion</td></tr>\\n          <tr><td>Wording</td><td>\\\"Save Session\\\"</td><td>\\\"Create Playlist from This\\\"</td><td>Tap-through rate</td></tr>\\n          <tr><td>Curation method</td><td>Save-all default</td><td>AI-curated default</td><td>Playlist retention / replay rate</td></tr>\\n        </tbody>\\n      </table></div>\\n      <p><strong>Hypothesis:</strong> one-tap saving and AI curation each independently increase the share of sessions converted into playlists, to be confirmed via the experiments above rather than assumed.</p>\\n    </section>\\n\\n    <section id=\\\"risks\\\">\\n      <h2><span class=\\\"num\\\">09</span>Trade-offs &amp; risks</h2>\\n      <ul>\\n        <li><strong>Automation vs. control</strong>: AI curation must stay editable; users should never lose the ability to override it.</li>\\n        <li><strong>Personalisation vs. discovery</strong>: over-personalising saved playlists risks narrowing future recommendations into an echo chamber.</li>\\n        <li><strong>AI quality vs. latency and cost</strong>: richer curation (LLM reasoning over audio features) costs more per playlist and adds latency; the MVP intentionally uses lightweight ordering.</li>\\n        <li><strong>Session scope</strong>: how much of a long session to offer for saving (10 songs vs. the entire session) affects both usefulness and clutter.</li>\\n        <li><strong>Groundedness risk</strong>: AI curation must only ever select from real catalogue and session tracks. This is enforced architecturally, not just by prompting.</li>\\n      </ul>\\n    </section>\\n\\n    <section id=\\\"roadmap\\\">\\n      <h2><span class=\\\"num\\\">10</span>Roadmap</h2>\\n      <div class=\\\"road\\\">\\n        <div class=\\\"road__ph\\\"><b>Phase 1 · MVP</b><p>Session tracking, Save All / Select, duplicate removal, basic ordering.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 2</b><p>AI curation from natural-language intent (\\\"make this chill\\\").</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 3</b><p>Conversational playlist editing.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 4</b><p>Proactive AI music companion, for example \\\"build me a 60-minute playlist for tomorrow's drive,\\\" informed by history, mood and context.</p></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"impact\\\">\\n      <h2><span class=\\\"num\\\">11</span>Business impact</h2>\\n      <p>Where the value would show up, to be quantified post-launch:</p>\\n      <ul>\\n        <li>Higher playlist creation and songs saved per active user</li>\\n        <li>Increased repeat listening and session length via revisited playlists</li>\\n        <li>Higher switching cost as personalised libraries grow</li>\\n        <li>Indirect contribution to retention and premium conversion through stronger perceived personalisation</li>\\n      </ul>\\n    </section>\\n\\n    <section id=\\\"summary\\\">\\n      <h2><span class=\\\"num\\\">12</span>Summary</h2>\\n      <div class=\\\"summary\\\">\\n        <h3>One line</h3>\\n        <p>Designed an AI-assisted feature that converts music-discovery sessions into one-tap playlists, closing the gap between recommendation and collection.</p>\\n\\n        <h3>The 50-word version</h3>\\n        <p>I identified a discovery-to-collection gap in music streaming: users enjoy recommended songs but rarely convert them into playlists. I designed Discovery Session, a feature that tracks recommendation sessions and lets users save or AI-curate them in one tap, backed by a full PRD, metrics tree and experiment plan.</p>\\n\\n        <h3>What this demonstrates</h3>\\n        <ul>\\n          <li>Identified and scoped a discovery-to-collection product gap in music streaming; defined JTBD, personas and a research plan to validate the opportunity.</li>\\n          <li>Designed an AI orchestration layer constrained to a controlled candidate set, eliminating hallucinated recommendations by architecture rather than prompting.</li>\\n          <li>Built a full experimentation and metrics framework, with a North Star, supporting and guardrail metrics, and three A/B test designs, to measure discovery-to-playlist conversion.</li>\\n        </ul>\\n      </div>\\n    </section>\",\"next\":[[\"zomato-retention.html\",\"Back to the start\",\"Beyond discounts: an AI retention engine for Zomato →\"],[\"../index.html#work\",\"Back\",\"All five case studies\"]]},{\"slug\":\"pw-learning-coach\",\"title\":\"Physics Wallah: an AI Learning Coach at mass-market scale · Abhinay Tiwari\",\"description\":\"AI product case study: diagnostic profiling on a knowledge graph, a RAG-grounded multimodal doubt solver and slippage detection, with confidence-tiered human escalation.\",\"ogTitle\":\"Physics Wallah: an AI Learning Coach at mass-market scale\",\"ogDesc\":\"Diagnostic profiling on a knowledge graph, a RAG-grounded doubt solver, and confidence-tiered human escalation.\",\"ogImage\":\"https://abhinaytiwari.netlify.app/assets/img/og-pw.png\",\"kicker\":\"Case study 03 · EdTech · RAG &amp; knowledge graphs\",\"h1\":\"Affordable, personalised, <em>at scale</em>\",\"sub\":\"Affordable education can reach millions of students, but personalisation has historically been expensive. The next edge in exam coaching isn't more content. It's knowing what each student needs to study next.\",\"tags\":[\"RAG grounding\",\"Knowledge graph\",\"Human-in-the-loop\",\"Hallucination guardrails\",\"Learning outcomes\"],\"meta\":[[\"Type\",\"Self-directed AI PM case study\"],[\"Domain\",\"Mass-market exam prep\"],[\"Focus\",\"Personalisation · doubt solving\"],[\"Reading time\",\"~9 minutes\"]],\"toc\":[[\"problem\",\"Scale vs. personalisation\"],[\"landscape\",\"Competitive landscape\"],[\"persona\",\"The at-risk dropper\"],[\"journey\",\"Current vs. future\"],[\"solution\",\"AI Learning Coach\"],[\"hitl\",\"Human-in-the-loop\"],[\"arch\",\"AI architecture\"],[\"risks\",\"Risks &amp; guardrails\"],[\"prd\",\"Product requirements\"],[\"mvp\",\"MVP &amp; prioritisation\"],[\"metrics\",\"Metrics\"],[\"experiments\",\"Experimentation\"],[\"impact\",\"Business impact\"],[\"roadmap\",\"Roadmap\"],[\"summary\",\"Summary\"]],\"prose\":\"<section id=\\\"problem\\\">\\n      <h2><span class=\\\"num\\\">01</span>The problem: scale vs. personalisation</h2>\\n      <p>India's competitive-exam coaching market has a structural trade-off: high-touch coaching can offer individualised support but doesn't scale cheaply; affordable, mass-market platforms reach far more students but historically struggle to personalise at that volume.</p>\\n      <p>Physics Wallah built its position on affordability and reach. The open question this case study explores is whether AI can let a mass-market platform deliver some of the benefits of high-touch coaching, knowing what a student is weak at, what to study next, and when they need help, <strong>without a proportional increase in human cost</strong>.</p>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Problem statement</span>\\n        <p>A student on a mass-market platform has access to hundreds of hours of content and thousands of questions, but often lacks personalised decision support: what to study today, what they're actually weak at, and whether they're on track.</p>\\n      </div>\\n\\n    </section>\\n\\n    <section id=\\\"landscape\\\">\\n      <h2><span class=\\\"num\\\">02</span>Competitive landscape <span style=\\\"font-size:.55em;color:var(--tx-4)\\\">(research questions)</span></h2>\\n      <p>A plausible positioning hypothesis for each platform:</p>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Platform</th><th>Hypothesised positioning</th></tr></thead>\\n        <tbody>\\n          <tr><td>Physics Wallah</td><td>Affordability + mass scale + strong content and community</td></tr>\\n          <tr><td>Allen</td><td>Structured, exam-oriented rigour; established offline/test ecosystem</td></tr>\\n          <tr><td>Unacademy</td><td>Large educator marketplace; flexibility of teacher choice</td></tr>\\n          <tr><td>Vedantu</td><td>Interactive live-class model; real-time engagement</td></tr>\\n        </tbody>\\n      </table></div>\\n      <p><strong>Dimensions to validate via primary sources:</strong> affordability, content scale, teacher choice, structured curriculum, doubt resolution, personalisation, test ecosystem, offline presence, community, AI capabilities and retention mechanisms. Where current evidence isn't available, the cell is marked <em>\\\"requires validation\\\"</em> rather than guessed.</p>\\n    </section>\\n\\n    <section id=\\\"persona\\\">\\n      <h2><span class=\\\"num\\\">03</span>Primary user: the at-risk JEE/NEET dropper</h2>\\n      <p>This persona is prioritised because droppers face the highest stakes with the least slack: they've already attempted the exam once, have known <em>and unknown</em> gaps, and are highly sensitive to falling behind schedule.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Profile trait</th><th>Detail</th></tr></thead>\\n        <tbody>\\n          <tr><td>Prior attempt</td><td>Has already sat the exam at least once</td></tr>\\n          <tr><td>Knowledge state</td><td>Mix of solid topics and significant weak areas</td></tr>\\n          <tr><td>Behaviour</td><td>Inconsistent lecture-watching, inconsistent test performance</td></tr>\\n          <tr><td>Core pain</td><td>Doesn't know what to study next or whether they're on track</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"pquote\\\">\\\"I have hundreds of hours of content and thousands of questions, but I don't know what I should study today, what I'm actually weak at, or whether I'm on track for my target score.\\\"</div>\\n      <p>The problem is <strong>too much content with too little personalisation</strong>: not too little content. That distinction changes what you build.</p>\\n    </section>\\n\\n    <section id=\\\"journey\\\">\\n      <h2><span class=\\\"num\\\">04</span>User journey: current vs. future</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Current state</th><th>Future state, AI Learning Coach</th></tr></thead>\\n        <tbody>\\n          <tr><td>Enrol → choose batch → attend lectures</td><td>Enrol → diagnostic assessment → AI learning profile</td></tr>\\n          <tr><td>Homework → tests → see score</td><td>Personal daily study plan → AI doubt solver</td></tr>\\n          <tr><td>Manually find weak areas</td><td>Continuous assessment → automatic weakness detection</td></tr>\\n          <tr><td>Decide what to study, ask doubts, repeat</td><td>Plan adapts automatically; teacher intervenes when AI flags real risk</td></tr>\\n        </tbody>\\n      </table></div>\\n      <p><strong>Key current-state friction:</strong> generic schedules, delayed doubt resolution, difficulty self-diagnosing root weaknesses, and poor prioritisation, all of which compound as a student falls further behind.</p>\\n    </section>\\n\\n    <section id=\\\"solution\\\">\\n      <h2><span class=\\\"num\\\">05</span>The solution: AI Learning Coach</h2>\\n      <p>Positioned as a 24/7 personalised academic operating system, and explicitly <strong>not a replacement for teachers</strong>. It answers five questions for every student: What should I study? What am I weak at? What should I practise? Am I on track? When do I need human help?</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Feature</th><th>What it does</th></tr></thead>\\n        <tbody>\\n          <tr><td>Diagnostic + Learning Profile</td><td>Topic-level mastery map from a diagnostic test plus performance history</td></tr>\\n          <tr><td>AI Study Plan</td><td>A specific daily plan (topic, duration, question count) that adapts to progress and fatigue</td></tr>\\n          <tr><td>Multimodal Doubt Solver</td><td>Student photographs a question; AI extracts, classifies and explains it</td></tr>\\n          <tr><td>Exam Readiness Score</td><td>Predicts topic-level risk and overall readiness, not just a raw percentage</td></tr>\\n          <tr><td>Slippage Detection</td><td>Flags when a student is falling behind syllabus pace, before it compounds</td></tr>\\n          <tr><td>Intervention Engine</td><td>Recommends a concrete recovery sequence, escalating to a teacher if needed</td></tr>\\n          <tr><td>Teacher Copilot</td><td>Surfaces at-risk students with an AI diagnosis so teachers focus where it matters</td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"hitl\\\">\\n      <h2><span class=\\\"num\\\">06</span>Human-in-the-loop design</h2>\\n      <p>The AI should not answer every doubt blindly. Confidence-tiered routing keeps humans in the loop for exactly the cases where AI is least reliable:</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Confidence</th><th>Action</th></tr></thead>\\n        <tbody>\\n          <tr><td>High</td><td>AI answers directly</td></tr>\\n          <tr><td>Medium</td><td>AI answers, with a lightweight verification option</td></tr>\\n          <tr><td>Low</td><td>Routed to a human teacher</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--hyp\\\">\\n        <span class=\\\"callout__label\\\">On thresholds</span>\\n        <p>Any specific confidence cutoff (e.g. 95%) is illustrative only. Real thresholds require calibration against an expert-labelled evaluation set before launch, a number picked in a doc is a guess, not a threshold.</p>\\n      </div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">The teacher's role in the future state</span>\\n        <p>AI absorbs first-line doubts, repetition and progress tracking, freeing teachers for complex problems, motivation, strategy and high-risk students, <strong>increasing teacher leverage rather than replacing them</strong>.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"arch\\\">\\n      <h2><span class=\\\"num\\\">07</span>AI architecture</h2>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Student events</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Data platform</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Feature store</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Recommendation engine</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">AI orchestrator</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Student + teacher experience</span><span class=\\\"flow__arw\\\">↺</span>\\n        <span class=\\\"flow__node\\\">Model evaluation</span>\\n      </div>\\n\\n      <h3>Why a knowledge graph + RAG, not a freeform LLM</h3>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Subject</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Chapter</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Concept</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Sub-concept</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Question</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Common error</span>\\n      </div>\\n      <p>A knowledge graph lets the system locate <em>exactly</em> which sub-concept a student is weak in, Physics → Mechanics → Rotational Motion → Moment of Inertia, rather than reporting \\\"you're weak at Physics.\\\" The doubt solver retrieves from approved course material, notes and question banks (RAG) rather than letting the LLM invent explanations, which matters when a wrong formula has real academic consequences.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Layer</th><th>Used for</th></tr></thead>\\n        <tbody>\\n          <tr><td>Traditional ML / rules</td><td>Completion tracking, score calculation, slippage detection, difficulty calibration</td></tr>\\n          <tr><td>LLM (RAG-grounded)</td><td>Explaining free-form doubts, personalised explanations, summarising learning history</td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"risks\\\">\\n      <h2><span class=\\\"num\\\">08</span>Risks &amp; guardrails</h2>\\n      <ul>\\n        <li><strong>Hallucination</strong>: a wrong formula or explanation; mitigated by RAG grounding and confidence-based escalation.</li>\\n        <li><strong>Dependency</strong>: students may stop reasoning independently if answers are handed over too readily. The solver should default to explaining <em>concepts</em>, not just final answers.</li>\\n        <li><strong>Misdiagnosis</strong>: the system may mislabel a weakness; teacher review and student-reported corrections act as a check.</li>\\n        <li><strong>Bias</strong>: different student groups could receive uneven support quality; requires evaluation segmented by cohort, not just in aggregate.</li>\\n        <li><strong>Privacy</strong>: performance and doubt data are sensitive and require strict access controls and audit logging.</li>\\n      </ul>\\n    </section>\\n\\n    <section id=\\\"prd\\\">\\n      <h2><span class=\\\"num\\\">09</span>Product requirements</h2>\\n      <div class=\\\"split\\\">\\n        <div>\\n          <h6>Goals</h6>\\n          <ul>\\n            <li>Give every student a clear, personalised answer to \\\"what should I study next?\\\"</li>\\n            <li>Detect falling-behind students early enough to intervene before it compounds</li>\\n            <li>Increase teacher leverage rather than replace teacher judgement</li>\\n          </ul>\\n        </div>\\n        <div>\\n          <h6>Non-goals (v1)</h6>\\n          <ul>\\n            <li>A fully autonomous AI tutor with no human escalation path</li>\\n            <li>Promising a specific exam score or outcome</li>\\n            <li>Replacing structured live or recorded teaching content</li>\\n          </ul>\\n        </div>\\n      </div>\\n\\n      <h3>Representative user stories</h3>\\n      <ul>\\n        <li>As a <strong>dropper</strong>, I want to know exactly which sub-topics I'm weakest in, not just an overall percentage.</li>\\n        <li>As a <strong>student</strong>, I want a specific daily plan, not just a chapter-level schedule.</li>\\n        <li>As a <strong>student</strong>, I want to photograph a doubt and get an <em>explained</em> solution, not just an answer.</li>\\n        <li>As a <strong>student falling behind</strong>, I want to be alerted before a test reveals it.</li>\\n        <li>As a <strong>teacher</strong>, I want an AI-prioritised list of at-risk students with a suggested diagnosis.</li>\\n      </ul>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Accuracy</h6><ul><li>Doubt-solver answers validated against an expert-labelled benchmark before launch</li></ul></div>\\n        <div><h6>Latency</h6><ul><li>Study-plan and doubt-solver responses in seconds, not minutes</li></ul></div>\\n        <div><h6>Privacy</h6><ul><li>Student performance and doubt history access-controlled and audit-logged</li></ul></div>\\n        <div><h6>Accessibility</h6><ul><li>Works on low-bandwidth connections and lower-end devices, non-negotiable for a mass-market base</li></ul></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"mvp\\\">\\n      <h2><span class=\\\"num\\\">10</span>MVP &amp; prioritisation</h2>\\n      <h3>MVP scope</h3>\\n      <ul>\\n        <li>Diagnostic test + topic-level Learning Profile</li>\\n        <li>AI Doubt Solver (text + image input) with confidence-based escalation</li>\\n        <li>Basic recommended-practice suggestions</li>\\n        <li>Simple progress dashboard for students and teachers</li>\\n      </ul>\\n      <p>Full adaptive study planning, slippage detection and the teacher copilot are valuable but depend on the diagnostic and doubt-solver data pipeline existing first, deferred rather than built in parallel.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Feature</th><th>Impact</th><th>Effort</th><th>Priority</th></tr></thead>\\n        <tbody>\\n          <tr><td>Diagnostic + Learning Profile</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>AI Doubt Solver</td><td>High</td><td>High</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Basic practice recommendations</td><td>Medium</td><td>Low</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Adaptive study planner</td><td>High</td><td>High</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Slippage detection</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Teacher copilot</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--p3\\\">Phase 3</span></td></tr>\\n          <tr><td>AI voice tutor</td><td>Medium</td><td>High</td><td><span class=\\\"pri pri--later\\\">Later</span></td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"metrics\\\">\\n      <h2><span class=\\\"num\\\">11</span>Metrics</h2>\\n      <div class=\\\"nstar\\\">\\n        <span>North Star</span>\\n        <strong>% of active students demonstrating measurable topic-mastery improvement per study cycle</strong>\\n        <p>A learning-<em>outcome</em> metric, not an engagement one. Engagement alone can mask a student who is busy but not improving, which is precisely the failure mode this product exists to fix.</p>\\n      </div>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Learning</h6><ul><li>Concept mastery change</li><li>Test-score improvement</li><li>Error reduction</li><li>Completion rate</li></ul></div>\\n        <div><h6>AI quality</h6><ul><li>Doubt-solver accuracy</li><li>Teacher-agreement rate</li><li>Escalation rate</li><li>Explanation quality rating</li></ul></div>\\n        <div><h6>Engagement</h6><ul><li>Daily active learners</li><li>Study sessions</li><li>Practice questions attempted</li></ul></div>\\n        <div><h6>Retention</h6><ul><li>D7 / D30 retention</li><li>Course completion</li><li>Renewal rate</li></ul></div>\\n        <div><h6>Business</h6><ul><li>Paid conversion</li><li>Renewal, churn</li><li>Customer lifetime value</li></ul></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"experiments\\\">\\n      <h2><span class=\\\"num\\\">12</span>Experimentation</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Experiment</th><th>Control</th><th>Treatment</th><th>Primary metric</th></tr></thead>\\n        <tbody>\\n          <tr><td>Doubt resolution</td><td>Traditional doubt queue</td><td>AI Doubt Solver</td><td>Resolution time + accuracy</td></tr>\\n          <tr><td>Study planning</td><td>Generic weekly schedule</td><td>AI personalised daily plan</td><td>Plan adherence + score improvement</td></tr>\\n          <tr><td>Early intervention</td><td>No slippage alert</td><td>Slippage alert + recovery plan</td><td>Recovery rate from falling behind</td></tr>\\n          <tr><td>Teacher tooling</td><td>Standard dashboard</td><td>AI-prioritised teacher dashboard</td><td>Teacher time saved + student improvement</td></tr>\\n        </tbody>\\n      </table></div>\\n      \\n    </section>\\n\\n    <section id=\\\"impact\\\">\\n      <h2><span class=\\\"num\\\">13</span>Business impact &amp; unit economics</h2>\\n      <div class=\\\"formula\\\">Contribution Margin <span>=</span> Revenue/Student <span>−</span> Content <span>−</span> Teacher <span>−</span> AI Inference <span>−</span> Support <span>−</span> Acquisition</div>\\n      <p>The strategic hypothesis: AI can lower the marginal cost of first-line academic support such as doubt resolution and progress tracking, while improving retention through visible learning progress.</p>\\n\\n      <h3>The retention loop</h3>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Study</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Practice</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Improvement</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Visible progress</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Motivation</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">More study</span><span class=\\\"flow__arw\\\">↺</span>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"roadmap\\\">\\n      <h2><span class=\\\"num\\\">14</span>Roadmap</h2>\\n      <div class=\\\"road\\\">\\n        <div class=\\\"road__ph\\\"><b>Phase 1 · 0-3 months</b><p>Diagnostic + Learning Profile, AI Doubt Solver, basic practice recommendations.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 2 · 3-8 months</b><p>Adaptive study planner, slippage detection.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 3 · 8-12 months</b><p>Teacher copilot with AI-prioritised at-risk lists.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 4 · 12-18 months</b><p>Conversational AI Exam Coach, e.g. \\\"90 days to improve my score\\\" goal planning.</p></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"summary\\\">\\n      <h2><span class=\\\"num\\\">15</span>Summary</h2>\\n      <div class=\\\"summary\\\">\\n        <h3>One line</h3>\\n        <p>Designed an AI Learning Coach strategy that lets a mass-market exam-prep platform deliver personalised study plans, doubt resolution and early intervention at a fraction of human-only tutoring cost.</p>\\n\\n        <h3>The 50-word version</h3>\\n        <p>Affordable exam-prep platforms reach millions but struggle to personalise at scale. I designed an AI Learning Coach, diagnostic profiling, adaptive study plans, a RAG-grounded multimodal doubt solver, and slippage detection with teacher escalation, to close that gap while keeping teachers focused on where human judgement matters most.</p>\\n\\n        <h3>What this demonstrates</h3>\\n        <ul>\\n          <li>Designed an AI product strategy giving a mass-market EdTech platform student-level personalisation (diagnostics, adaptive plans, slippage detection) at a fraction of human-tutoring marginal cost.</li>\\n          <li>Proposed a RAG-grounded, confidence-tiered architecture separating ML (tracking and prediction), LLM (explanation and tutoring) and human escalation by task suitability.</li>\\n          <li>Developed a learning-outcome-first metrics framework and experiment plan (North Star plus four A/B tests) to validate AI-driven retention impact before scaling.</li>\\n        </ul>\\n      </div>\\n    </section>\",\"next\":[[\"youtube-creator-os.html\",\"Next case study\",\"The Creator AI OS: rebuilding YouTube Studio around AI →\"],[\"rapido-mobility.html\",\"Previous\",\"← Rapido: how bike taxis crack India's last-mile problem\"]]},{\"slug\":\"rapido-mobility\",\"title\":\"Rapido: an AI Marketplace Optimizer for bike taxis · Abhinay Tiwari\",\"description\":\"AI product case study: demand forecasting, ETA and cancellation prediction to improve marketplace liquidity and captain earnings on a two-wheeler mobility network.\",\"ogTitle\":\"Rapido: an AI Marketplace Optimizer for bike taxis\",\"ogDesc\":\"Demand forecasting, ETA and cancellation prediction to improve marketplace liquidity and captain earnings.\",\"ogImage\":\"https://abhinaytiwari.netlify.app/assets/img/og-rapido.png\",\"kicker\":\"Case study 02 · Two-sided marketplace\",\"h1\":\"How bike taxis crack India's <em>last-mile problem</em>\",\"sub\":\"India has one of the largest privately owned two-wheeler fleets in the world, mostly idle for large parts of the day. Rapido's opportunity was to turn that into an affordable, scalable mobility network. The AI question is how you keep it liquid.\",\"tags\":[\"Demand forecasting\",\"Marketplace liquidity\",\"Unit economics\",\"Regulatory risk\",\"RICE prioritisation\"],\"meta\":[[\"Type\",\"Self-directed AI PM case study\"],[\"Domain\",\"Urban mobility marketplace\"],[\"Focus\",\"Liquidity · matching · ETA\"],[\"Reading time\",\"~10 minutes\"]],\"toc\":[[\"gap\",\"The last-mile gap\"],[\"why\",\"Why bike taxis\"],[\"users\",\"Users &amp; journeys\"],[\"liquidity\",\"Liquidity\"],[\"metrics\",\"Core metrics\"],[\"evolution\",\"Evolution &amp; regulation\"],[\"competition\",\"Competitive landscape\"],[\"economics\",\"Unit economics\"],[\"ai\",\"The AI opportunity\"],[\"arch\",\"Architecture &amp; evaluation\"],[\"mvp\",\"AI MVP &amp; prioritisation\"],[\"experiments\",\"Experimentation\"],[\"roadmap\",\"Roadmap &amp; moat\"],[\"recommendation\",\"Recommendation\"],[\"summary\",\"Summary\"]],\"prose\":\"<section id=\\\"gap\\\">\\n      <h2><span class=\\\"num\\\">01</span>India's last-mile mobility gap</h2>\\n      <p>India's urban mobility problem sits between two extremes: auto-rickshaws and cabs are relatively expensive and often unavailable on demand, while public transit rarely covers the final 3-10 km between a transit stop and a destination. Meanwhile, the country's enormous two-wheeler fleet sits idle for most of the day.</p>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Rider problems</h6><ul><li>Costly short rides</li><li>Long waits</li><li>Unpredictable ETAs</li><li>Poor last-mile connectivity</li></ul></div>\\n        <div><h6>Captain problems</h6><ul><li>Idle vehicle time</li><li>Unpredictable income</li><li>Fuel cost</li><li>Low customer reach</li></ul></div>\\n        <div><h6>Platform problems</h6><ul><li>Balancing supply and demand</li><li>Low fares vs. attractive earnings</li><li>Positive unit economics</li></ul></div>\\n      </div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Core thesis</span>\\n        <p>Two-wheelers are structurally well-suited to Indian traffic. They navigate congestion, need no parking search and are cheap to operate, making bike taxis a natural fit for short urban trips that are currently overserved by expensive cabs and underserved by unreliable autos.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"why\\\">\\n      <h2><span class=\\\"num\\\">02</span>Why bike taxis</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Factor</th><th>Bike taxi</th><th>Auto</th><th>Cab</th></tr></thead>\\n        <tbody>\\n          <tr><td>Cost (3-10 km)</td><td>Lowest</td><td>Medium</td><td>Highest</td></tr>\\n          <tr><td>Traffic navigation</td><td>Best, lane-splits, avoids jams</td><td>Moderate</td><td>Weakest in congestion</td></tr>\\n          <tr><td>Parking / pickup friction</td><td>Minimal</td><td>Moderate</td><td>High in dense areas</td></tr>\\n          <tr><td>Capacity</td><td>1 rider</td><td>2-3 riders</td><td>3-4 riders</td></tr>\\n          <tr><td>Best-fit segment</td><td>Solo, price- and time-sensitive</td><td>Small groups, moderate budget</td><td>Comfort-seeking, longer trips</td></tr>\\n        </tbody>\\n      </table></div>\\n      <p>The strategic sweet spot is the <strong>3-10 km urban trip</strong>: too short to justify a cab's cost and wait, too far or too congested for an auto to feel efficient, and exactly the range where a bike taxi's speed-through-traffic advantage compounds.</p>\\n    </section>\\n\\n    <section id=\\\"users\\\">\\n      <h2><span class=\\\"num\\\">03</span>Users &amp; journeys</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Persona</th><th>Profile</th><th>Core need</th></tr></thead>\\n        <tbody>\\n          <tr><td>Daily Commuter</td><td>Urban professional or student; cost- and time-sensitive; repeat weekday user</td><td>Fast, predictable, cheap commute</td></tr>\\n          <tr><td>Captain</td><td>Owns a two-wheeler; full- or part-time income</td><td>Predictable earnings <em>per hour</em>, not just per ride</td></tr>\\n          <tr><td>Occasional Rider</td><td>Low frequency, price-sensitive, situational</td><td>Availability when other options fail</td></tr>\\n          <tr><td>Ops Manager</td><td>Manages a city or zone</td><td>Tools to see and act on liquidity gaps in real time</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <h3>Rider journey, where the friction sits</h3>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Open app</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Destination</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Price</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Captain search</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Accept</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Arrival</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Ride</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Pay / rate</span>\\n      </div>\\n      <ul>\\n        <li><strong>Captain search</strong>: the highest-anxiety step; the uncertainty is whether a captain will be found <em>at all</em>.</li>\\n        <li><strong>Captain arrives</strong>: ETA <em>reliability</em> drives trust more than ETA speed alone.</li>\\n        <li><strong>Payment / rating</strong>: friction here suppresses repeat usage more than it appears to.</li>\\n      </ul>\\n\\n      <h3>Captain journey, the underused moment</h3>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Go online</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Request</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Accept</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Travel to pickup</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Complete</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Payment</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Choose next location</span>\\n      </div>\\n      <p><strong>\\\"Choose next location\\\"</strong> is the moment nobody instruments. Guidance here directly affects idle time and next-ride probability, which is why supply positioning made the AI MVP.</p>\\n    </section>\\n\\n    <section id=\\\"liquidity\\\">\\n      <h2><span class=\\\"num\\\">04</span>Two-sided marketplace &amp; liquidity</h2>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">More captains</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Better availability</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Lower wait</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Better experience</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">More riders</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Higher earnings</span><span class=\\\"flow__arw\\\">↺</span>\\n      </div>\\n      <p><strong>Liquidity</strong>: the platform's ability to reliably match supply and demand in real time, is the foundation everything else depends on. It's driven by supply density, demand density, match rate and time-to-match, and it flows directly into wait time, completion rate, satisfaction and repeat usage.</p>\\n\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node flow__node--hot\\\">Liquidity</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Match rate</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Waiting time</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Ride completion</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Satisfaction</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Repeat usage</span>\\n      </div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">MVP principle</span>\\n        <p>The first version should optimise for liquidity and completed rides, reliable matching, tracking and payment, rather than breadth of features. <strong>A polished app with unreliable matching fails; a bare-bones app with high liquidity succeeds.</strong></p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"metrics\\\">\\n      <h2><span class=\\\"num\\\">05</span>Core metrics</h2>\\n      <div class=\\\"nstar\\\">\\n        <span>North Star</span>\\n        <strong>Completed Rides per Active Supply Hour</strong>\\n        <p>It captures both marketplace health (matching is working) and captain value (utilisation), rather than optimising rides or supply growth in isolation, where either can be inflated at the other's expense.</p>\\n      </div>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Rider</h6><ul><li>Search-to-book conversion</li><li>Wait time</li><li>Cancellation rate</li><li>Repeat rate, NPS</li></ul></div>\\n        <div><h6>Captain</h6><ul><li>Acceptance rate</li><li>Earnings / hour</li><li>Utilisation</li><li>Online hours, retention</li></ul></div>\\n        <div><h6>Marketplace</h6><ul><li>Match rate</li><li>Fulfilment rate</li><li>Supply-demand ratio</li><li>ETA accuracy</li><li>Avg. pickup distance</li></ul></div>\\n        <div><h6>Business</h6><ul><li>GMV</li><li>Contribution margin</li><li>CAC, LTV</li><li>Incentive cost</li></ul></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"evolution\\\">\\n      <h2><span class=\\\"num\\\">06</span>Product evolution &amp; regulatory reality</h2>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Bike taxi</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Bike + auto</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Cabs</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Delivery / logistics</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Multimodal platform</span>\\n      </div>\\n      <p>Expanding beyond bikes serves several goals at once: it raises captain utilisation (a captain idle for bike rides may accept auto, cab or delivery jobs), diversifies revenue, deepens retention through one app for more trip types, and reduces exposure to any single vehicle category's regulatory risk.</p>\\n\\n      <div class=\\\"callout callout--risk\\\">\\n        <span class=\\\"callout__label\\\">Regulatory reality</span>\\n        <p>Bike taxi legality in India varies by state and has been contested in several jurisdictions, commercial vs. private vehicle permit rules, licensing and insurance requirements differ by state and have changed over time. This is treated here as a <strong>live, evolving constraint requiring current, city-specific verification</strong>, not a settled fact assumed for the rest of the analysis.</p>\\n        <p>It affects product strategy directly: which cities can launch bike taxis at all, how supply must be onboarded (permits, insurance, helmets), and how much unit economics can lean on this vehicle category long-term, reinforcing the strategic case for multimodal diversification.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"competition\\\">\\n      <h2><span class=\\\"num\\\">07</span>Competitive landscape</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Dimension</th><th>Rapido</th><th>Uber</th><th>Ola</th></tr></thead>\\n        <tbody>\\n          <tr><td>Core vehicle focus</td><td>Bike-first, expanding multimodal</td><td>Cab-first, multimodal globally</td><td>Cab-first, multimodal in India</td></tr>\\n          <tr><td>Target segment</td><td>Price- and time-sensitive short trips</td><td>Broad, comfort + reliability</td><td>Broad, price + comfort</td></tr>\\n          <tr><td>Supply model</td><td>Two-wheeler-heavy, asset-light</td><td>Asset-light, car-heavy</td><td>Asset-light, car-heavy</td></tr>\\n        </tbody>\\n      </table></div>\\n      <p>No platform is asserted as universally better. Relative strength plausibly varies by city, vehicle category and rider segment, and would require current market research to state with confidence.</p>\\n    </section>\\n\\n    <section id=\\\"economics\\\">\\n      <h2><span class=\\\"num\\\">08</span>Unit economics <span style=\\\"font-size:.55em;color:var(--tx-4)\\\">(illustrative)</span></h2>\\n      <p>A constructed example, to show the <em>shape</em> of a bike-taxi ride's economics.</p>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Line item</th><th>Illustrative ₹100 ride</th></tr></thead>\\n        <tbody>\\n          <tr><td>Captain earnings</td><td>₹78-82</td></tr>\\n          <tr><td>Platform revenue (take rate)</td><td>₹18-22</td></tr>\\n          <tr><td>Payment processing</td><td>−₹1-2</td></tr>\\n          <tr><td>Insurance / safety</td><td>−₹1-2</td></tr>\\n          <tr><td>Support cost (amortised)</td><td>−₹1</td></tr>\\n          <tr><td>Incentive cost (variable)</td><td>−₹3-8 · city- and period-dependent</td></tr>\\n          <tr><td><strong>Illustrative contribution margin</strong></td><td><strong>₹5-12</strong></td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"formula\\\">Captain Net Earnings <span>=</span> Ride Revenue <span>+</span> Incentives <span>−</span> Fuel <span>−</span> Maintenance <span>−</span> Platform Fees</div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Key insight</span>\\n        <p>Captain earnings <em>per hour</em> matter more than simply adding more captains. Too much supply relative to demand drives down individual utilisation and earnings, which increases churn even as raw fleet size grows, a growth metric that quietly destroys the thing it's measuring.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"ai\\\">\\n      <h2><span class=\\\"num\\\">09</span>The AI opportunity</h2>\\n      <p>AI's role is to make the marketplace more liquid and more efficient at scale, forecasting demand, matching better than proximity alone, predicting problems before they happen, and personalising incentives instead of spending broadly.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>AI feature</th><th>What it does</th><th>Best technique</th></tr></thead>\\n        <tbody>\\n          <tr><td>Demand forecasting</td><td>Predicts demand by location/time from historical plus weather, event and traffic signals</td><td>Traditional ML (time-series / regression)</td></tr>\\n          <tr><td>Intelligent matching</td><td>Matches on completion probability, not just proximity, the closest captain isn't always the best one</td><td>ML + optimisation</td></tr>\\n          <tr><td>ETA prediction</td><td>Bike-specific ETA from GPS, traffic and road type</td><td>Traditional ML</td></tr>\\n          <tr><td>Cancellation prediction</td><td>Flags high-risk assignments for proactive reassignment or incentive</td><td>Traditional ML (classification)</td></tr>\\n          <tr><td>Captain AI Copilot</td><td>Suggests repositioning toward predicted demand</td><td>ML forecast + rules; avoids unsafe / overwork nudges</td></tr>\\n          <tr><td>Personalised incentives</td><td>Targets amount and timing per captain by need and churn risk</td><td>ML + optimisation</td></tr>\\n          <tr><td>Safety intelligence</td><td>Flags route deviation and GPS anomalies for human review</td><td>ML anomaly detection + human escalation</td></tr>\\n          <tr><td>Fraud detection</td><td>Flags GPS spoofing, fake rides, incentive abuse</td><td>ML risk scoring</td></tr>\\n          <tr><td>Customer support</td><td>Auto-resolves low-risk issues, escalates high-risk ones</td><td>LLM classification + human escalation</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--decision\\\">\\n        <span class=\\\"callout__label\\\">ML vs. LLM</span>\\n        <p>Forecasting, matching, ETA, cancellation and fraud are numerical and structured problems best served by traditional ML and optimisation. LLMs add value where language understanding matters, support, the captain assistant, natural-language interfaces, not as a universal replacement for prediction models.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"arch\\\">\\n      <h2><span class=\\\"num\\\">10</span>AI architecture &amp; evaluation</h2>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Rider / captain apps</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Event streaming</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Data platform</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Feature store</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Demand · ETA · Matching · Safety models</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Decision engine</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Apps</span><span class=\\\"flow__arw\\\">↺</span>\\n        <span class=\\\"flow__node\\\">Monitoring / retraining</span>\\n      </div>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Model</th><th>Key evaluation metrics</th></tr></thead>\\n        <tbody>\\n          <tr><td>Demand forecast</td><td>MAE, RMSE, forecast accuracy by zone and time</td></tr>\\n          <tr><td>ETA</td><td>MAE, P90 error</td></tr>\\n          <tr><td>Cancellation</td><td>Precision, recall, F1</td></tr>\\n          <tr><td>Fraud</td><td>Precision, false-positive rate</td></tr>\\n          <tr><td>Matching</td><td>Completion rate, time-to-match</td></tr>\\n        </tbody>\\n      </table></div>\\n      <p>Evaluation runs offline against historical backtests before any online A/B rollout. Production monitoring tracks model drift, latency, feature drift and, critically, <strong>business impact</strong>, not just model accuracy in isolation.</p>\\n\\n      <div class=\\\"callout callout--risk\\\">\\n        <span class=\\\"callout__label\\\">Safety guardrails</span>\\n        <p>High-risk actions, fraud flags, safety alerts, pricing changes, route through human review rather than fully automated decisions. Riders and captains can appeal automated decisions. Predictions and interventions are logged for audit and fairness review.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"mvp\\\">\\n      <h2><span class=\\\"num\\\">11</span>AI MVP &amp; prioritisation</h2>\\n      <p>The recommended AI MVP, an <strong>AI Marketplace Optimizer</strong>: starts with the four capabilities that most directly improve the North Star: demand forecasting, ETA prediction, cancellation prediction and supply positioning. Matching, personalised incentives and safety/fraud AI depend on this foundation and follow later.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Feature</th><th>Impact</th><th>Effort</th><th>Priority</th></tr></thead>\\n        <tbody>\\n          <tr><td>Demand forecasting</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>ETA prediction</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Cancellation prediction</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Supply positioning</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>AI matching</td><td>High</td><td>High</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Personalised incentives</td><td>High</td><td>High</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Safety intelligence</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Fraud detection</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>AI support</td><td>Medium</td><td>Low</td><td><span class=\\\"pri pri--p3\\\">Phase 1-2</span></td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"experiments\\\">\\n      <h2><span class=\\\"num\\\">12</span>Experimentation</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Experiment</th><th>Control</th><th>Treatment</th><th>Primary metric</th></tr></thead>\\n        <tbody>\\n          <tr><td>Demand-aware repositioning</td><td>No repositioning guidance</td><td>AI repositioning suggestion</td><td>Match rate in predicted-gap zones</td></tr>\\n          <tr><td>ETA display</td><td>Static ETA estimate</td><td>ML-predicted ETA</td><td>ETA accuracy, cancellation rate</td></tr>\\n          <tr><td>Cancellation prevention</td><td>No intervention</td><td>Proactive reassignment on high risk</td><td>Completed rides saved</td></tr>\\n          <tr><td>Personalised incentives</td><td>Flat incentive to all</td><td>AI-targeted incentive</td><td>Incremental rides per ₹ incentive</td></tr>\\n          <tr><td>AI matching</td><td>Proximity-based matching</td><td>Completion-probability matching</td><td>Completion rate, wait time</td></tr>\\n          <tr><td>AI support</td><td>Human-only support queue</td><td>AI auto-resolution + escalation</td><td>Time to resolution</td></tr>\\n        </tbody>\\n      </table></div>\\n      \\n    </section>\\n\\n    <section id=\\\"roadmap\\\">\\n      <h2><span class=\\\"num\\\">13</span>Roadmap &amp; competitive moat</h2>\\n      <div class=\\\"road\\\">\\n        <div class=\\\"road__ph\\\"><b>Phase 1 · 0-3 months</b><p>Data infrastructure, demand forecasting, ETA intelligence.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 2 · 3-9 months</b><p>AI matching, cancellation prediction, supply positioning, incentive optimisation.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 3 · 9-18 months</b><p>Captain AI Copilot; early AI Mobility Agent recommending mode, price and ETA.</p></div>\\n      </div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">The moat</span>\\n        <p>The durable advantage isn't any single model. It's the compounding loop of proprietary ride data, real-time marketplace signals and feedback tied to actual supply and distribution. <strong>A competitor could buy an LLM; replicating years of city-specific matching and demand data is far harder.</strong></p>\\n      </div>\\n\\n      <p><strong>Future direction:</strong> an AI Mobility Agent that compares bike, auto and cab price and ETA against a stated goal, <em>\\\"I need to reach Sector 17 by 9 AM, affordably\\\"</em>, and books on confirmation. That requires careful design around payment authorisation, safety checks and graceful failure handling before any autonomous booking is allowed.</p>\\n    </section>\\n\\n    <section id=\\\"recommendation\\\">\\n      <h2><span class=\\\"num\\\">14</span>Final recommendation</h2>\\n      <ul>\\n        <li><strong>Build</strong> an AI Marketplace Optimizer (demand forecasting → ETA → cancellation prediction → supply positioning) before broader AI features.</li>\\n        <li><strong>Why:</strong> these four levers most directly move the North Star and don't require matching or personalisation infrastructure to already exist.</li>\\n        <li><strong>For:</strong> riders (lower wait, more reliable ETA) and captains (better utilisation and earnings per hour).</li>\\n        <li><strong>Measured by:</strong> Completed Rides per Active Supply Hour, with wait time, cancellation rate and captain earnings/hour as supporting guardrails.</li>\\n        <li><strong>Biggest risks:</strong> regulatory uncertainty on bike taxis city-by-city, and incentive spend growing faster than genuine retention gains.</li>\\n      </ul>\\n    </section>\\n\\n    <section id=\\\"summary\\\">\\n      <h2><span class=\\\"num\\\">15</span>Summary</h2>\\n      <div class=\\\"summary\\\">\\n        <h3>One line</h3>\\n        <p>Designed an AI Marketplace Optimizer strategy for Rapido's bike-taxi network, using demand forecasting, ETA prediction and cancellation prediction to improve marketplace liquidity and captain earnings.</p>\\n\\n        <h3>The 50-word version</h3>\\n        <p>India's last-mile mobility gap sits between expensive cabs and unreliable autos. I analysed Rapido's two-wheeler marketplace model and designed an AI Marketplace Optimizer (demand forecasting, ETA and cancellation prediction, and personalised incentives) to improve liquidity and captain earnings, backed by a metrics tree and experiment plan.</p>\\n\\n        <h3>What this demonstrates</h3>\\n        <ul>\\n          <li>Analysed a two-sided mobility marketplace and designed an AI Marketplace Optimizer prioritising demand forecasting, ETA and cancellation prediction to improve completed-rides-per-supply-hour.</li>\\n          <li>Designed a matching and incentive strategy shifting from proximity-based assignment and blanket discounts to completion-probability matching and personalised, ROI-measured incentives.</li>\\n          <li>Built a metrics tree, RICE prioritisation and a six-experiment testing plan to validate AI-driven liquidity improvements before scaling.</li>\\n        </ul>\\n      </div>\\n    </section>\",\"next\":[[\"pw-learning-coach.html\",\"Next case study\",\"Physics Wallah: personalisation at mass-market scale →\"],[\"zomato-retention.html\",\"Previous\",\"← Beyond discounts: an AI retention engine for Zomato\"]]},{\"slug\":\"youtube-creator-os\",\"title\":\"The Creator AI OS: rebuilding YouTube Studio around AI · Abhinay Tiwari\",\"description\":\"AI product case study: an Analytics Copilot, Idea Engine and Thumbnail/Title Lab as the MVP for turning YouTube from an upload destination into a creator operating system.\",\"ogTitle\":\"The Creator AI OS: rebuilding YouTube Studio around AI\",\"ogDesc\":\"An Analytics Copilot, Idea Engine and Thumbnail Lab as the MVP for closing the creator data-to-action gap.\",\"ogImage\":\"https://abhinaytiwari.netlify.app/assets/img/og-youtube.png\",\"kicker\":\"Case study 04 · Creator tools · Platform strategy\",\"h1\":\"The Creator <em>AI OS</em>\",\"sub\":\"YouTube should evolve from a platform where creators upload content into an AI-powered creator operating system that helps them ideate, produce, distribute, understand and monetise.\",\"tags\":[\"RICE prioritisation\",\"Technique selection\",\"Composite North Star\",\"Homogenisation risk\",\"Creator personas\"],\"meta\":[[\"Type\",\"Self-directed AI PM case study\"],[\"Domain\",\"Creator platform\"],[\"Focus\",\"Data-to-action gap\"],[\"Reading time\",\"~8 minutes\"]],\"toc\":[[\"problem\",\"The problem\"],[\"creators\",\"Creators &amp; the journey\"],[\"priority\",\"Pain-point prioritisation\"],[\"vision\",\"Product vision\"],[\"arch\",\"Architecture &amp; technique\"],[\"control\",\"Human control\"],[\"mvp\",\"MVP\"],[\"metrics\",\"Metrics\"],[\"experiments\",\"Experimentation\"],[\"context\",\"Competitive context\"],[\"roadmap\",\"Roadmap\"],[\"summary\",\"Summary\"]],\"prose\":\"<section id=\\\"problem\\\">\\n      <h2><span class=\\\"num\\\">01</span>The problem</h2>\\n      <p>Today's creator has to be a strategist, writer, editor, translator, analyst and salesperson, often stitching together ten different tools around YouTube Studio rather than working within it: ChatGPT for ideas, Canva for thumbnails, a separate editor, a translation tool, a spreadsheet for sponsorships.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Friction area</th><th>Examples</th></tr></thead>\\n        <tbody>\\n          <tr><td>Creation</td><td>Ideation, scripting, editing, thumbnail and title testing, short-form repurposing</td></tr>\\n          <tr><td>Growth &amp; understanding</td><td>Knowing what to make next, interpreting analytics, audience fit</td></tr>\\n          <tr><td>Monetisation &amp; ops</td><td>Sponsorship discovery, localisation, comment management, copyright and likeness protection</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Product thesis</span>\\n        <p>YouTube should evolve from a platform where creators upload content into an AI-powered <strong>creator operating system</strong>: a central intelligence layer for ideation, creation, growth and monetisation, rather than a place creators visit only to publish and check stats.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"creators\\\">\\n      <h2><span class=\\\"num\\\">02</span>Creators &amp; the content journey</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Persona</th><th>Profile</th><th>Core problem</th></tr></thead>\\n        <tbody>\\n          <tr><td>New Creator</td><td>0 to 10K subs, limited budget and skills</td><td>\\\"I don't know what content to make next.\\\"</td></tr>\\n          <tr><td>Growing Creator</td><td>10K to 500K subs, small team</td><td>Ideation, production workload and localisation all at once</td></tr>\\n          <tr><td>Large Creator</td><td>500K+ subs, multi-person team</td><td>Scaling output, international expansion, brand protection</td></tr>\\n          <tr><td>Professional Media Creator</td><td>Podcasts, news, education libraries</td><td>Repurposing and content ops at library scale</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node flow__node--hot\\\">Idea</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Research</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Script</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Record</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Edit</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Thumbnail</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Upload</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Analytics</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Monetisation</span>\\n      </div>\\n      <p>Two stages carry disproportionate friction across all four personas: deciding <strong>what to make next</strong>, and turning raw analytics into a clear <strong>next action</strong>. Both are decision-support problems rather than production problems, which is exactly what makes them well-suited to AI.</p>\\n    </section>\\n\\n    <section id=\\\"priority\\\">\\n      <h2><span class=\\\"num\\\">03</span>Pain-point prioritisation</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Problem</th><th>Frequency</th><th>Impact</th><th>AI leverage</th><th>Priority</th></tr></thead>\\n        <tbody>\\n          <tr><td>Content ideation</td><td>High</td><td>High</td><td>High</td><td><span class=\\\"pri pri--mvp\\\">Top 3</span></td></tr>\\n          <tr><td>Analytics to action gap</td><td>High</td><td>High</td><td>High</td><td><span class=\\\"pri pri--mvp\\\">Top 3</span></td></tr>\\n          <tr><td>Thumbnail / title testing</td><td>High</td><td>Medium</td><td>High</td><td><span class=\\\"pri pri--mvp\\\">Top 3</span></td></tr>\\n          <tr><td>Editing / repurposing</td><td>Medium</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Localisation</td><td>Medium</td><td>High for scaled creators</td><td>High</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Sponsorship matching</td><td>Low</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--p3\\\">Phase 3</span></td></tr>\\n          <tr><td>Comment management</td><td>High</td><td>Low to medium</td><td>Medium</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Identity / likeness protection</td><td>Low but severe</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--p3\\\">Phase 3</span></td></tr>\\n        </tbody>\\n      </table></div>\\n      <p><strong>Top three to solve first:</strong> content ideation, the analytics-to-action gap, and thumbnail/title testing. They are the highest-frequency friction points, need the least new infrastructure (mostly LLM plus existing analytics and computer-vision data), and compound into everything downstream.</p>\\n    </section>\\n\\n    <section id=\\\"vision\\\">\\n      <h2><span class=\\\"num\\\">04</span>Product vision: Creator AI OS</h2>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node flow__node--hot\\\">Creator AI OS</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Ideate</span>\\n        <span class=\\\"flow__node\\\">Create</span>\\n        <span class=\\\"flow__node\\\">Grow</span>\\n        <span class=\\\"flow__node\\\">Monetise</span>\\n      </div>\\n      <p>Each pillar backed by AI, replacing the current patchwork of six or more external tools.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Pillar</th><th>Feature</th><th>What it does</th></tr></thead>\\n        <tbody>\\n          <tr><td>Ideate</td><td>AI Idea Engine</td><td>Recommends next-video topics from the creator's own performance, search demand and competitive gaps</td></tr>\\n          <tr><td>Ideate</td><td>Content Gap Finder</td><td>Surfaces topics the audience wants that the creator hasn't covered</td></tr>\\n          <tr><td>Create</td><td>Creation Copilot</td><td>Turns a one-line idea into a brief, editable script and shot list; the creator stays the decision-maker</td></tr>\\n          <tr><td>Create</td><td>AI Repurposing</td><td>Turns one long-form video into Shorts, clips, captions and a blog or podcast version</td></tr>\\n          <tr><td>Create</td><td>Thumbnail + Title Lab</td><td>Generates and A/B tests variants; optimises for click <em>and</em> satisfaction, not CTR alone</td></tr>\\n          <tr><td>Grow</td><td>Analytics Copilot</td><td>Diagnoses why a video under- or over-performed and recommends a specific next action</td></tr>\\n          <tr><td>Grow</td><td>AI Localisation</td><td>Translation, dubbing with voice preservation, culturally checked subtitles and titles</td></tr>\\n          <tr><td>Grow</td><td>Comment Intelligence</td><td>Summarises comments into themes, sentiment and unanswered questions</td></tr>\\n          <tr><td>Monetise</td><td>Revenue Copilot</td><td>Surfaces sponsorship categories aligned with audience interest and brand safety</td></tr>\\n          <tr><td>Protect</td><td>Creator Identity Protection</td><td>Flags likely face or voice misuse online for creator review, not automatic takedown</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--risk\\\">\\n        <span class=\\\"callout__label\\\">Clickbait guardrail</span>\\n        <p>Title and thumbnail AI is explicitly optimised for click <strong>plus downstream satisfaction</strong> (retention, not-interested rate), never CTR in isolation. Maximising CTR alone rewards clickbait that damages long-term trust and watch time, and the metric would look great the whole time it happened.</p>\\n      </div>\\n\\n      <div class=\\\"callout callout--risk\\\">\\n        <span class=\\\"callout__label\\\">Localisation guardrail</span>\\n        <p>AI dubs and translations pass an automated quality and cultural-context check, then require creator approval before publishing. Creators can edit, correct pronunciation, or reject a dub entirely.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"arch\\\">\\n      <h2><span class=\\\"num\\\">05</span>AI architecture &amp; technique selection</h2>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Creator apps</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Creator Data Platform</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Creator Profile · Content Graph</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">AI Intelligence Layer</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">YouTube Studio</span>\\n      </div>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Technique</th><th>Used for</th></tr></thead>\\n        <tbody>\\n          <tr><td>LLM</td><td>Ideation, scripts, analytics explanations, comment summarisation, creator conversation</td></tr>\\n          <tr><td>Recommendation / ranking</td><td>Content recommendations, topic ranking, sponsor matching</td></tr>\\n          <tr><td>Predictive ML</td><td>Performance prediction, churn and retention risk, audience forecasting</td></tr>\\n          <tr><td>Computer vision</td><td>Thumbnail analysis, video understanding, likeness detection</td></tr>\\n          <tr><td>Speech models</td><td>Transcription, dubbing, voice processing</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--decision\\\">\\n        <span class=\\\"callout__label\\\">Architecture decision</span>\\n        <p>The same discipline applies here as in any AI marketplace: an LLM is not the default tool for numeric prediction (performance, churn) or ranking (recommendations, sponsor matching). Those stay with traditional ML, with the LLM layer reserved for language understanding and generation.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"control\\\">\\n      <h2><span class=\\\"num\\\">06</span>Human control &amp; guardrails</h2>\\n      <div class=\\\"split\\\">\\n        <div>\\n          <h6>AI assists with</h6>\\n          <ul><li>Ideas and scripts</li><li>Analytics summaries</li><li>Comment insights</li><li>Sponsor suggestions</li></ul>\\n        </div>\\n        <div>\\n          <h6>Creator retains control of</h6>\\n          <ul><li>Final content</li><li>Publishing decisions</li><li>Voice and likeness use</li><li>Sponsorship and monetisation choices</li></ul>\\n        </div>\\n      </div>\\n\\n      <ul>\\n        <li><strong>Hallucination</strong>: idea and analytics suggestions are recommendations with visible confidence, not asserted facts.</li>\\n        <li><strong>Homogenisation risk</strong>: if every creator gets similar AI-optimised titles and topics, content converges. Recommendations must be personalised to each creator's own audience data, never a shared global template.</li>\\n        <li><strong>Creator dependency</strong>: tools are framed as copilots that explain their reasoning, so creators build judgement rather than just following prompts.</li>\\n        <li><strong>Deepfake and likeness misuse</strong>: identity protection includes false-positive and false-negative handling, consent checks, and a creator appeals path, not automatic takedowns.</li>\\n        <li><strong>Privacy</strong>: creator analytics and audience data stay within the creator's own account scope; no cross-creator data sharing without consent.</li>\\n        <li><strong>Burnout signal</strong>: the system flags workflow health (a sustained drop in publishing cadence) and offers workflow simplification, without making any psychological diagnosis.</li>\\n      </ul>\\n    </section>\\n\\n    <section id=\\\"mvp\\\">\\n      <h2><span class=\\\"num\\\">07</span>MVP: YouTube Creator Copilot</h2>\\n      <p>Rather than building the full Creator AI OS at once, the MVP targets the three highest-priority problems using capabilities that don't require new video-generation infrastructure.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>MVP feature</th><th>Why it's in v1</th></tr></thead>\\n        <tbody>\\n          <tr><td>AI Analytics Explanation</td><td>Directly closes the biggest data-to-action gap using data YouTube already has</td></tr>\\n          <tr><td>Content Idea Generator</td><td>Highest-frequency creator pain point; LLM plus existing performance data</td></tr>\\n          <tr><td>Title + Thumbnail Assistant</td><td>High leverage, testable via existing A/B infrastructure</td></tr>\\n          <tr><td>Comment Intelligence</td><td>High-frequency, low infra cost, immediately useful</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Feature</th><th>Reach</th><th>Impact</th><th>Confidence</th><th>Effort</th><th>Priority</th></tr></thead>\\n        <tbody>\\n          <tr><td>AI Analytics Copilot</td><td>High</td><td>High</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>AI Idea Engine</td><td>High</td><td>High</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Thumbnail / Title Lab</td><td>High</td><td>Medium</td><td>High</td><td>Low to med</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Comment Intelligence</td><td>High</td><td>Medium</td><td>High</td><td>Low</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>AI Localisation</td><td>Medium</td><td>High</td><td>Medium</td><td>High</td><td><span class=\\\"pri pri--p2\\\">Phase 2 to 3</span></td></tr>\\n          <tr><td>Revenue Copilot</td><td>Low to med</td><td>Medium</td><td>Medium</td><td>Medium</td><td><span class=\\\"pri pri--p3\\\">Phase 3</span></td></tr>\\n          <tr><td>Creator Protection</td><td>Low</td><td>High</td><td>Medium</td><td>High</td><td><span class=\\\"pri pri--p3\\\">Phase 3</span></td></tr>\\n        </tbody>\\n      </table></div>\\n      \\n    </section>\\n\\n    <section id=\\\"metrics\\\">\\n      <h2><span class=\\\"num\\\">08</span>Metrics</h2>\\n      <div class=\\\"nstar\\\">\\n        <span>North Star candidate</span>\\n        <strong>Creator Value Generated per Active Creator</strong>\\n        <p>A composite of successful publishing, discovery and monetisation outcomes. Chosen over a single metric like \\\"successful publishing\\\" because a volume metric would reward over-optimising production at the expense of growth or revenue.</p>\\n      </div>\\n\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node flow__node--hot\\\">Creator success</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Creation: output, retention</span>\\n        <span class=\\\"flow__node\\\">Discovery: views, watch time</span>\\n        <span class=\\\"flow__node\\\">Monetisation: revenue, sponsors</span>\\n      </div>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Feature area</th><th>Evaluation metric</th></tr></thead>\\n        <tbody>\\n          <tr><td>Idea Engine</td><td>Idea acceptance rate, idea-to-upload conversion</td></tr>\\n          <tr><td>Analytics Copilot</td><td>Recommendation acceptance, action rate, creator satisfaction</td></tr>\\n          <tr><td>Thumbnail / Title Lab</td><td>CTR improvement, experiment adoption rate</td></tr>\\n          <tr><td>Localisation</td><td>Correction rate, non-native viewer retention</td></tr>\\n          <tr><td>Comment Intelligence</td><td>Summary usefulness rating</td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"experiments\\\">\\n      <h2><span class=\\\"num\\\">09</span>Experimentation</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Experiment</th><th>Control</th><th>Treatment</th><th>Primary metric</th></tr></thead>\\n        <tbody>\\n          <tr><td>AI idea suggestions</td><td>No suggestions</td><td>AI-generated idea list</td><td>Idea-to-upload conversion</td></tr>\\n          <tr><td>AI titles</td><td>Creator-only titles</td><td>AI-suggested title options</td><td>CTR + retention, never CTR alone</td></tr>\\n          <tr><td>Analytics Copilot</td><td>Standard dashboard</td><td>\\\"Ask Analytics\\\" diagnosis + recommendation</td><td>Recommendation action rate</td></tr>\\n          <tr><td>Comment Intelligence</td><td>Manual comment reading</td><td>AI comment summary</td><td>Time spent, creator-reported usefulness</td></tr>\\n        </tbody>\\n      </table></div>\\n      <p>No outcomes are asserted here. Each is a proposed test design with a stated guardrail, for example watch-time retention as a guardrail on the title experiment so click-optimisation cannot win at retention's expense.</p>\\n    </section>\\n\\n    <section id=\\\"context\\\">\\n      <h2><span class=\\\"num\\\">10</span>Competitive context &amp; business impact</h2>\\n      <p>Creators today assemble their own stack across TikTok and Instagram for distribution, CapCut, Canva and Adobe for creation, and Patreon for monetisation. No platform is asserted as superior across every category. YouTube's opportunity is to reduce the <em>need</em> for that stack by embedding equivalent AI capability directly into the creator's existing workflow, not necessarily to out-feature every point solution.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Scenario</th><th>Illustrative framing</th></tr></thead>\\n        <tbody>\\n          <tr><td>Conservative</td><td>Modest lift in idea and title adoption; limited effect on retention or upload frequency</td></tr>\\n          <tr><td>Base</td><td>Meaningful reduction in time-to-publish and analytics confusion; some creator retention gain</td></tr>\\n          <tr><td>Aggressive</td><td>Materially higher upload consistency and international reach via localisation</td></tr>\\n        </tbody>\\n      </table></div>\\n      \\n    </section>\\n\\n    <section id=\\\"roadmap\\\">\\n      <h2><span class=\\\"num\\\">11</span>Roadmap</h2>\\n      <div class=\\\"road\\\">\\n        <div class=\\\"road__ph\\\"><b>Phase 1 · 0 to 3 months</b><p>AI Analytics Copilot, Content Idea Engine, Title Assistant.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 2 · 3 to 9 months</b><p>Thumbnail Lab, Comment Intelligence, content repurposing.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 3 · 9 to 18 months</b><p>Global localisation, Revenue Copilot, Creator Protection.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 4 · 18+ months</b><p>AI Creator Agent that understands the channel, proposes a content plan, tracks performance and recommends next actions, with the creator approving each step.</p></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"summary\\\">\\n      <h2><span class=\\\"num\\\">12</span>Summary</h2>\\n      <div class=\\\"summary\\\">\\n        <h3>One line</h3>\\n        <p>Designed a Creator AI OS strategy for YouTube, with an AI Analytics Copilot, Idea Engine and Thumbnail/Title Lab as the MVP, to close the gap between creator data and creator action.</p>\\n\\n        <h3>The 50-word version</h3>\\n        <p>Creators juggle ten disconnected tools around YouTube Studio. I proposed a Creator AI OS (an Analytics Copilot, Idea Engine and Thumbnail/Title Lab as the MVP) that turns creator data into concrete next actions, with clear human-in-the-loop guardrails against clickbait, homogenisation and identity misuse.</p>\\n\\n        <h3>What this demonstrates</h3>\\n        <ul>\\n          <li>Designed a Creator AI OS product strategy for YouTube, prioritising an Analytics Copilot, Idea Engine and Thumbnail/Title Lab as an MVP using RICE scoring.</li>\\n          <li>Proposed an AI architecture mapping ideation, analytics, localisation and safety to the right technique (LLM vs. ranking vs. predictive ML vs. computer vision) rather than a one-size-fits-all model.</li>\\n          <li>Built a metrics framework with a composite North Star and four A/B test designs, balancing creator growth against clickbait, homogenisation and creator-dependency guardrails.</li>\\n        </ul>\\n      </div>\\n    </section>\",\"next\":[[\"one-tap-playlists.html\",\"Next case study\",\"One-Tap Playlists: closing the discovery-to-collection gap →\"],[\"pw-learning-coach.html\",\"Previous\",\"← Physics Wallah: affordable, personalised, at scale\"]]},{\"slug\":\"zomato-retention\",\"title\":\"Beyond Discounts: an AI retention engine for Zomato · Abhinay Tiwari\",\"description\":\"AI product case study: replacing blanket discounting at Zomato with uplift-modelled, budget-constrained incentives and proactive service recovery.\",\"ogTitle\":\"Beyond Discounts: an AI retention engine for Zomato\",\"ogDesc\":\"Replacing blanket discounting with uplift-modelled, budget-constrained incentives and proactive service recovery.\",\"ogImage\":\"https://abhinaytiwari.netlify.app/assets/img/og-zomato.png\",\"kicker\":\"Case study 01 · Retention &amp; incentive economics\",\"h1\":\"Beyond discounts: an AI retention engine for <em>Zomato</em>\",\"sub\":\"Food delivery is a multi-homing market: customers don't have to choose Zomato <em>or</em> Swiggy, they can use both. The easiest way to win one order is a discount. The easiest way to wreck unit economics is to make discounts the only reason customers come back.\",\"tags\":[\"Uplift modelling\",\"Budget-constrained optimisation\",\"Holdout experiments\",\"Service recovery\",\"Marketplace economics\"],\"meta\":[[\"Type\",\"Self-directed AI PM case study\"],[\"Domain\",\"Food delivery marketplace\"],[\"Focus\",\"Retention · incentive ROI\"],[\"Reading time\",\"~9 minutes\"]],\"toc\":[[\"problem\",\"The problem\"],[\"segments\",\"Customer segments\"],[\"market\",\"Marketplace dynamics\"],[\"funnel\",\"Funnel &amp; key insight\"],[\"solution\",\"Smart Rewards\"],[\"uplift\",\"Uplift modelling\"],[\"recovery\",\"Service recovery\"],[\"prd\",\"Product requirements\"],[\"mvp\",\"MVP &amp; prioritisation\"],[\"metrics\",\"Metrics\"],[\"experiments\",\"Experimentation\"],[\"ethics\",\"Ethics &amp; trade-offs\"],[\"roadmap\",\"Roadmap\"],[\"impact\",\"Business impact\"],[\"summary\",\"Summary\"]],\"prose\":\"<section id=\\\"problem\\\">\\n      <h2><span class=\\\"num\\\">01</span>The problem</h2>\\n      <p>Zomato competes in a multi-homing marketplace: most customers have both Zomato and Swiggy installed, so switching cost is near zero and every order is a fresh competitive decision. The instinctive lever is discounting, but discounts are easy to match, expensive to sustain, and can train customers to only order when a promotion is active.</p>\\n      <p>The real question is not how to give bigger discounts. It's how to retain customers <strong>efficiently</strong>: without discount spend growing faster than retention does.</p>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Problem statement</span>\\n        <p>Zomato needs to retain price-sensitive customers in a multi-homing marketplace without continuously increasing discount spend.</p>\\n      </div>\\n\\n      <div class=\\\"callout callout--hyp\\\">\\n        <span class=\\\"callout__label\\\">Working hypothesis</span>\\n        <p>Giving the right customer the right incentive at the right time may retain more customers per rupee spent than giving everyone the same discount.</p>\\n      </div>\\n\\n      <h3>Customer vs. business tension</h3>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Customer wants</th><th>Business wants</th><th>Tension</th></tr></thead>\\n        <tbody><tr>\\n          <td>Good prices, reliable delivery, fast issue resolution</td>\\n          <td>Higher repeat orders, lower churn, lower promo cost</td>\\n          <td>More discount may lift short-term orders but erode long-term margin</td>\\n        </tr></tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"segments\\\">\\n      <h2><span class=\\\"num\\\">02</span>Customer segments</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Segment</th><th>Profile</th><th>Retention objective</th></tr></thead>\\n        <tbody>\\n          <tr><td>Heavy Users</td><td>8-15 orders/month</td><td>Protect retention with low-cost loyalty benefits</td></tr>\\n          <tr><td>Discount Seekers</td><td>Orders mainly when offers exist</td><td>Lift frequency without escalating discount dependency</td></tr>\\n          <tr><td>At-Risk Users</td><td>Previously active, frequency declining</td><td>Prevent churn before it happens</td></tr>\\n          <tr><td>Churned Users</td><td>No order in a long period</td><td>Win back at acceptable cost</td></tr>\\n          <tr><td>Premium Users</td><td>High order value and frequency</td><td>Grow lifetime value, not just order count</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--hyp\\\">\\n        <span class=\\\"callout__label\\\">Research plan, not yet conducted</span>\\n        <p>15 customer interviews covering platform choice, discount sensitivity, delivery reliability and support experience, plus hypotheses to be tested, e.g. <em>\\\"customers with declining order frequency are more likely to churn,\\\"</em> and <em>\\\"delivery reliability matters more than discount size for some segments.\\\"</em></p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"market\\\">\\n      <h2><span class=\\\"num\\\">03</span>Marketplace dynamics &amp; competitive landscape</h2>\\n      <p>Zomato and Swiggy both operate two-sided marketplaces (restaurants + customers), and neither platform has an inherent lock-in. No claim is made here that either has better discounts, service or restaurant selection, those are open questions for research, and likely vary by city and segment.</p>\\n\\n      <h3>The multi-homing flywheel</h3>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">More restaurants</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Better selection</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">More customers</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">More orders</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">More restaurant demand</span><span class=\\\"flow__arw\\\">↺</span>\\n      </div>\\n      <p>Discounts can accelerate this flywheel in the short term, more orders means more restaurant interest. But if customers only respond to price, the flywheel becomes dependent on ever-increasing subsidy rather than genuine product loyalty.</p>\\n\\n      <h3>Dimensions to research (not assumed)</h3>\\n      <ul>\\n        <li>Acquisition approach and promotional intensity</li>\\n        <li>Loyalty / membership programme design</li>\\n        <li>Delivery reliability and speed</li>\\n        <li>Customer support responsiveness and issue resolution</li>\\n        <li>Personalisation of offers and recommendations</li>\\n      </ul>\\n    </section>\\n\\n    <section id=\\\"funnel\\\">\\n      <h2><span class=\\\"num\\\">04</span>Retention funnel &amp; the key insight</h2>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">New user</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">First order</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Second order</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Repeat</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Habitual</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Loyal</span>\\n      </div>\\n      <p>The <strong>first → second order</strong> transition is typically the highest-leverage drop-off point. It's the first evidence of habit formation, and the point where a generic new-user discount stops being the reason to return.</p>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Key insight</span>\\n        <p>The goal isn't to maximise discounts. It's to maximise <strong>incremental retention per rupee of incentive spend</strong>. A customer who would have reordered anyway represents wasted discount spend; a customer who reorders <em>only</em> because of the incentive represents real ROI.</p>\\n      </div>\\n\\n      <div class=\\\"formula\\\">Incremental Retention ROI <span>=</span> Incremental retained customers <span>/</span> Incremental discount spend<br>\\nCost per Retained Customer <span>=</span> Total incremental incentive cost <span>/</span> Incrementally retained customers</div>\\n    </section>\\n\\n    <section id=\\\"solution\\\">\\n      <h2><span class=\\\"num\\\">05</span>The solution: Zomato Smart Rewards</h2>\\n      <p>An AI-powered retention engine that decides <strong>who</strong> should receive an incentive, <strong>when</strong>, <strong>what kind</strong>, <strong>how much</strong> to spend, and <strong>why</strong>: rather than applying one discount rule to everyone.</p>\\n\\n      <h3>Decision flow</h3>\\n      <div class=\\\"flow\\\">\\n        <span class=\\\"flow__node\\\">Customer data</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Feature engineering</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Churn model</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Offer propensity</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Expected incremental order</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node flow__node--hot\\\">Budget-constrained optimiser</span><span class=\\\"flow__arw\\\">→</span>\\n        <span class=\\\"flow__node\\\">Best incentive</span>\\n      </div>\\n\\n      <h3>Which AI technique for which job</h3>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Layer</th><th>Used for</th><th>Why</th></tr></thead>\\n        <tbody>\\n          <tr><td>Traditional ML</td><td>Churn prediction, segmentation, incentive-response prediction</td><td>Structured, high-volume, well-suited to classification/regression</td></tr>\\n          <tr><td>Optimisation</td><td>Incentive selection, budget allocation, experiment allocation</td><td>Constrained decision-making under a fixed budget</td></tr>\\n          <tr><td>LLM</td><td>Support-ticket summarisation, complaint classification, personalised offer copy</td><td>Best for language understanding and generation, not numeric prediction</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--decision\\\">\\n        <span class=\\\"callout__label\\\">Architecture decision</span>\\n        <p>An LLM is <strong>not</strong> used to predict churn or set discount amounts. That's a job for calibrated ML models where precision and auditability matter, and where you need to explain to a finance team why a specific rupee amount was chosen.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"uplift\\\">\\n      <h2><span class=\\\"num\\\">06</span>Uplift modelling, the central idea</h2>\\n      <p>A high churn-probability score alone doesn't justify an incentive: some high-risk customers would churn regardless, and some low-risk customers wouldn't respond to an offer either. What matters is the <strong>incremental effect of the intervention</strong>.</p>\\n\\n      <div class=\\\"formula\\\">Uplift <span>=</span> P(retention | incentive) <span>−</span> P(retention | no incentive)</div>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Customer</th><th>Retention w/o incentive</th><th>Retention w/ ₹100</th><th>Uplift</th><th>Good target?</th></tr></thead>\\n        <tbody>\\n          <tr><td>A</td><td>40%</td><td>60%</td><td>+20 pts</td><td><span class=\\\"pri pri--mvp\\\">Yes, incentive changes behaviour</span></td></tr>\\n          <tr><td>B</td><td>85%</td><td>87%</td><td>+2 pts</td><td><span class=\\\"pri pri--later\\\">No, would return anyway</span></td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Why this matters</span>\\n        <p>Customer A is the better incentive target even though Customer B has a far higher absolute retention probability. That gap is the difference between <strong>propensity modelling</strong> and <strong>uplift modelling</strong>: and it's the mechanism that keeps incentive spend efficient rather than merely well-targeted.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"recovery\\\">\\n      <h2><span class=\\\"num\\\">07</span>Service recovery as a retention lever</h2>\\n      <p>Customer service is treated as part of the retention system, not a separate function. When a customer experiences a late delivery, missing item or quality issue, the system recommends an appropriate recovery action, refund, credit, free delivery, or priority support, with human policy as the final authority for sensitive or high-value cases.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Situation</th><th>Generic approach</th><th>Personalised approach</th></tr></thead>\\n        <tbody>\\n          <tr><td>At-risk, price-insensitive customer</td><td>\\\"₹100 OFF\\\" banner</td><td>\\\"Your next delivery is on us\\\", matches known delivery-fee sensitivity</td></tr>\\n          <tr><td>Churned 30+ days</td><td>No message</td><td>\\\"We've missed you, ₹100 off your next order\\\"</td></tr>\\n          <tr><td>Loyal, frequent customer</td><td>Another discount</td><td>\\\"You've ordered 10 times this month, free delivery this weekend\\\"</td></tr>\\n          <tr><td>Recent late delivery</td><td>Nothing / generic apology</td><td>\\\"Sorry your last order was late, free delivery next time\\\"</td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"prd\\\">\\n      <h2><span class=\\\"num\\\">08</span>Product requirements</h2>\\n      <div class=\\\"split\\\">\\n        <div>\\n          <h6>Goals</h6>\\n          <ul>\\n            <li>Increase incremental retention per rupee of incentive spend</li>\\n            <li>Replace blanket discounting with targeted, explainable interventions</li>\\n            <li>Treat service recovery as a first-class retention lever</li>\\n          </ul>\\n        </div>\\n        <div>\\n          <h6>Non-goals (v1)</h6>\\n          <ul>\\n            <li>Fully autonomous incentive agent with no human oversight</li>\\n            <li>Dynamic real-time pricing</li>\\n            <li>Restaurant-side supply optimisation</li>\\n          </ul>\\n        </div>\\n      </div>\\n\\n      <h3>Representative user stories</h3>\\n      <ul>\\n        <li>As an <strong>at-risk customer</strong>, I want an offer relevant to why I might leave, not a generic discount.</li>\\n        <li>As a <strong>loyal customer</strong>, I don't want to be given increasingly large discounts I don't need.</li>\\n        <li>As a <strong>customer who had a bad delivery</strong>, I want proactive recovery, not silence.</li>\\n        <li>As a <strong>product team</strong>, we want to measure incremental impact, not just coupon redemption.</li>\\n        <li>As a <strong>product team</strong>, we want every AI-recommended incentive to have a clear, auditable reason.</li>\\n      </ul>\\n\\n      <h3>Key non-functional requirements</h3>\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Latency</h6><ul><li>Offer decision available before app-open render, &lt;500ms from cache/precompute</li></ul></div>\\n        <div><h6>Explainability</h6><ul><li>Every recommended incentive carries a human-readable reason code</li></ul></div>\\n        <div><h6>Privacy</h6><ul><li>Order history, location and support data used only for retention modelling, never shared externally</li></ul></div>\\n        <div><h6>Scalability</h6><ul><li>Churn and propensity scoring runs across the full active user base daily</li></ul></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"mvp\\\">\\n      <h2><span class=\\\"num\\\">09</span>MVP &amp; prioritisation</h2>\\n      <h3>MVP scope, phase 1</h3>\\n      <ul>\\n        <li>Rule-based customer segmentation</li>\\n        <li>Churn prediction model</li>\\n        <li>Basic offer recommendation over a limited incentive set</li>\\n        <li>A/B testing infrastructure with a permanent holdout group</li>\\n        <li>Retention dashboard for the product team</li>\\n      </ul>\\n      <p>Uplift modelling, AI service recovery and a conversational retention agent are deliberately deferred. They depend on having reliable churn and propensity data plus experiment infrastructure already in place.</p>\\n\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Feature</th><th>Impact</th><th>Effort</th><th>Priority</th></tr></thead>\\n        <tbody>\\n          <tr><td>Churn prediction</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Basic offer recommendation</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>A/B testing + holdout group</td><td>High</td><td>Low</td><td><span class=\\\"pri pri--mvp\\\">MVP</span></td></tr>\\n          <tr><td>Uplift modelling</td><td>High</td><td>High</td><td><span class=\\\"pri pri--p3\\\">Phase 2-3</span></td></tr>\\n          <tr><td>Service recovery engine</td><td>High</td><td>Medium</td><td><span class=\\\"pri pri--p2\\\">Phase 2</span></td></tr>\\n          <tr><td>Conversational retention agent</td><td>Medium</td><td>High</td><td><span class=\\\"pri pri--later\\\">Later</span></td></tr>\\n        </tbody>\\n      </table></div>\\n    </section>\\n\\n    <section id=\\\"metrics\\\">\\n      <h2><span class=\\\"num\\\">10</span>Metrics</h2>\\n      <div class=\\\"nstar\\\">\\n        <span>North Star</span>\\n        <strong>Incremental Retained Customers per ₹1,000 of Incentive Spend</strong>\\n        <p>Chosen over raw retention because raw retention rewards spending more; this metric only improves when spend gets <em>smarter</em>.</p>\\n      </div>\\n\\n      <div class=\\\"mgrid\\\">\\n        <div><h6>Customer</h6><ul><li>D7 / D30 / D60 retention</li><li>Order frequency</li><li>Reactivation rate</li></ul></div>\\n        <div><h6>Financial</h6><ul><li>Incentive cost per order</li><li>CLV, contribution margin</li><li>Cost per retained customer</li></ul></div>\\n        <div><h6>Product</h6><ul><li>Offer acceptance</li><li>Offer redemption</li><li>Repeat order rate</li></ul></div>\\n        <div><h6>AI quality</h6><ul><li>Churn model AUC + calibration</li><li>Uplift accuracy</li><li>Offer-acceptance prediction accuracy</li></ul></div>\\n        <div><h6>Guardrails</h6><ul><li>Complaint rate</li><li>Discount abuse</li><li>Margin erosion</li><li>Notification fatigue</li></ul></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"experiments\\\">\\n      <h2><span class=\\\"num\\\">11</span>Experimentation</h2>\\n      <div class=\\\"tbl-wrap\\\"><table>\\n        <thead><tr><th>Experiment</th><th>Control</th><th>Treatment</th><th>Primary metric</th></tr></thead>\\n        <tbody>\\n          <tr><td>Personalisation</td><td>Generic discount</td><td>Personalised discount</td><td>Incremental retention</td></tr>\\n          <tr><td>Incentive type</td><td>₹100 discount</td><td>Free delivery</td><td>Reorder rate</td></tr>\\n          <tr><td>Recovery vs. discount</td><td>Discount only</td><td>Service recovery action</td><td>Post-issue retention</td></tr>\\n          <tr><td>Targeting method</td><td>Rule-based offer</td><td>AI/uplift-selected offer</td><td>Incremental retention ROI</td></tr>\\n        </tbody>\\n      </table></div>\\n\\n      <div class=\\\"callout callout--key\\\">\\n        <span class=\\\"callout__label\\\">Why a holdout group matters</span>\\n        <p>Some customers would reorder with no incentive at all. Without a <strong>permanent</strong> control/holdout group, Zomato risks attributing organic reorders to discounts and systematically overstating incentive ROI, the failure mode that makes discount budgets grow forever while looking successful in every dashboard.</p>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"ethics\\\">\\n      <h2><span class=\\\"num\\\">12</span>Ethics, fairness &amp; trade-offs</h2>\\n      <ul>\\n        <li><strong>Price discrimination</strong>: different customers seeing different offers must be explainable and non-exploitative, not arbitrary.</li>\\n        <li><strong>Vulnerable customers</strong>: avoid incentive designs that exploit compulsive ordering behaviour.</li>\\n        <li><strong>Transparency</strong>: personalisation should be understandable to the customer, not a black box.</li>\\n        <li><strong>Privacy</strong>: order history, location and support interactions require strict access controls.</li>\\n        <li><strong>Notification fatigue</strong>: more targeting doesn't mean more messages. Over-targeting is a guardrail metric, not a success metric.</li>\\n        <li><strong>Model risk</strong>: a wrong churn or uplift prediction should default to a low-cost, low-risk action, not an aggressive discount.</li>\\n      </ul>\\n    </section>\\n\\n    <section id=\\\"roadmap\\\">\\n      <h2><span class=\\\"num\\\">13</span>Roadmap</h2>\\n      <div class=\\\"road\\\">\\n        <div class=\\\"road__ph\\\"><b>Phase 1</b><p>Rule-based segmentation, churn model, basic offers, A/B + holdout infrastructure.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 2</b><p>Service recovery engine; expand the offer catalogue.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 3</b><p>Uplift modelling for incentive targeting.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 4</b><p>Dynamic, budget-constrained incentive optimisation.</p></div>\\n        <div class=\\\"road__ph\\\"><b>Phase 5</b><p>Unified AI retention agent, operating within budget, fairness and escalation rules.</p></div>\\n      </div>\\n    </section>\\n\\n    <section id=\\\"impact\\\">\\n      <h2><span class=\\\"num\\\">14</span>Business impact &amp; unit economics</h2>\\n      <div class=\\\"formula\\\">Contribution Value <span>=</span> CLV <span>−</span> Acquisition Cost <span>−</span> Discount Cost <span>−</span> Delivery Subsidy <span>−</span> Support Cost</div>\\n      <p>The framework's goal is to move discount spend from a blanket cost line to a targeted investment: reducing spend on customers who'd return anyway, and concentrating it on customers whose behaviour a well-chosen incentive can actually change. No revenue or margin figures are asserted here. They would be established through the experiments above.</p>\\n    </section>\\n\\n    <section id=\\\"summary\\\">\\n      <h2><span class=\\\"num\\\">15</span>Summary</h2>\\n      <div class=\\\"summary\\\">\\n        <h3>One line</h3>\\n        <p>Designed an AI-powered retention engine for Zomato that replaces blanket discounting with uplift-modelled, budget-constrained incentives and proactive service recovery.</p>\\n\\n        <h3>The 50-word version</h3>\\n        <p>In a multi-homing food-delivery market, discounts alone don't build loyalty. I designed an AI retention system that predicts churn, models the incremental effect (uplift) of an incentive per customer, and selects the lowest-cost intervention (including service recovery) likely to actually change behaviour, validated through holdout-controlled experiments.</p>\\n\\n        <h3>What this demonstrates</h3>\\n        <ul>\\n          <li>Reframed a discounting problem as an incremental-retention-ROI problem, then designed an uplift-modelling approach to target incentives at customers whose behaviour would actually change.</li>\\n          <li>Designed an AI system architecture separating ML (prediction), optimisation (budget-constrained decisioning) and LLM (language tasks) <em>by capability</em>, rather than defaulting to one technique.</li>\\n          <li>Built a full experimentation framework, including a permanent holdout group, to isolate incremental incentive impact from organic reorder behaviour.</li>\\n        </ul>\\n      </div>\\n    </section>\",\"next\":[[\"rapido-mobility.html\",\"Next case study\",\"Rapido: an AI Marketplace Optimizer for bike taxis →\"],[\"../index.html#work\",\"Back\",\"All five case studies\"]]}]");
+}),
+"[project]/lib/content.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "aboutParas",
+    ()=>aboutParas,
+    "builds",
+    ()=>builds,
+    "bySlug",
+    ()=>bySlug,
+    "caps",
+    ()=>caps,
+    "caseStudies",
+    ()=>caseStudies,
+    "contact",
+    ()=>contact,
+    "plain",
+    ()=>plain,
+    "stats",
+    ()=>stats,
+    "ticker",
+    ()=>ticker,
+    "works",
+    ()=>works,
+    "xp",
+    ()=>xp
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/landing.json.[json].cjs [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$cases$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/cases.json.[json].cjs [app-rsc] (ecmascript)");
+;
+;
+const strip = (s)=>s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim();
+const works = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].works;
+const builds = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].builds;
+const caps = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].caps;
+const xp = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].xp;
+const stats = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].stats;
+const ticker = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].ticker;
+const contact = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].contact;
+const aboutParas = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landing$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].aboutParas.map((p)=>p);
+const caseStudies = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$cases$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"];
+const bySlug = (slug)=>caseStudies.find((c)=>c.slug === slug);
+const plain = strip;
+}),
+"[project]/lib/landing.json.[json].cjs [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = JSON.parse("{\"title\":\"Abhinay Tiwari · AI Product Manager\",\"description\":\"AI Product Manager. 0→1 with founders, five AI product case studies (Zomato, Rapido, Physics Wallah, YouTube, music streaming) and four shipped builds, agentic commerce, enterprise RAG search, lead-gen automation.\",\"badge\":null,\"heroName\":\"Abhinay <em>Tiwari</em>\",\"heroRole\":\"AI Product Manager <i></i> 0&#8594;1 with founders\",\"heroLine\":\"<span class=\\\"ln\\\">Turning AI capability into products</span>\\n    <span class=\\\"ln\\\"><em>people actually use.</em>\\n      <span class=\\\"emo\\\" aria-hidden=\\\"true\\\"><span>&#129504;</span><span>&#9889;</span></span>\\n    </span>\",\"heroBio\":\"I take products <span class=\\\"hl hl--g\\\">0&nbsp;&#8594;&nbsp;1</span> alongside founders: the\\n    <span class=\\\"hl\\\">PRDs</span>, the <span class=\\\"hl\\\">metrics trees</span>, the\\n    <span class=\\\"hl hl--a\\\">GTM</span>. Then I ship it myself.\",\"stats\":[[\"5\",\"Case studies\"],[\"5\",\"Shipped builds\"],[\"3\",\"Founder-side roles\"],[\"52\",\"Automated tests\"]],\"ticker\":[\"0&#8594;1 discovery\",\"Agentic guardrails\",\"Cohort analysis\",\"GTM\",\"Holdout experiments\",\"Metrics trees\",\"Model evaluation\",\"PRDs\",\"RAG grounding\",\"RICE prioritisation\",\"Unit economics\",\"Uplift modelling\"],\"works\":[{\"href\":\"work/zomato-retention.html\",\"img\":\"assets/img/cs-zomato.svg\",\"idx\":\"01 · RETENTION &amp; INCENTIVE ECONOMICS\",\"h3\":\"Beyond discounts: an AI retention engine for Zomato\",\"p\":\"In a multi-homing marketplace, the easy lever is a discount and the easy way to wreck unit economics is to make discounts the only reason anyone comes back. I reframed it as an <strong>incremental-retention-ROI</strong> problem and designed an uplift-modelled incentive engine on top.\",\"northStar\":\"Incremental retained customers per ₹1,000 of incentive spend\",\"tags\":[\"Uplift modelling\",\"Budget-constrained optimisation\",\"Holdout experiments\",\"Service recovery\"],\"meta\":\"14 sections · ~9 min\"},{\"href\":\"work/rapido-mobility.html\",\"img\":\"assets/img/cs-rapido.svg\",\"idx\":\"02 · TWO-SIDED MARKETPLACE\",\"h3\":\"Rapido: an AI Marketplace Optimizer for bike taxis\",\"p\":\"India's last-mile gap sits between expensive cabs and unreliable autos. I analysed the two-sided liquidity problem and scoped the four AI levers (demand forecasting, ETA, cancellation prediction and supply positioning) that move the North Star without needing matching infrastructure to exist first.\",\"northStar\":\"Completed rides per active supply hour\",\"tags\":[\"Demand forecasting\",\"Marketplace liquidity\",\"Unit economics\",\"Regulatory risk\"],\"meta\":\"14 sections · ~10 min\"},{\"href\":\"work/pw-learning-coach.html\",\"img\":\"assets/img/cs-pw.svg\",\"idx\":\"03 · EDTECH · RAG &amp; KNOWLEDGE GRAPHS\",\"h3\":\"Physics Wallah: personalisation at mass-market scale\",\"p\":\"A dropper has hundreds of hours of content and no idea what to study today. I designed an AI Learning Coach: diagnostic profiling on a knowledge graph, a RAG-grounded multimodal doubt solver and slippage detection, with confidence-tiered escalation so teachers get the cases AI is worst at.\",\"northStar\":\"% of active students showing measurable topic-mastery gain per cycle\",\"tags\":[\"RAG grounding\",\"Knowledge graph\",\"Human-in-the-loop\",\"Hallucination guardrails\"],\"meta\":\"14 sections · ~9 min\"},{\"href\":\"work/youtube-creator-os.html\",\"img\":\"assets/img/cs-youtube.svg\",\"idx\":\"04 · CREATOR TOOLS · PLATFORM STRATEGY\",\"h3\":\"The Creator AI OS: rebuilding YouTube Studio around AI\",\"p\":\"Creators stitch ten tools around YouTube Studio. I mapped the friction across four personas, ranked it by frequency × impact × AI leverage, and scoped a Creator Copilot MVP, with a clickbait guardrail that optimises for click <em>and</em> retention, never CTR alone.\",\"northStar\":\"Creator value generated per active creator\",\"tags\":[\"RICE prioritisation\",\"Technique selection\",\"Composite North Star\",\"Homogenisation risk\"],\"meta\":\"11 sections · ~8 min\"},{\"href\":\"work/one-tap-playlists.html\",\"img\":\"assets/img/cs-playlists.svg\",\"idx\":\"05 · CONSUMER · 0→1 FEATURE\",\"h3\":\"One-Tap Playlists: closing the discovery-to-collection gap\",\"p\":\"Recommendation engines are working fine. What breaks is the moment right after: you loved six songs and saved none of them. I scoped Discovery Session, a tracked autoplay stream you can save or AI-curate in one tap, where the LLM <strong>can't hallucinate a track by construction.</strong>\",\"northStar\":\"Recommendation-to-playlist conversion rate\",\"tags\":[\"JTBD\",\"Constrained LLM orchestration\",\"Structured output contract\",\"A/B design\"],\"meta\":\"11 sections · ~7 min\"}],\"builds\":[{\"img\":\"assets/img/bd-vriddhi.svg\",\"h3\":\"Vriddhi\",\"tag\":\"Agentic commerce\",\"p\":\"An AI agent that finds revenue opportunities for Razorpay merchants (abandoned-checkout recovery and cross-sell) and drafts actions a human must approve before anything executes. Every money action passes a deterministic policy engine, an approval gate, and a full audit trail. <strong>The LLM can suggest; it can't spend.</strong> Built in 22 sequential phases, each live-tested before the next started.\",\"stack\":[\"Next.js\",\"TypeScript\",\"Gemini\",\"Prisma\",\"Postgres\",\"52 tests\"],\"live\":\"https://vriddhi-beta.vercel.app\",\"github\":\"https://github.com/abhinaytiwari542-max/vriddhi\",\"note\":null},{\"img\":\"assets/img/bd-secondobrain.svg\",\"h3\":\"SecondoBrain\",\"tag\":\"Enterprise RAG\",\"p\":\"A company's searchable memory. Employees ask plain-English questions across Drive, Slack, Gmail and Jira and get <strong>permission-filtered</strong> results plus a grounded, cited answer. Semantic and keyword search run in parallel and fuse with RRF; Cloud DLP redacts PII before embedding and <strong>fails closed</strong>: a chunk is dropped rather than leaked. Nothing leaves the VPC.\",\"stack\":[\"FastAPI\",\"Next.js\",\"Pinecone\",\"Elasticsearch\",\"Vertex AI\",\"GCP VPC\"],\"live\":\"https://www.secondobrain.com/\",\"github\":\"https://github.com/abhinaytiwari542-max/secondobrain\",\"note\":\"RRF · ACL fail-closed · audit log\"},{\"img\":\"assets/img/bd-leads.svg\",\"h3\":\"Leads Finder\",\"tag\":\"GTM automation\",\"p\":\"A multi-platform lead-generation engine: Playwright and RSS scrapers across Upwork, Reddit and LinkedIn feed a Gemini qualification pass that scores each job, then auto-drafts a proposal and fires a Slack, Telegram or desktop alert. Scheduled scans every 10 minutes, SQLite analytics, Sheets export, and a FastAPI dashboard on top.\",\"stack\":[\"Python\",\"Playwright\",\"Gemini\",\"FastAPI\",\"SQLite\",\"pytest\"],\"live\":null,\"github\":\"https://github.com/abhinaytiwari542-max/leads-finder\",\"note\":\"Scrape → qualify → draft → alert\"},{\"img\":\"assets/img/bd-loandsa.svg\",\"h3\":\"Loan DSA Platform\",\"tag\":\"Fintech ops\",\"p\":\"A loan direct-selling-agent platform with four portals on one schema: agents file applications, ops work a queue, admins set commission rules, and customers upload documents through a tokenised link with no account at all. The money path runs end to end, from bank statement import through reconciliation to commission transactions and payout batches. <strong>Authorisation lives in the database</strong>, as Postgres row-level security keyed to helper functions, so a bug in the client cannot widen what a role can read.\",\"stack\":[\"React 19\",\"TypeScript\",\"Supabase\",\"Postgres RLS\",\"TanStack Query\",\"Tailwind v4\"],\"live\":\"https://loan-dsa.vercel.app\",\"github\":\"https://github.com/abhinaytiwari542-max/Loan-DSA\",\"note\":\"18 tables · 6 migrations · 4 roles\"},{\"img\":\"assets/img/bd-tracker.svg\",\"h3\":\"Tracker\",\"tag\":\"Full-stack\",\"p\":\"A habit tracker with streaks and real visualisations, and an auth system I built properly rather than quickly. Access tokens live 15 minutes in memory only; refresh tokens are opaque, SHA-256 hashed, HttpOnly, and rotate on every use, so <strong>an XSS bug can't walk off with a session.</strong> Google sign-in verifies signature, issuer <em>and</em> audience, skipping that last check is the classic hole.\",\"stack\":[\"Java 21\",\"Spring Boot 3.5\",\"React\",\"Postgres\",\"Flyway\",\"Testcontainers\"],\"live\":\"https://tracker-khaki-phi.vercel.app\",\"github\":\"https://github.com/abhinaytiwari542-max/Tracker\",\"note\":\"Rotating refresh tokens · OIDC\"}],\"caps\":[{\"h3\":\"Pick the technique, don't default to one\",\"p\":\"Churn is a calibrated ML problem. Budget allocation is optimisation. Support triage is an LLM job. Reaching for an LLM because it's the exciting one is how you get an unauditable model setting discount amounts.\"},{\"h3\":\"Incrementality, or it didn't happen\",\"p\":\"A customer who'd have come back anyway is wasted spend. I design permanent holdout groups in from day one, because without one you'll attribute organic behaviour to your own intervention and believe it.\"},{\"h3\":\"Constrain the model architecturally\",\"p\":\"Telling an LLM \\\"don't hallucinate tracks\\\" is a prompt. Only letting it select from a candidate set the recommender produced is an architecture. I prefer the second: it holds when the prompt doesn't.\"},{\"h3\":\"Guardrail metrics are real metrics\",\"p\":\"Optimise CTR alone and you ship clickbait. Optimise targeting alone and you ship notification fatigue. Every North Star in my case studies carries a guardrail that's allowed to veto it.\"},{\"h3\":\"Label the assumption as an assumption\",\"p\":\"Every case study here separates public knowledge, my proposals, and illustrative numbers. Inventing a 34% retention lift is easy and worthless. Saying \\\"here's the experiment that would tell us\\\" is the actual job.\"},{\"h3\":\"Build it if that's the fastest way to know\",\"p\":\"I ship code: Spring Boot, FastAPI, Next.js, Playwright. Not to be an engineer, but because a working thing settles arguments that a document keeps having, and it teaches me what I'm really asking a team for.\"}],\"xp\":[{\"when\":\"Mar 2026 to May 2026\",\"where\":\"Bengaluru\",\"role\":\"Operations &amp; GTM Lead\",\"co\":\"Build AI\",\"bullets\":[\"Led GTM and stakeholder onboarding across factory owners, workers and government authorities in a multi-state rollout.\",\"Built the field-ops infrastructure from scratch, recruited and trained the team, and scaled a zero-pending-24-hours logistics SLA.\",\"Architected onboarding playbooks and a scaling framework, plus a sustained worker data pipeline feeding the product.\"],\"chips\":[\"GTM\",\"Field ops\",\"Stakeholder management\",\"Team building\"]},{\"when\":\"Oct 2025 to Apr 2026\",\"where\":\"Remote\",\"role\":\"Product &amp; Business Management\",\"co\":\"Renan\",\"bullets\":[\"Worked directly with founders to take AI products 0→1, product strategy, feature development and GTM execution.\",\"Built and shipped AI-driven automations that streamlined internal workflows and cut manual process load.\",\"Led product discovery and feature launches off real user needs, improving acquisition, conversion and engagement.\"],\"chips\":[\"0→1 product\",\"Product discovery\",\"AI automation\",\"Growth\"]},{\"when\":\"Jun 2025 to Aug 2025\",\"where\":\"Chandigarh\",\"role\":\"Finance Intern\",\"co\":\"Aditya Birla Capital\",\"bullets\":[\"Ran financial statement analysis, credit assessment and operating performance review to support investment and risk decisions.\",\"Built and validated DCF and LBO models, testing leverage capacity, downside risk and scenario-based return outcomes.\",\"Supported financial due diligence and data verification, packaging structured insight summaries for senior stakeholders.\"],\"chips\":[\"DCF / LBO\",\"Due diligence\",\"Unit economics\",\"Risk analysis\"]}],\"aboutParas\":[\"I got into product from the numbers side, building DCF models at Aditya Birla Capital, and found I cared much more about <em>why the business worked</em> than about the model.\",\"Since then it's been 0→1 work with founders: at <strong>Renan</strong>, taking AI products from an idea to something users touched; at <strong>Build AI</strong>, standing up field operations across multiple states and learning that GTM is mostly logistics wearing a suit.\",\"The finance background left me with a habit I haven't shaken: I want to see the unit economics before I get excited about a feature. It's why every case study here ends with a contribution-margin line rather than a hockey stick.\",\"Alongside that I'm finishing a <strong>B.E. in Electronics &amp; Communication Engineering at UIET, Panjab University</strong>, and building things on the side that are too small to be startups and too real to be toys.\",\"Away from work: I led leadership and training programmes for 100+ cadets in the <strong>NCC</strong>, and I founded <strong>Mind Sustain</strong>, an NGO running financial-literacy bootcamps for underserved students, budgeting, savings, and how compounding actually feels over ten years.\"],\"contact\":[[\"mailto:abhinaytiwari542@gmail.com\",\"Email\",\"abhinaytiwari542@gmail.com\"],[\"https://www.linkedin.com/in/abhinay-tiwari22/\",\"LinkedIn\",\"/in/abhinay-tiwari22\"],[\"https://github.com/abhinaytiwari542-max\",\"GitHub\",\"@abhinaytiwari542-max\"],[\"tel:+919604966007\",\"Phone\",\"+91 96049 66007\"],[\"https://drive.google.com/file/d/1qxyGEIRskjYCb9Ry_yulhfnbb-nR_Trk/view?usp=sharing\",\"Resume\",\"Google Drive &middot; one page\"],[\"#work\",\"Case studies\",\"Five, start anywhere\"]]}");
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__1_yuqi_._.js.map
