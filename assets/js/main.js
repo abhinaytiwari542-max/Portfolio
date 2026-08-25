@@ -2,6 +2,13 @@
 (function () {
   'use strict';
 
+  /* Motion is on by default and does not read the OS preference. Set
+     data-motion="reduced" on <html> to honour it again; the CSS gate and this
+     helper both key off that single attribute. */
+  function motionReduced() {
+    return document.documentElement.getAttribute('data-motion') === 'reduced';
+  }
+
   /* sticky nav: an IntersectionObserver on a top sentinel. A scroll listener
      fires on every frame with no batching, so it is banned here. */
   var nav = document.querySelector('.nav');
@@ -121,7 +128,7 @@
     if (!canvas) return;
     // Reduced motion still gets a starfield, just a still one: no drift,
     // no twinkle, no pointer reaction. Coarse pointers skip it entirely.
-    var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var still = motionReduced();
     if (window.matchMedia('(hover: none)').matches) return;
 
     var ctx = canvas.getContext('2d', { alpha: true });
@@ -369,7 +376,7 @@
     var orb = document.querySelector('.orb');
     if (!orb) return;
     if (window.matchMedia('(hover: none)').matches) { orb.remove(); return; }
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { orb.remove(); return; }
+    if (motionReduced()) { orb.remove(); return; }
 
     var x = -200, y = -200, tx = -200, ty = -200, shown = false, raf = null;
 

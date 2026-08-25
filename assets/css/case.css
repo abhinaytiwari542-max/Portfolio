@@ -205,22 +205,20 @@
 
 /* Reduced motion keeps the sequence legible but removes the movement:
    the stages still light in order, they simply do not travel. */
-@media (prefers-reduced-motion: reduce){
-  /* The global reduced-motion reset flattens every animation to .001ms with
+/* The global reduced-motion reset flattens every animation to .001ms with
      !important. This is the intentional alternative the guidance asks for, so
      it has to outrank that reset rather than be erased by it. */
-  .flow--run > .flow__node,
-  .flow--run > .flow__arw{
+:root[data-motion="reduced"] .flow--run > .flow__node, :root[data-motion="reduced"] .flow--run > .flow__arw{
     animation-name:flowSettle !important;
     animation-duration:.45s !important;
     animation-fill-mode:both !important;
   }
-  @keyframes flowSettle{
+@keyframes flowSettle{
     0%   { opacity:.55; }
     100% { opacity:1; }
   }
-  .flow > .flow__node:hover{ transform:none; }
-}
+:root[data-motion="reduced"] .flow > .flow__node:hover{ transform:none; }
+
 
 /* tables */
 .tbl-wrap{ overflow-x:auto; margin:0 0 24px; border:1px solid var(--line); border-radius:var(--r); background:var(--bg-1); }
@@ -319,14 +317,9 @@ td .pri{ font-family:var(--mono); font-size:11px; padding:3px 8px; border-radius
 
 
 /* ---------- reduced motion (Section 6.B) ---------- */
-@media (prefers-reduced-motion: reduce){
-  .cs-prog{ animation:none; transform:scaleX(0); display:none; }
-  .cs-back svg,
-  .cs-back:hover svg,
-  .cs-toc a,
-  .cs-next a{ transition:none; }
-  .cs-next a:hover{ transform:none; }
-  .prose *,
-  .cs-hero *{ animation-duration:.001ms !important; animation-iteration-count:1 !important;
+:root[data-motion="reduced"] .cs-prog{ animation:none; transform:scaleX(0); display:none; }
+:root[data-motion="reduced"] .cs-back svg, :root[data-motion="reduced"] .cs-back:hover svg, :root[data-motion="reduced"] .cs-toc a, :root[data-motion="reduced"] .cs-next a{ transition:none; }
+:root[data-motion="reduced"] .cs-next a:hover{ transform:none; }
+:root[data-motion="reduced"] .prose *, :root[data-motion="reduced"] .cs-hero *{ animation-duration:.001ms !important; animation-iteration-count:1 !important;
               transition-duration:.001ms !important; scroll-behavior:auto !important; }
-}
+
