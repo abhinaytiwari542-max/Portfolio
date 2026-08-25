@@ -19,8 +19,24 @@
 
 :root[data-theme="light"] .cs-nav{ background:rgba(255,255,255,.80); }
 
-/* progress bar */
-.cs-prog{ position:fixed; top:0; left:0; height:2px; background:var(--green); z-index:60; width:0; transition:width .08s linear; }
+/* Reading progress, driven by the scroll timeline rather than a scroll
+   listener (Section 5.D bans the listener). Unsupported browsers get no bar
+   rather than a JS fallback, since the bar is decorative. */
+.cs-prog{
+  position:fixed; top:0; left:0; height:2px; width:0;
+  background:var(--green); z-index:60; transform-origin:0 50%;
+}
+@supports (animation-timeline: scroll()){
+  .cs-prog{
+    width:100%; transform:scaleX(0);
+    animation:csProgress linear both;
+    animation-timeline:scroll(root block);
+  }
+  @keyframes csProgress{ from{ transform:scaleX(0); } to{ transform:scaleX(1); } }
+}
+@supports not (animation-timeline: scroll()){
+  .cs-prog{ display:none; }
+}
 
 /* ---------- hero ---------- */
 .cs-hero{ padding:150px 0 56px; position:relative; z-index:2; border-bottom:1px solid var(--line); }
@@ -242,4 +258,18 @@ td .pri{ font-family:var(--mono); font-size:11px; padding:3px 8px; border-radius
   .cs-hero{ padding-top:120px; }
   .cs-next{ padding-inline:20px; }
   .summary{ padding:24px 22px; }
+}
+
+
+/* ---------- reduced motion (Section 6.B) ---------- */
+@media (prefers-reduced-motion: reduce){
+  .cs-prog{ animation:none; transform:scaleX(0); display:none; }
+  .cs-back svg,
+  .cs-back:hover svg,
+  .cs-toc a,
+  .cs-next a{ transition:none; }
+  .cs-next a:hover{ transform:none; }
+  .prose *,
+  .cs-hero *{ animation-duration:.001ms !important; animation-iteration-count:1 !important;
+              transition-duration:.001ms !important; scroll-behavior:auto !important; }
 }

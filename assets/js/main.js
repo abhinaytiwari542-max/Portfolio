@@ -1,13 +1,22 @@
-/* Abhinay Tiwari — portfolio interactions */
+/* Abhinay Tiwari, portfolio interactions */
 (function () {
   'use strict';
 
-  /* sticky nav */
+  /* sticky nav: an IntersectionObserver on a top sentinel. A scroll listener
+     fires on every frame with no batching, so it is banned here. */
   var nav = document.querySelector('.nav');
   if (nav) {
-    var onScroll = function () { nav.classList.toggle('is-stuck', window.scrollY > 24); };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    var sentinel = document.createElement('div');
+    sentinel.setAttribute('aria-hidden', 'true');
+    sentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:24px;pointer-events:none;visibility:hidden;';
+    document.body.prepend(sentinel);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        nav.classList.toggle('is-stuck', !entries[0].isIntersecting);
+      }).observe(sentinel);
+    } else {
+      nav.classList.add('is-stuck');
+    }
   }
 
   /* mobile menu */
@@ -39,18 +48,9 @@
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
-  /* reading progress (case study pages) */
-  var prog = document.querySelector('.cs-prog');
-  if (prog) {
-    var tick = function () {
-      var h = document.documentElement;
-      var max = h.scrollHeight - h.clientHeight;
-      prog.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
-    };
-    tick();
-    window.addEventListener('scroll', tick, { passive: true });
-    window.addEventListener('resize', tick);
-  }
+  /* reading progress is now a pure CSS scroll-driven animation (see case.css).
+     Where animation-timeline is unsupported the bar hides itself rather than
+     falling back to a banned scroll listener. */
 
   /* TOC scroll-spy */
   var tocLinks = document.querySelectorAll('.cs-toc a');
@@ -168,26 +168,6 @@
 
       ctx.clearRect(0, 0, W, H);
 
-      // nebula that trails the cursor
-      if (pointer.live) {
-        var R = 185;
-        var g = ctx.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, R);
-        if (light) {
-          g.addColorStop(0,    'rgba(31,158,67,.070)');
-          g.addColorStop(0.30, 'rgba(70,110,200,.038)');
-          g.addColorStop(0.65, 'rgba(90,80,220,.014)');
-          g.addColorStop(1,    'rgba(90,80,220,0)');
-        } else {
-          g.addColorStop(0,    'rgba(135,228,124,.085)');
-          g.addColorStop(0.30, 'rgba(140,180,220,.045)');
-          g.addColorStop(0.65, 'rgba(146,146,245,.016)');
-          g.addColorStop(1,    'rgba(146,146,245,0)');
-        }
-        ctx.fillStyle = g;
-        ctx.beginPath();
-        ctx.arc(pointer.x, pointer.y, R, 0, Math.PI * 2);
-        ctx.fill();
-      }
 
       /* --- shooting stars --- */
       if (!still) {

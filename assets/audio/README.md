@@ -12,10 +12,12 @@ It is crossfaded at the seam, so it repeats without an audible click.
 
 The vinyl button in the header reads, in order:
 
-1. `assets/audio/track.mp3`
-2. `assets/audio/track.m4a`
+1. `assets/audio/track.m4a`  (shipped, loads first so the console stays clean)
+2. `assets/audio/track.mp3`  (fallback)
 
-Drop a file in at either name and it takes over with no code change. If none of
+To use your own track, replace `track.m4a`. If your file is an mp3, drop it in as
+`track.mp3` and swap the two entries in the `data-src` attribute on `.vinylbtn`
+so the mp3 is read first, otherwise the m4a wins and the mp3 is never reached. If none of
 the candidates can play, the button hides itself rather than sitting in the
 header doing nothing.
 
