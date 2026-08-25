@@ -161,9 +161,66 @@
 .flow__node{
   padding:8px 14px; border-radius:9px; background:var(--bg-3); border:1px solid var(--line-2);
   font-size:12.8px; color:var(--tx-2); white-space:nowrap; letter-spacing:-.01em;
+  /* visible by default: the sequence below enhances, it never gates content */
+  transition:transform .22s var(--ease), border-color .22s var(--ease),
+             color .22s var(--ease), background .22s var(--ease);
 }
 .flow__node--hot{ background:rgba(135,228,124,.11); border-color:rgba(135,228,124,.32); color:var(--green); }
-.flow__arw{ color:var(--tx-4); flex:0 0 auto; font-size:13px; }
+.flow__arw{ color:var(--tx-4); flex:0 0 auto; font-size:13px; transition:color .22s var(--ease); }
+
+/* ---- the signal passing through the pipeline ----
+   Fires once, when a diagram first enters view. Each child lights in DOM
+   order, so the figure performs the movement it describes. */
+.flow--run > *{
+  animation:flowPulse .62s var(--ease) both;
+  animation-delay:calc(var(--i, 0) * var(--step, 62ms));
+}
+@keyframes flowPulse{
+  0%   { transform:translateY(0)      scale(1);    filter:brightness(1); }
+  38%  { transform:translateY(-3px)   scale(1.035); filter:brightness(1.45); }
+  100% { transform:translateY(0)      scale(1);    filter:brightness(1); }
+}
+.flow--run > .flow__node{
+  animation-name:flowPulseNode;
+}
+@keyframes flowPulseNode{
+  0%   { transform:translateY(0)    scale(1);     filter:brightness(1);
+         border-color:var(--line-2); box-shadow:0 0 0 0 rgba(135,228,124,0); }
+  38%  { transform:translateY(-3px) scale(1.035); filter:brightness(1.3);
+         border-color:rgba(135,228,124,.55); box-shadow:0 3px 14px -2px rgba(135,228,124,.30); }
+  100% { transform:translateY(0)    scale(1);     filter:brightness(1);
+         border-color:var(--line-2); box-shadow:0 0 0 0 rgba(135,228,124,0); }
+}
+.flow--running > *{ will-change:transform, filter; }
+
+/* ---- supporting state: bring one stage forward ---- */
+@media (hover:hover){
+  .flow:hover > .flow__node{ color:var(--tx-3); border-color:var(--line); }
+  .flow > .flow__node:hover{
+    transform:translateY(-2px);
+    color:var(--tx); border-color:rgba(135,228,124,.5); background:var(--bg-hover);
+  }
+  .flow:hover > .flow__node--hot{ color:var(--green); }
+}
+
+/* Reduced motion keeps the sequence legible but removes the movement:
+   the stages still light in order, they simply do not travel. */
+@media (prefers-reduced-motion: reduce){
+  /* The global reduced-motion reset flattens every animation to .001ms with
+     !important. This is the intentional alternative the guidance asks for, so
+     it has to outrank that reset rather than be erased by it. */
+  .flow--run > .flow__node,
+  .flow--run > .flow__arw{
+    animation-name:flowSettle !important;
+    animation-duration:.45s !important;
+    animation-fill-mode:both !important;
+  }
+  @keyframes flowSettle{
+    0%   { opacity:.55; }
+    100% { opacity:1; }
+  }
+  .flow > .flow__node:hover{ transform:none; }
+}
 
 /* tables */
 .tbl-wrap{ overflow-x:auto; margin:0 0 24px; border:1px solid var(--line); border-radius:var(--r); background:var(--bg-1); }

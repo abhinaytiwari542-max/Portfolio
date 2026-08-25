@@ -478,6 +478,49 @@
     });
   })();
 
+
+  /* ---------------------------------------------------------
+     flow diagrams: light each stage in DOM order the first
+     time a diagram is seen, so the figure performs the movement
+     it describes. Runs once per diagram, then releases.
+     --------------------------------------------------------- */
+  (function flowSequence() {
+    var flows = document.querySelectorAll('.flow');
+    if (!flows.length) return;
+
+    // No observer support: the diagrams are already fully visible, so there
+    // is nothing to recover. Skip rather than degrade.
+    if (!('IntersectionObserver' in window)) return;
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var flow = en.target;
+        io.unobserve(flow);
+
+        var kids = flow.children;
+        // Bound the whole traversal rather than the step: a 15-stage pipeline
+        // at a fixed 62ms ran ~870ms of stagger alone. Short flows keep the
+        // full step, long ones compress to stay under the cap.
+        var CAP = 560;
+        var step = kids.length > 1 ? Math.min(62, CAP / (kids.length - 1)) : 62;
+        flow.style.setProperty('--step', step.toFixed(1) + 'ms');
+
+        for (var i = 0; i < kids.length; i++) {
+          kids[i].style.setProperty('--i', i);
+        }
+
+        flow.classList.add('flow--run', 'flow--running');
+
+        // drop will-change once the last child has finished
+        var total = step * kids.length + 700;
+        setTimeout(function () { flow.classList.remove('flow--running'); }, total);
+      });
+    }, { threshold: 0.35, rootMargin: '0px 0px -8% 0px' });
+
+    flows.forEach(function (f) { io.observe(f); });
+  })();
+
   /* current year */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = new Date().getFullYear();
